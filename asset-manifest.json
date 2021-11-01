@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/itcart/static/css/main.1e20a9d4.chunk.css",
+    "main.js": "/itcart/static/js/main.ef5c4c45.chunk.js",
+    "main.js.map": "/itcart/static/js/main.ef5c4c45.chunk.js.map",
+    "runtime-main.js": "/itcart/static/js/runtime-main.f7f76372.js",
+    "runtime-main.js.map": "/itcart/static/js/runtime-main.f7f76372.js.map",
+    "static/js/2.f7d5c62e.chunk.js": "/itcart/static/js/2.f7d5c62e.chunk.js",
+    "static/js/2.f7d5c62e.chunk.js.map": "/itcart/static/js/2.f7d5c62e.chunk.js.map",
+    "static/js/3.76065f2f.chunk.js": "/itcart/static/js/3.76065f2f.chunk.js",
+    "static/js/3.76065f2f.chunk.js.map": "/itcart/static/js/3.76065f2f.chunk.js.map",
+    "index.html": "/itcart/index.html",
+    "static/css/main.1e20a9d4.chunk.css.map": "/itcart/static/css/main.1e20a9d4.chunk.css.map",
+    "static/js/2.f7d5c62e.chunk.js.LICENSE.txt": "/itcart/static/js/2.f7d5c62e.chunk.js.LICENSE.txt",
+    "static/media/Union.be3fa9a4.png": "/itcart/static/media/Union.be3fa9a4.png",
+    "static/media/dynamic.d05ab64a.png": "/itcart/static/media/dynamic.d05ab64a.png",
+    "static/media/ecommerce.4c759aa4.png": "/itcart/static/media/ecommerce.4c759aa4.png",
+    "static/media/pay.ff3f0ba4.png": "/itcart/static/media/pay.ff3f0ba4.png",
+    "static/media/Header.scss": "/itcart/static/media/slide1.423bc639.png",
+    "static/media/static.abda4835.png": "/itcart/static/media/static.abda4835.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7f76372.js",
+    "static/js/2.f7d5c62e.chunk.js",
+    "static/css/main.1e20a9d4.chunk.css",
+    "static/js/main.ef5c4c45.chunk.js"
+  ]
+}
