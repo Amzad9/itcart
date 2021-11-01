@@ -11,11 +11,11 @@ function Header() {
         <header>
             <Container fluid="xxl">
                 <Row>
-                  <Col sm={12} md={8}>
+                  <Col sm={12} md={12}>
                        <Slider {...Header_SLIDER_SETTINGS}>
                             
                                 {SLIDER_DATA.map( item => (
-                                    <SliderContent className="slide-1" title={item.title} subtitle={item.subtitle}>
+                                    <SliderContent className="slide-1 mx-0" title={item.title} subtitle={item.subtitle}>
                                         <Button className="text-white">Explore</Button>
                                     </SliderContent>
                                 ))}

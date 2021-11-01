@@ -4,6 +4,9 @@ header{
         height: 750px;
         display: flex !important;
         align-items: center;
+        @media(max-width: 576px){
+            height: 450px;
+        }
     }
     h1{
         font-weight: bold;
@@ -12,6 +15,7 @@ header{
         color: #000000;
         @media(max-width: 576px){
             font-size: 30px;
+            line-height: 46px;
         }
     }
     p{

@@ -65,7 +65,7 @@ function Business() {
 
                              </tbody>
                          </Table> */}
-                     <Col md={4} className="mt-2 pt-2 basic">
+                     <Col md={4} className="mt-2 pt-2 basic mb-4 mb-md-0">
                          <Card className="mt-2 rounded-0">
                          
                          <Table className="mb-0" striped bordered hover>
@@ -98,7 +98,7 @@ function Business() {
                          
                         
                     </Col>
-                    <Col md={4} className="format-card">
+                    <Col md={4} className="format-card mb-4 mb-md-0">
                     <Card>
                        <div className="card-header bg-primary text-center">
                              <h4 className="text-white">Traditional Business Format</h4>
@@ -133,7 +133,7 @@ function Business() {
                          </div>
                          </Card>
                     </Col>
-                    <Col md={4}  className="enterprice">
+                    <Col md={4}  className="enterprice mb-4 mb-md-0">
                     <Card>
                          <div className="card-header bg-secondary text-center">
                              <h4 className="text-white">Digitally Transformed Enterprise</h4>

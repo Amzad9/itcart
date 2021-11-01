@@ -3,7 +3,7 @@ import { Row, Col} from 'react-bootstrap';
 
 const  SliderContent = ({title, subtitle, children, className}) => {
     return (
-        <>
+        <div>
            <Row className={className}>
                 <Col xs={12} sm={12} md={12} xxl={8}>
                     <h1 className="mb-5">{title}</h1>
@@ -11,7 +11,7 @@ const  SliderContent = ({title, subtitle, children, className}) => {
                     {children}
                 </Col>
             </Row> 
-        </>
+        </div>
     )
 }
 

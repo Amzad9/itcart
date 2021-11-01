@@ -37,7 +37,7 @@ function Footer() {
                                   <Nav.Link className="fw-semibold text-dark" href="#">Careers</Nav.Link>
                                 </Nav.Item>
                             </Nav>
-                            <div className="d-flex socisl-media ms-5">
+                            <div className="d-flex socisl-media ms-0 ms-md-5">
                                <Nav.Link href="#">
                                    <img src={Insta} alt="insta" />  
                                </Nav.Link>

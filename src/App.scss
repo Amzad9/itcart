@@ -42,12 +42,12 @@ h2{
     }
     .service-tab{
         .nav-item:first-child{
-            @media(max-width: 768px){
-                padding-left: 40rem;
-            }
-            @media(max-width: 576px){
-                padding-left: 59rem;
-            }
+            // @media(max-width: 768px){
+            //     padding-left: 40rem;
+            // }
+            // @media(max-width: 576px){
+            //     padding-left: 59rem;
+            // }
            
         }
     }
@@ -61,6 +61,7 @@ h2{
     @media(max-width: 768px){
         flex-wrap: nowrap;
         overflow-x: scroll;
+        justify-content: flex-start !important;
     }
  
 }
@@ -76,6 +77,7 @@ h2{
     white-space: pre;
     @media(max-width: 768px){
         padding: 1rem 2.3rem;
+        font-size: 19px;
     }
 }
 .nav-pills .nav-item:not(:last-child){
