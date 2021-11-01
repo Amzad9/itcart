@@ -11,7 +11,7 @@ function Header() {
         <header>
             <Container fluid="xxl">
                 <Row>
-                  <Col sm={12} md={12}>
+                  <Col sm={12} md={8}>
                        <Slider {...Header_SLIDER_SETTINGS}>
                             
                                 {SLIDER_DATA.map( item => (
