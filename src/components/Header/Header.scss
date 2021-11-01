@@ -10,6 +10,9 @@ header{
         font-size: 64px;
         line-height: 72px;
         color: #000000;
+        @media(max-width: 576px){
+            font-size: 30px;
+        }
     }
     p{
         font-weight: 500;
