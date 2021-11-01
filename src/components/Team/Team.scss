@@ -1,0 +1,14 @@
+.team{
+    .card{
+        min-height: auto !important;
+        img{
+            max-height: initial !important;
+            border-radius: 10px 10px 0px 0px !important;
+        }
+    }
+    .card-body{
+          padding: 15px 10px 32px 25px;
+          border: 6px solid #DD87B8;
+          border-radius: 0px 0px 10px 10px !important;
+    }
+}

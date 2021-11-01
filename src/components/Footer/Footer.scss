@@ -1,0 +1,15 @@
+footer{
+    .navbar-nav{
+        .nav-link{
+            padding: 0.3rem 1.3rem !important; 
+            @media(max-width: 768px){
+                padding: 1rem 1.3rem !important; 
+            }
+        }
+    }
+    .socisl-media{
+        .nav-link{
+            padding: 8px;
+        }
+    }
+}

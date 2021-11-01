@@ -1,0 +1,14 @@
+.newslatter{
+    .form-control{
+        height: 46px;
+        border-radius: 10px 0px 0px 10px;
+        border:0;
+    }
+    button{
+        border-radius: 0px 10px 10px 0px;
+        padding: 6px 38px;
+        &:hover{
+            background: #76D1D4 !important;
+        }
+    }
+}

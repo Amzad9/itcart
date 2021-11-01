@@ -1,0 +1,57 @@
+$primary: #E86275;
+$secondary: #48C1C6;
+$success: #3e8d63;
+$info: #D1EFF1;
+$warning: #FFF2CB;
+$danger: #d62518;
+$light: #F1F1F1;
+$light1:#EAEAEA;
+$dark: #000000;
+$white: #ffffff;
+
+$accent : #C4C4C4;
+$blue: #DD87B8;
+$text-sky:#1CAFE1;
+ 
+
+// this is used to map colors. change accordingly.
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark,
+  accent: $accent,
+  blue:$blue,
+);
+
+.text-blue{
+  color: $blue;
+}
+
+.bg-blue{
+  background-color: $blue;
+}
+.text-sky{
+  color:$text-sky !important;
+}
+$table-striped-bg-factor:     0;
+$table-hover-bg-factor:       0;
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: $light1 !important;
+  color: var(--bs-table-striped-color);
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: $white !important;
+  color: var(--bs-table-striped-color);
+}
+.table-hover > tbody > tr:hover {
+  --bs-table-accent-bg: var(--bs-table-hover-bg);
+  color: var(--bs-table-hover-color);
+}
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

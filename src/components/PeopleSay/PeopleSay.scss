@@ -1,0 +1,55 @@
+.PeopleSay{
+    .card{
+        border-radius: 10px 10px 0px 0px !important;
+        min-height: auto !important;
+        h4{
+            font-weight: 500;
+        }
+        img{
+            max-height: initial !important;
+            border-radius: 10px 10px 0px 0px !important;
+        }
+        .card-body{
+            background: url(../assets/vector2.png) no-repeat center center;
+            background-size: 100%;
+           div{
+              padding: 3px 10px 45px 25px;
+           }
+            // border: 6px solid #DD87B8;
+            // border-radius: 0px 0px 10px 10px !important;
+        }
+
+        // .popup{
+        //     width:295px;
+        //     height:164px;
+        //     position: absolute;
+        //     border-radius: 10px;
+        //     bottom: 77px;
+        //     right: -251px;
+        //     z-index: 99;
+        //     visibility: hidden;
+        //     transition: all 0.3 ease;
+        //     &::after{
+        //         position: absolute;
+        //         content: '';
+        //         width: 0;
+        //         height: 0;
+        //         border-bottom: 26px solid #DD87B8;
+        //         border-left: 29px solid transparent;
+        //         left: -22px;
+        //         bottom:0px;
+        //     }
+        //     small{
+        //         line-height: 17px !important;
+        //         display: block;
+        //     }
+        // }
+
+        // &:hover .popup{
+        //     visibility: visible;
+        // }
+    }
+    .slick-slide {
+        padding: 24px;
+    }
+}

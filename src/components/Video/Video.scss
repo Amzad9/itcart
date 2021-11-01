@@ -1,0 +1,15 @@
+.video-container{
+    background: #D1EFF1;
+    iframe{
+        border-radius: 20px;
+        border: solid 15px #C4C4C4;
+        max-width: 696px;
+        width: 696px;
+        min-height: 384px;
+        margin: auto;
+        @media(max-width: 768px){
+            min-height: auto;
+            width: auto;
+        }
+    }
+}

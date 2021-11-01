@@ -1,0 +1,22 @@
+.contactus{
+    .card{
+        min-height: 317px;
+        max-width: 316px;
+        border: 5px solid #D1EFF1;
+        box-sizing: border-box;
+        border-radius: 10px;
+        @media(max-width: 768px){
+            max-width: 228px;
+            min-height: 200px;
+        }
+        @media(max-width: 576px){
+            max-width: 100%;
+            min-height: 200px;
+            margin-bottom: 20px;
+        }
+       img{
+           margin: auto;
+           display: block;
+       }
+    }
+}

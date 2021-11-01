@@ -1,0 +1,18 @@
+.form-control{
+    border: 5px solid #D1EFF1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: 500 !important;
+   &:focus{
+       box-shadow: none;
+   }
+}
+input{
+    height: 91px;
+}
+.btn-form{
+    border: 2px solid #48C1C6;
+    &:hover{
+        color: #fff;
+    }
+}
