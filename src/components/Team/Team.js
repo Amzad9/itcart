@@ -1,17 +1,10 @@
 import React, {useState, useRef} from 'react'
-import Slider from "react-slick";
 import { Container, Row, Col, Nav, Overlay, Popover} from 'react-bootstrap';
-import TabContainer from '../Tabs/TabContainer'
-import Tabs from '../Tabs/Tabs';
-import NavLink from '../Tabs/NavLink';
 import SlideCard from '../Card/SlideCard';
-import {SolutionData} from '../Utility'
-import NextArrow from '../Client/NextArrow';  
-import PrevArrow from '../Client/PrevArrow';
 import '../Client/Client.scss'
 import './Team.scss'
 import Union from '../assets/Union.png';
-import Vactor from '../assets/Vector.png';
+
 
 
 // import ScrollAnimation from 'react-animate-on-scroll';

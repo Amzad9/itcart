@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap';
 import SlideCard from '../Card/SlideCard';
 import FormControl from './FormControl'
