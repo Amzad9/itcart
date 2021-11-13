@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Navbar, Container, Nav, NavDropdown  } from 'react-bootstrap';
 import Icon from '../Icon/Icon'
 import './Nav.scss';
@@ -10,8 +10,10 @@ const  Navigation = () => {
       <div>
          <Navbar id='navihation' sticky="top" bg="white" variant="light" expand="lg">
             <Container fluid="xxl">
-              <Navbar.Brand href="#home">
-                <img src={Logo} alt="logo" />
+              <Navbar.Brand>
+                <Link to="/">
+                   <img src={Logo} alt="logo" />
+                </Link>
               </Navbar.Brand>
               <Navbar.Toggle />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -34,7 +36,7 @@ const  Navigation = () => {
                     <NavDropdown.Item href="#action/3.3">Resources</NavDropdown.Item>
                    </NavDropdown>
                    <Nav.Item>
-                    <Nav.Link className="nav-link">Careers</Nav.Link>
+                    <Link className="nav-link" to="careers">Careers</Link>
                    </Nav.Item>
                    <Nav.Item>
                     <Nav.Link className="nav-link">Get in touch</Nav.Link>

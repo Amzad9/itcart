@@ -15,7 +15,7 @@ export const Header_SLIDER_SETTINGS = {
 
 export const NavData = [
     {key: 'web', title: 'Web Development'},
-    {key: 'App', title: 'App Development'},
+    {key: 'app', title: 'App Development'},
     {key: 'business', title: 'Business Automation'},
     {key: 'technology', title: 'Technology Consulting'}
 ]

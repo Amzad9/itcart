@@ -128,9 +128,14 @@ const Solution = () => {
             {index === 0 ? 
                       <Row>
                          {hrm.map(item => (
-                            <Col xs={12} md={6} lg={4} xl={4} className="mb-4">
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
+                            <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light front px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
+                                </SlideCard>
+                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                    <h5 className="text-black">{item.title}</h5>
+                                    
+                                     <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
                                 </SlideCard>
                             </Col>
                             ))}
@@ -138,19 +143,29 @@ const Solution = () => {
                    : index === 1 ?
                     <Row>
                     {cms.map(item => (
-                        <Col md={4} className="mb-4">
-                            <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
+                        <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                            <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
                                 <h6>{item.title}</h6>
                             </SlideCard>
+                            <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                    <h5 className="text-black">{item.title}</h5>
+                                    
+                                     <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                                </SlideCard>
                         </Col>
                         ))}
                     </Row>
                    : index === 2 ?
                         <Row>
                            {businE.map(item => (
-                             <Col md={4} className="mb-4">
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
+                             <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
+                                </SlideCard>
+                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                    <h5 className="text-black">{item.title}</h5>
+                                    
+                                     <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
                                 </SlideCard>
                              </Col>
                             ))}
