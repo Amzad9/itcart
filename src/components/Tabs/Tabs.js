@@ -8,7 +8,7 @@ const Tabs = (props) => {
 
     return (
         <>
-            <Nav variant="pills" className="justify-content-center">
+            <Nav variant="pills" className={props.ClassName}>
                 {props.children}
             </Nav> 
         </>

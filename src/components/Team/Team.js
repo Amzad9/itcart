@@ -50,7 +50,7 @@ const PeopleSay = () => {
                        
                        
                             {SlideData.map(item => (
-                             <Col className="mb-4 mb-xl-0" sm={12} md={6} xxl={3} ref={ref}>
+                             <Col className="mb-4 mb-xl-0" sm={12} md={6} xl={3} ref={ref}>
                                 <SlideCard  onClick={handleClick} classBody="pb-0" className="border-0 bg-white shadow-none p-0" src={item.img}>
                                    <div>
                                       <h4>{item.title}</h4>

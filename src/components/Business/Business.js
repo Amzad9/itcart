@@ -12,7 +12,7 @@ function Business() {
                 <Row>
                     <Col md={12} className="text-center">
                         <h2 className="mb-5">How we help Businesses Grow!</h2>
-                        <p className="col-12 col-md-7 mx-auto">IT Cart helps a Business develop into an Enterprise that is technologically systematized to automate most of its processes in order to perform at its optimally best.</p>
+                        <p className="col-12 col-md-12 col-xxl-7 mx-auto">IT Cart helps a Business develop into an Enterprise that is technologically systematized to automate most of its processes in order to perform at its optimally best.</p>
                     </Col>
                 </Row>
                 <Row className="gx-0 align-items-center mt-5">

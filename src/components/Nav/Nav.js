@@ -1,7 +1,9 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import { Navbar, Container, Nav, NavDropdown  } from 'react-bootstrap';
+import Icon from '../Icon/Icon'
 import './Nav.scss';
+
 import Logo from '../assets/logo-f.png'
 const  Navigation = () => {
     return (
@@ -20,10 +22,10 @@ const  Navigation = () => {
                     <NavDropdown.Item href="#action/3.3">Services</NavDropdown.Item>
                   </NavDropdown>
                 
-                  <NavDropdown title="Products" id="Products-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Products</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Products</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Products</NavDropdown.Item>
+                  <NavDropdown title="Solutions" id="Products-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Solutions</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Solutions</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Solutions</NavDropdown.Item>
                   </NavDropdown>
 
                    <NavDropdown title="Resources" id="Resources-nav-dropdown">
@@ -32,11 +34,12 @@ const  Navigation = () => {
                     <NavDropdown.Item href="#action/3.3">Resources</NavDropdown.Item>
                    </NavDropdown>
                    <Nav.Item>
-                    <Nav.Link className="nav-link">Contact Us</Nav.Link>
-                   </Nav.Item>
-                   <Nav.Item>
                     <Nav.Link className="nav-link">Careers</Nav.Link>
                    </Nav.Item>
+                   <Nav.Item>
+                    <Nav.Link className="nav-link">Get in touch</Nav.Link>
+                   </Nav.Item>
+                   
                  </Nav>
               </Navbar.Collapse>
             </Container>

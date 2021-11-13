@@ -41,9 +41,9 @@ const PeopleSay = () => {
         prevArrow: <PrevArrow />,
         responsive: [
             {
-              breakpoint: 1023,
+              breakpoint: 1025,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,

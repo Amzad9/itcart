@@ -51,7 +51,7 @@ const ContactUs = () => {
                <Row className="justify-content-center mt-5">
                   <Col sm={12} md={12} lg={9} xxl={9}>
                         <Row>
-                         <Col className="ps-5 mb-3" md={12}>
+                         <Col className="ps-3 ps-md-5 mb-3" md={12}>
                             <h2 className="text-start">Write to us  |  Didn’t find what you were looking for?</h2>
                             <h4>Let us help you...</h4>
                          </Col>
