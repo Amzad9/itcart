@@ -22,8 +22,8 @@ export const NavData = [
 
 export const SolutionData = [
     {key: 'HRMS', title: 'HRMS'},
-    {key: 'EServices', title: 'E-Services'},
-    {key: 'CRMS', title: 'MIS'},
+    {key: 'E-Services', title: 'E-Services'},
+    {key: 'MIS', title: 'MIS'},
     {key: 'Enterprise', title: 'Enterprise Solutions'},
 ]
 

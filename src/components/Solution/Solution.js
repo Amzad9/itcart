@@ -6,15 +6,40 @@ import Tabs from '../Tabs/Tabs';
 import NavLink from '../Tabs/NavLink';
 import SlideCard from '../Card/SlideCard';
 import {SolutionData} from '../Utility'
-import NextArrow from '../Client/NextArrow';  
-import PrevArrow from '../Client/PrevArrow';
-import '../Client/Client.scss'
-// import Attendance from '../assets/atten.png';
-// import Payroll from '../assets/pay.png';
-// import Performance from '../assets/perfor.png';
-import Static from '../assets/static.png';
-import Dynamic from '../assets/dynamic.png';
-import Ecommerce from '../assets/ecommerce.png';
+// import NextArrow from '../Client/NextArrow';  
+// import PrevArrow from '../Client/PrevArrow';
+import '../Client/Client.scss';
+
+import Emp from '../assets/hrms/1.png';
+import Recru from '../assets/hrms/2.png';
+import Onboarding from '../assets/hrms/3.png';
+import Attendance from '../assets/hrms/4.png';
+import Employee from '../assets/hrms/5.png';
+import Travel from '../assets/hrms/6.png';
+
+import Document from '../assets/EService/1.png';
+import Business from '../assets/EService/2.png';
+import Non from '../assets/EService/3.png';
+import Service from '../assets/EService/4.png';
+import Capital from '../assets/EService/5.png';
+import KYC from '../assets/EService/6.png';
+
+
+import Digital from '../assets/MIS/1.png';
+import Corporate from '../assets/MIS/3.png';
+import Department from '../assets/MIS/3.png';
+import Asset from '../assets/MIS/4.png';
+import Management from '../assets/MIS/5.png';
+import Customer from '../assets/MIS/6.png';
+
+
+import degree from '../assets/EnterP/1.png';
+import Real from '../assets/EnterP/3.png';
+import Performance from '../assets/EnterP/3.png';
+import Industrial from '../assets/EnterP/4.png';
+import Healthcare from '../assets/EnterP/5.png';
+import Procurement from '../assets/EnterP/6.png';
+
 // import ScrollAnimation from 'react-animate-on-scroll';
  {/* <ScrollAnimation animateIn="fadeIn">
                Some Text
@@ -70,28 +95,36 @@ const Solution = () => {
     //       ]
     //   };
     const hrm = [
-        {id: 1, img: Static, title: 'Employee Management'},
-        {id: 2, img: Dynamic,  title: 'Recruitment Process Management'},
-        {id: 3, img: Ecommerce, title: 'Onboarding Process Management'},
-        {id: 4, img: Static, title: 'Attendance & Time Logs Management'},
-        {id: 5, img: Static, title: 'Employee Leave Management'},
-        {id: 6, img: Static, title: 'Travel & Expense Claims Processing'}
+        {id: 1, img:Emp, title: 'Employee Management'},
+        {id: 2, img:Recru,  title: 'Recruitment Process Management'},
+        {id: 3, img:Onboarding, title: 'Onboarding Process Management'},
+        {id: 4, img:Attendance, title: 'Attendance & Time Logs Management'},
+        {id: 5, img:Employee, title: 'Employee Leave Management'},
+        {id: 6, img:Travel, title: 'Travel & Expense Claims Processing'}
       ]
       const cms = [
-        {id: 1, img: Static, title: 'Document Change Request (DCR)'},
-        {id: 2, img: Dynamic,  title: 'Business Change Request (BCR)'},
-        {id: 3, img: Ecommerce, title: 'Non-Conformity Reporting (NCR)'},
-        {id: 4, img: Static, title: 'IT Service Request & Approval'},
-        {id: 5, img: Static, title: 'Capital Expenditure Note Approval (CapEx)'},
-        {id: 6, img: Static, title: 'KYC Update Request and Approval'}
+        {id: 1, img:Document, title: 'Document Change Request (DCR)'},
+        {id: 2, img:Business,  title: 'Business Change Request (BCR)'},
+        {id: 3, img:Non, title: 'Non-Conformity Reporting (NCR)'},
+        {id: 4, img:Service, title: 'IT Service Request & Approval'},
+        {id: 5, img:Capital, title: 'Capital Expenditure Note Approval (CapEx)'},
+        {id: 6, img:KYC, title: 'KYC Update Request and Approval'}
       ]
       const businE = [
-        {id: 1, img: Static, title: 'Digital Transformation (DX) Management'},
-        {id: 2, img: Dynamic,  title: 'Corporate Document Management'},
-        {id: 3, img: Ecommerce, title: 'Business Workflow Automation'},
-        {id: 4, img: Static, title: 'Department Data Management'},
-        {id: 5, img: Static, title: 'IT Asset Management'},
-        {id: 6, img: Static, title: 'KYC Management'}
+        {id: 1, img:Digital, title: 'Digital Transformation (DX) Management'},
+        {id: 2, img:Corporate,  title: 'Corporate Document Management'},
+        {id: 3, img:Department, title: 'Business Workflow Automation'},
+        {id: 4, img: Asset, title: 'Department Data Management'},
+        {id: 5, img: Management, title: 'IT Asset Management'},
+        {id: 6, img: Customer, title: 'KYC Management'}
+      ]
+      const enterP = [
+        {id: 1, img: degree, title: '360 degree Digital Transformation (DX)'},
+        {id: 2, img: Real,  title: 'Real Estate Digital Solution'},
+        {id: 3, img: Performance, title: 'Performance Management Automation'},
+        {id: 4, img: Industrial, title: 'Industrial Process Automation'},
+        {id: 5, img: Healthcare, title: 'Healthcare Management System'},
+        {id: 6, img: Procurement, title: 'Procurement Management System '}
       ]
       
     //   const SlideData = [
@@ -170,7 +203,22 @@ const Solution = () => {
                              </Col>
                             ))}
                         </Row>
-                   : null}
+                       : index === 3 ?
+                        <Row>
+                            {enterP.map(item => (
+                                <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
+                                    <h6>{item.title}</h6>
+                                </SlideCard>
+                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                    <h5 className="text-black">{item.title}</h5>
+                                    
+                                        <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                                </SlideCard>
+                                </Col>
+                            ))}
+                        </Row>
+                       : null}
                 {/* <Row>
                     <Col md={12}>
                         {index === 0 ? 
