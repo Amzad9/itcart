@@ -19,28 +19,34 @@ const  Navigation = () => {
               <Navbar.Collapse id="basic-navbar-nav">
                <Nav className="ms-auto">
                   <NavDropdown title="Services" id="Services-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Services</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Services</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Services</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">Web Development</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">App Development</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Business Automation</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Technology Consulting</NavDropdown.Item>
                   </NavDropdown>
                 
                   <NavDropdown title="Solutions" id="Products-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Solutions</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Solutions</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Solutions</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">HRMS</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">E-Services</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">MIS</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Enterprise Solutions</NavDropdown.Item>
                   </NavDropdown>
 
                    <NavDropdown title="Resources" id="Resources-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Resources</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Resources</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Resources</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">News</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Blog</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Case Study</NavDropdown.Item>
                    </NavDropdown>
                    <Nav.Item>
                     <Link className="nav-link" to="careers">Careers</Link>
                    </Nav.Item>
-                   <Nav.Item>
-                    <Nav.Link className="nav-link">Get in touch</Nav.Link>
-                   </Nav.Item>
+                  
+                   <NavDropdown title="Get in touch" id="get-in-touch">
+                    <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">Our Team</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Contact Us</NavDropdown.Item>
+                   
+                  </NavDropdown>
                    
                  </Nav>
               </Navbar.Collapse>

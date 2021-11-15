@@ -14,8 +14,8 @@ function Header() {
                   <Col sm={12} md={12} lg={12}>
                        <Slider {...Header_SLIDER_SETTINGS}>
                             
-                                {SLIDER_DATA.map( item => (
-                                    <SliderContent className="slide-1 mx-0" title={item.title} subtitle={item.subtitle}>
+                                {SLIDER_DATA.map( (item, index) => (
+                                    <SliderContent className={"mx-0 slide-" + index } title={item.title} subtitle={item.subtitle}>
                                         <Button className="text-white">Explore</Button>
                                     </SliderContent>
                                 ))}

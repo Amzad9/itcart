@@ -1,7 +1,7 @@
 export const SLIDER_DATA = [
     {title: "Business Problems? Technology Solutions!", subtitle: "IT Cart is a multi-window digital solution provider that primarily focuses on Business problems and approaches in a consultative manner with befitting Technology Solutions!"},
-    {title: "Business Problems? Technology Solutions!", subtitle: "IT Cart is a multi-window digital solution provider that primarily focuses on Business problems and approaches in a consultative manner with befitting Technology Solutions!"},
-    {title: "Business Problems? Technology Solutions!", subtitle: "IT Cart is a multi-window digital solution provider that primarily focuses on Business problems and approaches in a consultative manner with befitting Technology Solutions!"}
+    {title: "Making Technology accessible!", subtitle: "We take great pride in our domain expertise and decades of rich experience in Business automation, Digital transformations & Enterprise Solutions!"},
+    {title: "Are you Stuck in your Business?IT Cart helps you find that flow!", subtitle: "Feel free to get in touch to get a free session with our consultant for your Technology needs!"}
 ];
 
 export const Header_SLIDER_SETTINGS = {
@@ -22,7 +22,8 @@ export const NavData = [
 
 export const SolutionData = [
     {key: 'HRMS', title: 'HRMS'},
-    {key: 'CRMS', title: 'CRMS'},
+    {key: 'EServices', title: 'E-Services'},
+    {key: 'CRMS', title: 'MIS'},
     {key: 'Enterprise', title: 'Enterprise Solutions'},
 ]
 

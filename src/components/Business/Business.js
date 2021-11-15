@@ -77,13 +77,13 @@ function Business() {
                                     <td>Possibility of Error</td>
                                 </tr>
                                 <tr>
-                                    <td>Growth Tracking KPI’s </td>
+                                    <td>Growth </td>
+                                </tr>
+                                <tr>
+                                    <td>Tracking KPI’s  </td>
                                 </tr>
                                 <tr>
                                     <td>Generating Reports</td>
-                                </tr>
-                                <tr>
-                                    <td>Administration</td>
                                 </tr>
                                 <tr>
                                     <td>Administration</td>
@@ -115,13 +115,13 @@ function Business() {
                                     <td>Difficult</td>
                                 </tr>
                                 <tr>
-                                    <td>Manually</td>
+                                    <td>Difficult </td>
+                                </tr>
+                                <tr>
+                                    <td>Manually </td>
                                 </tr>
                                 <tr>
                                     <td>In person</td>
-                                </tr>
-                                <tr>
-                                    <td>Difficult</td>
                                 </tr>
                                 <tr>
                                     <td>Difficult</td>

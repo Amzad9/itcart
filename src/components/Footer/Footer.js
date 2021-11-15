@@ -30,11 +30,12 @@ function Footer() {
                                 <Nav.Item>
                                   <Nav.Link className="fw-semibold text-dark" href="#">Resources</Nav.Link>
                                 </Nav.Item>
-                                <Nav.Item>
-                                  <Nav.Link className="fw-semibold text-dark" href="#">Contact Us</Nav.Link>
-                                </Nav.Item>
+                               
                                 <Nav.Item>
                                   <Nav.Link className="fw-semibold text-dark" href="#">Careers</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link className="fw-semibold text-dark">Get in touch</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <div className="d-flex socisl-media ms-0 ms-md-5">
@@ -52,6 +53,9 @@ function Footer() {
                                </Nav.Link>
                             </div>
                         </Navbar>
+                    </Col>
+                    <Col sm={12} className="text-center pt-5">
+                        <p>Copyright &copy; ItCart - All rights reserved. Powered by ItCart</p>
                     </Col>
                 </Row>
             </Container>

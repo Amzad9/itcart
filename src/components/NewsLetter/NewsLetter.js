@@ -13,7 +13,7 @@ function NewsLetter() {
                <Row className="justify-content-center">
                    <Col sm={12} md={9} lg={6}>
                        <Form.Group className="mb-3 mt-5 position-relative d-flex" controlId="exampleForm.ControlTextarea1">
-                            <Form.Control type="email" placeholder="E-email*" />
+                            <Form.Control type="email" placeholder="E-Mail*" />
                             <Button 
                               variant="outline-secondary" 
                               className="fs-6 fw-semibold bg-white p btn-form">
