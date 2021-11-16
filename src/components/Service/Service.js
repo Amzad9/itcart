@@ -9,20 +9,39 @@ import {NavData} from '../Utility'
 // import NextArrow from '../Client/NextArrow';  
 // import PrevArrow from '../Client/PrevArrow';
 import '../Client/Client.scss'
-import Static from '../assets/static.png';
-import Dynamic from '../assets/dynamic.png';
-import Ecommerce from '../assets/ecommerce.png';
+import Digital from '../assets/Web/1.png';
+import Corporate from '../assets/Web/2.png';
+import Document from '../assets/Web/3.png';
+import Learning from '../assets/Web/4.png';
+import Process from '../assets/Web/5.png';
+import Project from '../assets/Web/6.png';
 
-// import ScrollAnimation from 'react-animate-on-scroll';
- {/* <ScrollAnimation animateIn="fadeIn">
-               Some Text
-            </ScrollAnimation> */}
+import Customer from '../assets/app/1.png';
+import Business from '../assets/app/2.png';
+import Utility from '../assets/app/3.png';
+import Commerce from '../assets/app/4.png';
+import Apps from '../assets/app/5.png';
+import Employee from '../assets/app/6.png';
+
+
+import Management from '../assets/Business/1.png';
+import Supply from '../assets/Business/2.png';
+import Business1 from '../assets/Business/3.png';
+import Customer1 from '../assets/Business/4.png';
+import Department from '../assets/app/5.png';
+import Document1 from '../assets/Business/6.png';
+
+
+import solutions from '../assets/tech/1.png';
+import SaaS from '../assets/tech/2.png';
+import SharePoint from '../assets/tech/3.png';
+import Office from '../assets/Business/4.png';
+import Premise from '../assets/tech/4.png';
+import Azure from '../assets/tech/4.png';
 
 const Service = () => {
    
     const [index, setIndex] = useState(0)
-
-
 
     // const SERVICE_SLIDER_SETTINGS = {
     //     dots: false,
@@ -75,43 +94,43 @@ const Service = () => {
     //     {id: 4, img: Static, title: 'App Development'}
     //   ]
       const web = [
-        {id: 1, img: Static, title: 'Digital (DX) Collaboration Portal'},
-        {id: 2, img: Dynamic,  title: 'Corporate Internet Portal'},
-        {id: 3, img: Ecommerce, title: 'Document Management System (DMS)'},
-        {id: 4, img: Static, title: 'Digital Learning Platform'},
-        {id: 5, img: Static, title: 'Digital Process Management'},
-        {id: 6, img: Static, title: 'Project Management System'}
+        {id: 1, img: Digital, title: 'Digital (DX) Collaboration Portal'},
+        {id: 2, img: Corporate,  title: 'Corporate Internet Portal'},
+        {id: 3, img: Document, title: 'Document Management System (DMS)'},
+        {id: 4, img: Learning, title: 'Digital Learning Platform'},
+        {id: 5, img: Process, title: 'Digital Process Management'},
+        {id: 6, img: Project, title: 'Project Management System'}
       ]
       const appd = [
-        {id: 1, img: Static, title: 'Customer Service Apps'},
-        {id: 2, img: Dynamic,  title: 'Business Process Apps'},
-        {id: 3, img: Ecommerce, title: 'Utility & Tools Apps'},
-        {id: 4, img: Static, title: 'E-Commerce Apps'},
-        {id: 5, img: Static, title: 'Digital Learning Apps'},
-        {id: 6, img: Static, title: 'Employee E-Service Apps'}
+        {id: 1, img: Customer, title: 'Customer Service Apps'},
+        {id: 2, img: Business,  title: 'Business Process Apps'},
+        {id: 3, img: Utility, title: 'Utility & Tools Apps'},
+        {id: 4, img: Commerce, title: 'E-Commerce Apps'},
+        {id: 5, img: Apps, title: 'Digital Learning Apps'},
+        {id: 6, img: Employee, title: 'Employee E-Service Apps'}
       ]
       const businessd = [
-        {id: 1, img: Static, title: 'Employee Management automation'},
-        {id: 2, img: Dynamic,  title: 'Supply Chain Automation'},
-        {id: 3, img: Ecommerce, title: 'Business Workflow Automation'},
-        {id: 4, img: Static, title: 'Customer Support Automation'},
-        {id: 5, img: Static, title: 'Inter-Department Review Automation'},
-        {id: 6, img: Static, title: 'Document management Automation'}
+        {id: 1, img: Management, title: 'Employee Management automation'},
+        {id: 2, img: Supply,  title: 'Supply Chain Automation'},
+        {id: 3, img: Business1, title: 'Business Workflow Automation'},
+        {id: 4, img: Customer1, title: 'Customer Support Automation'},
+        {id: 5, img: Department, title: 'Inter-Department Review Automation'},
+        {id: 6, img: Document1, title: 'Document management Automation'}
       ]
       const Technologyd = [
-        {id: 1, img: Static, title: 'Digital Transformation (DX) solutions'},
-        {id: 2, img: Dynamic,  title: 'E-Commerce (SaaS) solutions'},
-        {id: 3, img: Ecommerce, title: 'SharePoint Online solutions'},
-        {id: 4, img: Static, title: 'Office 365 solutions'},
-        {id: 5, img: Static, title: 'SharePoint On Premise solutions'},
-        {id: 6, img: Static, title: 'Azure Cloud solutions'}
+        {id: 1, img: solutions, title: 'Digital Transformation (DX) solutions'},
+        {id: 2, img: SaaS,  title: 'E-Commerce (SaaS) solutions'},
+        {id: 3, img: SharePoint, title: 'SharePoint Online solutions'},
+        {id: 4, img: Office, title: 'Office 365 solutions'},
+        {id: 5, img: Premise, title: 'SharePoint On Premise solutions'},
+        {id: 6, img: Azure, title: 'Azure Cloud solutions'}
       ]
-      const SlideData2 = [
-        {id: 1, img: Static, title: 'Websites'},
-        {id: 2, img: Dynamic,  title: 'Dynamic'},
-        {id: 3, img: Ecommerce, title: 'Commerce'},
-        {id: 4, img: Static, title: 'Development'}
-      ]
+    //   const SlideData2 = [
+    //     {id: 1, img: Static, title: 'Websites'},
+    //     {id: 2, img: Dynamic,  title: 'Dynamic'},
+    //     {id: 3, img: Ecommerce, title: 'Commerce'},
+    //     {id: 4, img: Static, title: 'Development'}
+    //   ]
       
     return (
         <section className="clients service py-b mar-nagative bg-white">
