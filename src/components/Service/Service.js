@@ -272,7 +272,7 @@ const Service = () => {
                                        </Col>
                                        <Col sm={12} className="mt-4 px-3">
                                    
-                                       <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
+                                       <Button className="text-white w-100 bg-primary btn-b">Get Brochure</Button>
                                       </Col>
                                      </Row>
                              </SlideCard>

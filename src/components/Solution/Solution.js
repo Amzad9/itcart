@@ -7,6 +7,7 @@ import Tabs from '../Tabs/Tabs';
 import NavLink from '../Tabs/NavLink';
 import SlideCard from '../Card/SlideCard';
 import {SolutionData} from '../Utility'
+import'./Solution.scss'
 // import NextArrow from '../Client/NextArrow';  
 // import PrevArrow from '../Client/PrevArrow';
 import '../Client/Client.scss';
@@ -169,7 +170,7 @@ const Solution = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
                                      <h5 className="text-black">{item.title}</h5>
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper justify-content-between px-4 mt-5">
+                                     <Row className="btn-wrapper-solution justify-content-between px-4 mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -199,7 +200,7 @@ const Solution = () => {
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper justify-content-between px-4 mt-5">
+                                     <Row className="btn-wrapper-solution justify-content-between px-4 mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -229,7 +230,7 @@ const Solution = () => {
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper justify-content-between px-4 mt-5">
+                                     <Row className="btn-wrapper-solution justify-content-between px-4 mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -259,7 +260,7 @@ const Solution = () => {
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                         <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                        <Row className="btn-wrapper justify-content-between px-4 mt-5">
+                                        <Row className="btn-wrapper-solution justify-content-between px-4 mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
