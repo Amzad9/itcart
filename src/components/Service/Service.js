@@ -35,9 +35,9 @@ import Document1 from '../assets/Business/6.png';
 import solutions from '../assets/tech/1.png';
 import SaaS from '../assets/tech/2.png';
 import SharePoint from '../assets/tech/3.png';
-import Office from '../assets/Business/4.png';
-import Premise from '../assets/tech/4.png';
-import Azure from '../assets/tech/4.png';
+import Office from '../assets/Business/3.png';
+import Premise from '../assets/tech/3.png';
+import Azure from '../assets/tech/3.png';
 
 const Service = () => {
    
