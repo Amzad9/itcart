@@ -165,6 +165,9 @@ h2{
     border:0;
     .dropdown-item{
         padding: 0.8rem 1rem;
+        &:hover{
+            background-color: #E86275 !important
+        }
     }
 }
 
@@ -184,9 +187,9 @@ h2{
     >.back {
         position: absolute;
         opacity: 0;
-        top: 0px;
-        left: 0px;
-        width: 100%;
+        top:0;
+        left: 3%;
+        width: 94%;
         height: 100%;
         transform: rotateY(-180deg);
     }
