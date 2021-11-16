@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/itcart/static/css/main.1caac0dc.chunk.css",
-    "main.js": "/itcart/static/js/main.124e435a.chunk.js",
-    "main.js.map": "/itcart/static/js/main.124e435a.chunk.js.map",
-    "runtime-main.js": "/itcart/static/js/runtime-main.8832123e.js",
-    "runtime-main.js.map": "/itcart/static/js/runtime-main.8832123e.js.map",
-    "static/js/2.b3d04b16.chunk.js": "/itcart/static/js/2.b3d04b16.chunk.js",
-    "static/js/2.b3d04b16.chunk.js.map": "/itcart/static/js/2.b3d04b16.chunk.js.map",
-    "static/js/3.6729f246.chunk.js": "/itcart/static/js/3.6729f246.chunk.js",
-    "static/js/3.6729f246.chunk.js.map": "/itcart/static/js/3.6729f246.chunk.js.map",
+    "main.css": "/itcart/static/css/main.52d7eab6.chunk.css",
+    "main.js": "/itcart/static/js/main.cdabdd23.chunk.js",
+    "main.js.map": "/itcart/static/js/main.cdabdd23.chunk.js.map",
+    "runtime-main.js": "/itcart/static/js/runtime-main.736d8e37.js",
+    "runtime-main.js.map": "/itcart/static/js/runtime-main.736d8e37.js.map",
+    "static/js/2.e6aa6625.chunk.js": "/itcart/static/js/2.e6aa6625.chunk.js",
+    "static/js/2.e6aa6625.chunk.js.map": "/itcart/static/js/2.e6aa6625.chunk.js.map",
+    "static/js/3.fbff90a7.chunk.js": "/itcart/static/js/3.fbff90a7.chunk.js",
+    "static/js/3.fbff90a7.chunk.js.map": "/itcart/static/js/3.fbff90a7.chunk.js.map",
     "index.html": "/itcart/index.html",
-    "static/css/main.1caac0dc.chunk.css.map": "/itcart/static/css/main.1caac0dc.chunk.css.map",
-    "static/js/2.b3d04b16.chunk.js.LICENSE.txt": "/itcart/static/js/2.b3d04b16.chunk.js.LICENSE.txt",
+    "static/css/main.52d7eab6.chunk.css.map": "/itcart/static/css/main.52d7eab6.chunk.css.map",
+    "static/js/2.e6aa6625.chunk.js.LICENSE.txt": "/itcart/static/js/2.e6aa6625.chunk.js.LICENSE.txt",
     "static/media/1.4324a88c.png": "/itcart/static/media/1.4324a88c.png",
     "static/media/2.4010cc10.png": "/itcart/static/media/2.4010cc10.png",
     "static/media/2.cd673e3c.png": "/itcart/static/media/2.cd673e3c.png",
@@ -33,9 +33,9 @@
     "static/media/Header.scss": "/itcart/static/media/slide3.2439c4b9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8832123e.js",
-    "static/js/2.b3d04b16.chunk.js",
-    "static/css/main.1caac0dc.chunk.css",
-    "static/js/main.124e435a.chunk.js"
+    "static/js/runtime-main.736d8e37.js",
+    "static/js/2.e6aa6625.chunk.js",
+    "static/css/main.52d7eab6.chunk.css",
+    "static/js/main.cdabdd23.chunk.js"
   ]
 }
