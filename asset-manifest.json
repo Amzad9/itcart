@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/itcart/static/css/main.a45a0019.chunk.css",
-    "main.js": "/itcart/static/js/main.4d36c083.chunk.js",
-    "main.js.map": "/itcart/static/js/main.4d36c083.chunk.js.map",
+    "main.css": "/itcart/static/css/main.1caac0dc.chunk.css",
+    "main.js": "/itcart/static/js/main.124e435a.chunk.js",
+    "main.js.map": "/itcart/static/js/main.124e435a.chunk.js.map",
     "runtime-main.js": "/itcart/static/js/runtime-main.8832123e.js",
     "runtime-main.js.map": "/itcart/static/js/runtime-main.8832123e.js.map",
     "static/js/2.b3d04b16.chunk.js": "/itcart/static/js/2.b3d04b16.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.6729f246.chunk.js": "/itcart/static/js/3.6729f246.chunk.js",
     "static/js/3.6729f246.chunk.js.map": "/itcart/static/js/3.6729f246.chunk.js.map",
     "index.html": "/itcart/index.html",
-    "static/css/main.a45a0019.chunk.css.map": "/itcart/static/css/main.a45a0019.chunk.css.map",
+    "static/css/main.1caac0dc.chunk.css.map": "/itcart/static/css/main.1caac0dc.chunk.css.map",
     "static/js/2.b3d04b16.chunk.js.LICENSE.txt": "/itcart/static/js/2.b3d04b16.chunk.js.LICENSE.txt",
     "static/media/1.4324a88c.png": "/itcart/static/media/1.4324a88c.png",
     "static/media/2.4010cc10.png": "/itcart/static/media/2.4010cc10.png",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.8832123e.js",
     "static/js/2.b3d04b16.chunk.js",
-    "static/css/main.a45a0019.chunk.css",
-    "static/js/main.4d36c083.chunk.js"
+    "static/css/main.1caac0dc.chunk.css",
+    "static/js/main.124e435a.chunk.js"
   ]
 }
