@@ -8,9 +8,13 @@ export const Header_SLIDER_SETTINGS = {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 2000,
+    // autoplaySpeed: 2000,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    cssEase: "linear",
+    pauseOnHover: false
   };
 
 export const NavData = [

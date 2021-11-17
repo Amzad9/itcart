@@ -170,7 +170,7 @@ const Solution = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
                                      <h5 className="text-black">{item.title}</h5>
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper-solution justify-content-between px-3 mt-5">
+                                     <Row className="btn-wrapper-solution justify-content-between px-3   mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
