@@ -171,11 +171,11 @@ const Solution = () => {
                                      <h5 className="text-black">{item.title}</h5>
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
                                      <Row className="btn-wrapper-solution justify-content-between px-3   mt-5">
-                                       <Col sm={6}>
+                                       <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
                                        </Col>
-                                       <Col sm={6}>
+                                       <Col sm={6} className="text-end">
                                        
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
@@ -201,11 +201,11 @@ const Solution = () => {
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
                                      <Row className="btn-wrapper-solution justify-content-between px-3 mt-5">
-                                       <Col sm={6}>
+                                       <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
                                        </Col>
-                                       <Col sm={6}>
+                                       <Col sm={6} className="text-end">
                                        
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
@@ -231,11 +231,11 @@ const Solution = () => {
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
                                      <Row className="btn-wrapper-solution justify-content-between px-3 mt-5">
-                                       <Col sm={6}>
+                                       <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
                                        </Col>
-                                       <Col sm={6}>
+                                       <Col sm={6} className="text-end">
                                        
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
@@ -261,11 +261,11 @@ const Solution = () => {
                                     
                                         <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
                                         <Row className="btn-wrapper-solution justify-content-between px-3 mt-5">
-                                       <Col sm={6}>
+                                       <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
                                        </Col>
-                                       <Col sm={6}>
+                                       <Col sm={6} className="text-end">
                                        
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
