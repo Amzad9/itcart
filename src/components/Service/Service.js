@@ -128,14 +128,7 @@ const Service = () => {
         {id: 6, img: Azure, title: 'Azure Cloud solutions'}
       ]
      
-      itemslist : [
-        {id: 1, item: 'SharePoint'},
-        {id: 2, item: 'SharePoint'},
-        {id: 3, item: 'SharePoint'},
-        {id: 4, item: 'SharePoint'},
-        {id: 5, item: 'SharePoint'},
-        {id: 6, item: 'SharePoint'},
-      ]
+    
 
 
     //   const SlideData2 = [
