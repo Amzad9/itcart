@@ -171,7 +171,7 @@ const Service = () => {
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper justify-content-between px-4 mt-5">
+                                     <Row className="btn-wrapper justify-content-between px-3 mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -181,7 +181,7 @@ const Service = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4 px-3">
+                                       <Col sm={12} className="mt-4">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
@@ -201,7 +201,7 @@ const Service = () => {
                             <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper justify-content-between px-4 mt-5">
+                                     <Row className="btn-wrapper justify-content-between px-3 mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -211,7 +211,7 @@ const Service = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4 px-3">
+                                       <Col sm={12} className="mt-4">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
@@ -231,7 +231,7 @@ const Service = () => {
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper justify-content-between px-4 mt-5">
+                                     <Row className="btn-wrapper justify-content-between px-3 mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -241,7 +241,7 @@ const Service = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4 px-3">
+                                       <Col sm={12} className="mt-4">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
@@ -260,7 +260,7 @@ const Service = () => {
                             <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
                                  <h5 className="text-black">{item.title}</h5>
                                  <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                 <Row className="btn-wrapper justify-content-between px-4 mt-5">
+                                 <Row className="btn-wrapper justify-content-between px-3 mt-5">
                                        <Col sm={6}>
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -270,7 +270,7 @@ const Service = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4 px-3">
+                                       <Col sm={12} className="mt-4">
                                    
                                        <Button className="text-white w-100 bg-primary btn-b">Get Brochure</Button>
                                       </Col>
