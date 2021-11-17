@@ -9,7 +9,7 @@ export const Header_SLIDER_SETTINGS = {
     arrows: false,
     infinite: true,
     autoplay: true,
-    speed: 10000,
+    speed: 20000,
     // autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
