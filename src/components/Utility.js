@@ -9,12 +9,12 @@ export const Header_SLIDER_SETTINGS = {
     arrows: false,
     infinite: true,
     autoplay: true,
-    speed: 2000,
+    speed: 10000,
     // autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: "linear",
-    pauseOnHover: false
+    pauseOnHover: true
   };
 
 export const NavData = [
