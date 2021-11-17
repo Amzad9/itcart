@@ -70,7 +70,7 @@ const PeopleSay = () => {
                                         container={ref}
                                         containerPadding={20}
                                     >
-                                        <Popover className="bg-blue" id="popover-contained">
+                                        <Popover className="bg-blue meet-overlay" id="popover-contained">
                                         
                                         <Popover.Body>
                                             <small className="text-white"> “We looked at several tools, including Monday.com, Basecamp, and Asana, but none could offer the breadth of features that Scoro has.”
