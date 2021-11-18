@@ -180,12 +180,12 @@ const Service = () => {
                                     
                                      
                                      <ul className="text-start list">
-                                         <li>{iconC }A collaboration platform for employees</li>
-                                         <li>{iconC }Publish news, events, anouncements</li>
-                                         <li>{iconC }Share event photos and videos with all</li>
-                                         <li>{iconC }Motivate with broadcasts and thoughts</li>
-                                         <li>{iconC }Show Facebook, LinkedIn, Twitter posts</li>
-                                         <li>{iconC }Quick links for all internal applications</li>
+                                         <li>{iconC }Build your knowledge base online</li>
+                                         <li>{iconC }Provide a centralized learning platform</li>
+                                         <li>{iconC }Employees who learn and contribute</li>
+                                         <li>{iconC }Promote and celebrate top contributors</li>
+                                         <li>{iconC }Search by keywords, topics, expertise</li>
+                                         <li>{iconC }Conduct assessments and surveys</li>
                                       
                                      </ul>
                                      <Row className="btn-wrapper justify-content-between mx-0 mt-4">
