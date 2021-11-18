@@ -18,5 +18,54 @@
            margin: auto;
            display: block;
        }
+      
     }
+    .blue{
+        &::before{
+            position: absolute;
+            content: '';
+            background: #1CAFE1 !important;
+            top: -3px;
+            height: 19px;
+            width: 102.4%;
+            left: -3px;
+            border-radius: 10px 10px 0px 0px;
+         }
+    }
+    .red{
+        &::before{
+            position: absolute;
+            content: '';
+            background-color: #E86275 !important;
+            top: -3px;
+            height: 19px;
+            width: 102.4%;
+            left: -3px;
+            border-radius: 10px 10px 0px 0px;
+         }
+    }
+    .green{
+        &::before{
+            position: absolute;
+            content: '';
+            background-color:  #48C1C6 !important;
+            top: -3px;
+            height: 19px;
+            width: 102.4%;
+            left: -3px;
+            border-radius: 10px 10px 0px 0px;
+         }
+    }
+   .left-b{
+       position: relative;
+      &::after{
+        position: absolute;
+        content: '';
+        background-color: #000 !important;
+        top: 7%;
+        height: 810px;
+        width: 5px;
+        right: 30px;
+      }
+   }
 }

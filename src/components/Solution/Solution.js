@@ -162,7 +162,7 @@ const Solution = () => {
                </Row>
              
            </Container>
-            <Container className="pt-4" fluid="xxl">
+            <Container className="pt-4" fluid="xl">
             {index === 0 ? 
                       <Row>
                          {hrm.map(item => (
@@ -181,7 +181,7 @@ const Solution = () => {
                                          <li>{iconC }Celebrate birthdays & anniversaries</li>
                                       
                                      </ul>
-                                     <Row className="btn-wrapper-solution justify-content-between px-3   mt-4">
+                                     <Row className="btn-wrapper-solution justify-content-between  mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -211,7 +211,7 @@ const Solution = () => {
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper-solution justify-content-between px-3 mt-5">
+                                     <Row className="btn-wrapper-solution justify-content-between  mt-5">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -241,7 +241,7 @@ const Solution = () => {
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper-solution justify-content-between px-3 mt-5">
+                                     <Row className="btn-wrapper-solution justify-content-between mt-5">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -271,7 +271,7 @@ const Solution = () => {
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                         <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                        <Row className="btn-wrapper-solution justify-content-between px-3 mt-5">
+                                        <Row className="btn-wrapper-solution justify-content-between  mt-5">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    

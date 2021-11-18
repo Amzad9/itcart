@@ -8,7 +8,7 @@ import Like from '../assets/like.png'
 function Business() {
     return (
         <section className="business py-5">
-            <Container>
+            <Container fluid="xl">
                 <Row>
                     <Col md={12} className="text-center">
                         <h2 className="mb-5">How we help Businesses Grow!</h2>

@@ -37,9 +37,9 @@ import Document1 from '../assets/Business/6.png';
 import solutions from '../assets/tech/1.png';
 import SaaS from '../assets/tech/2.png';
 import SharePoint from '../assets/tech/3.png';
-import Office from '../assets/Business/3.png';
-import Premise from '../assets/tech/3.png';
-import Azure from '../assets/tech/3.png';
+import Office from '../assets/Business/4.png';
+import Premise from '../assets/tech/5.png';
+import Azure from '../assets/tech/6.png';
 
 const Service = () => {
    
@@ -144,7 +144,7 @@ const Service = () => {
       
     return (
         <section className="clients service py-b mar-nagative bg-white">
-           <Container fluid="xxl">
+           <Container fluid="xl">
                <Row>
                    <Col classNAme="text-center" md="12">
                        <h2>Our Services</h2>
@@ -165,7 +165,7 @@ const Service = () => {
                </Row>
              
            </Container>
-            <Container className="pt-4" fluid="xxl">
+            <Container className="pt-4" fluid="xl">
                
                      
                    {index === 0 ? 

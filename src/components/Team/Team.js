@@ -29,13 +29,13 @@ const PeopleSay = () => {
       const SlideData = [
         {id: 1, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'},
         {id: 2, img: Union,  title: 'Attila Probáld CEO', subtitle: 'feat. Agency'},
-        {id: 3, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'},
-        {id: 1, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'}
+        {id: 3, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'}
+        // {id: 1, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'}
       ]
       
     return (
-        <section className="clients service team py-5">
-           <Container fluid="xxl">
+        <section className="clients  team py-5">
+           <Container fluid="xl">
                <Row>
                    <Col className="text-center" md="12">
                        <h2>Meet the Team</h2>
@@ -44,13 +44,13 @@ const PeopleSay = () => {
                </Row>
                
            </Container>
-            <Container className="pt-4" fluid="xxl">
+            <Container className="pt-4" fluid="xl">
                 <Row >
                     
                        
                        
                             {SlideData.map(item => (
-                             <Col className="mb-4 mb-xl-0" sm={12} md={6} xl={3} ref={ref}>
+                             <Col className="mb-4 mb-xl-0" sm={12} md={6} xl={4} ref={ref}>
                                 <SlideCard  onClick={handleClick} classBody="pb-0" className="border-0 bg-white shadow-none p-0" src={item.img}>
                                    <div>
                                       <h4>{item.title}</h4>

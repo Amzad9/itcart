@@ -79,8 +79,8 @@ const PeopleSay = () => {
       ]
       
     return (
-        <section className="clients service PeopleSay py-5">
-           <Container fluid="xxl">
+        <section className="clients  PeopleSay py-5">
+           <Container fluid="xl">
                <Row>
                    <Col classNAme="text-center" md="12">
                        <h2>What People Say</h2>
@@ -88,7 +88,7 @@ const PeopleSay = () => {
                </Row>
                
            </Container>
-            <Container className="pt-4" fluid="xxl">
+            <Container className="pt-4" fluid="xl">
                 <Row>
                     <Col md={12} ref={ref}>
                        
