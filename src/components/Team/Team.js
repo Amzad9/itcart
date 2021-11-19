@@ -3,7 +3,11 @@ import { Container, Row, Col, Nav, Overlay, Popover} from 'react-bootstrap';
 import SlideCard from '../Card/SlideCard';
 import '../Client/Client.scss'
 import './Team.scss'
-import Union from '../assets/Union.png';
+// import Union from '../assets/Union.png';
+
+
+import Team1 from '../assets/team1.png';
+import Team2 from '../assets/team2.png';
 
 
 
@@ -27,9 +31,9 @@ const PeopleSay = () => {
    
       
       const SlideData = [
-        {id: 1, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'},
-        {id: 2, img: Union,  title: 'Attila Probáld CEO', subtitle: 'feat. Agency'},
-        {id: 3, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'}
+        {id: 1, img: Team1, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'},
+        {id: 2, img: Team2,  title: 'Attila Probáld CEO', subtitle: 'feat. Agency'},
+        {id: 3, img: Team1, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'}
         // {id: 1, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency'}
       ]
       
@@ -51,7 +55,7 @@ const PeopleSay = () => {
                        
                             {SlideData.map(item => (
                              <Col className="mb-4 mb-xl-0" sm={12} md={6} xl={4} ref={ref}>
-                                <SlideCard  onClick={handleClick} classBody="pb-0" className="border-0 bg-white shadow-none p-0" src={item.img}>
+                                <SlideCard  onClick={handleClick} classBody="pb-0" className="box-shadow-sm border-0 bg-white  p-0" src={item.img}>
                                    <div>
                                       <h4>{item.title}</h4>
                                       <p className="fs-6">{item.subtitle}</p>

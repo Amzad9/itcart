@@ -94,7 +94,7 @@ const PeopleSay = () => {
                        
                         <Slider {...SERVICE_SLIDER_SETTINGS}>
                             {SlideData.map(item => (
-                                <SlideCard  onClick={handleClick} classBody="pb-0" className="border-0 bg-white shadow-none p-0" src={item.img}>
+                                <SlideCard  onClick={handleClick} classBody="pb-0" className="bg-white shadow-none p-0" src={item.img}>
                                    <div>
                                       <h4>{item.title}</h4>
                                       <p className="fs-6">{item.subtitle}</p>

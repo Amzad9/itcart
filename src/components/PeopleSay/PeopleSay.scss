@@ -1,8 +1,9 @@
 .PeopleSay{
     .card{
-        border-radius: 10px 10px 0px 0px !important;
+        border-radius: 10px 10px 10px 10px !important;
         min-height: auto !important;
         width: 100% !important;
+        border: 5px solid #DD87B8;
         h4{
             font-weight: 500;
         }
@@ -12,10 +13,10 @@
             max-width: 100% !important;
         }
         .card-body{
-            background: url(../assets/vector2.png) no-repeat center center;
+            // background: url(../assets/vector2.png) no-repeat center center;
             background-size: 100%;
            div{
-              padding: 3px 10px 45px 25px;
+              padding: 3px 0px 0px 25px;
            }
             // border: 6px solid #DD87B8;
             // border-radius: 0px 0px 10px 10px !important;
