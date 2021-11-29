@@ -144,13 +144,13 @@ const Service = () => {
       
     return (
         <section className="clients service py-b mar-nagative bg-white">
-           <Container fluid="xl">
+           <Container fluid="xxl" className="bg-service rounded-8 px-6 pt-5 pb-4">
                <Row>
                    <Col classNAme="text-center" md="12">
                        <h2>Our Services</h2>
                    </Col>
                </Row>
-               <Row className="mt-5 mb-4 service-tab">
+               <Row className="my-5 pb-4 service-tab">
                    <Col md={12}>
                         <TabContainer activeTab="web">
                             <Tabs ClassName="justify-content-start justify-content-lg-start justify-content-xxl-center">
@@ -164,18 +164,17 @@ const Service = () => {
                    </Col>
                </Row>
              
-           </Container>
-            <Container className="pt-4" fluid="xl">
+          
                
                      
                    {index === 0 ? 
                       <Row>
                          {web.map(item => (
                             <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light front px-3 pt-3 pb-0" src={item.img}>
+                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-white front px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
                                 </SlideCard>
-                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-2 pb-0">
+                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-2 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      
@@ -212,10 +211,10 @@ const Service = () => {
                     <Row>
                     {appd.map(item => (
                         <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
-                            <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
+                            <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                 <h6>{item.title}</h6>
                             </SlideCard>
-                            <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                            <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
                                      <Row className="btn-wrapper justify-content-between px-3 mt-5">
@@ -241,10 +240,10 @@ const Service = () => {
                         <Row>
                            {businessd.map(item => (
                              <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
+                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
                                 </SlideCard>
-                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
@@ -271,10 +270,10 @@ const Service = () => {
                     <Row>
                        {Technologyd.map(item => (
                         <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
-                            <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
+                            <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                 <h6>{item.title}</h6>
                             </SlideCard>
-                            <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                            <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                  <h5 className="text-black">{item.title}</h5>
                                  <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
                                  <Row className="btn-wrapper justify-content-between px-3 mt-5">

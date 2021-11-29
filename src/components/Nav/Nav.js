@@ -4,6 +4,11 @@ import { Navbar, Container, Nav, NavDropdown  } from 'react-bootstrap';
 import Icon from '../Icon/Icon'
 import './Nav.scss';
 
+import W from '../assets/w.png';
+import A from '../assets/a.png';
+import B from '../assets/b.png';
+import T from '../assets/t.png';
+
 import Logo from '../assets/logo-f.png'
 const  Navigation = () => {
     return (
@@ -19,10 +24,10 @@ const  Navigation = () => {
               <Navbar.Collapse id="basic-navbar-nav">
                <Nav className="ms-auto">
                   <NavDropdown title="Services" id="Services-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Web Development</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">App Development</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Business Automation</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Technology Consulting</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1"><img src={W} alt="" /> Web Development</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2"><img src={A} alt="" /> App Development</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3"><img src={B} alt="" /> Business Automation</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3"><img src={T} alt="" /> Technology Consulting</NavDropdown.Item>
                   </NavDropdown>
                 
                   <NavDropdown title="Solutions" id="Products-nav-dropdown">

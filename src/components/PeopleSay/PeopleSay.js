@@ -28,11 +28,11 @@ const PeopleSay = () => {
     const SERVICE_SLIDER_SETTINGS = {
         dots: false,
         arrows: true,
-        infinite: true,
-        autoplay: true,
+        // infinite: true,
+        // autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
         // centerMode: true,
@@ -43,7 +43,7 @@ const PeopleSay = () => {
             {
               breakpoint: 1025,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,
@@ -80,52 +80,48 @@ const PeopleSay = () => {
       
     return (
         <section className="clients  PeopleSay py-5">
-           <Container fluid="xl">
-               <Row>
+           <Container fluid="xxl" className="bg-service rounded-8 px-0 px-md-6 pt-5 pb-4">
+               <Row className="mx-0">
                    <Col classNAme="text-center" md="12">
                        <h2>What People Say</h2>
                    </Col>
                </Row>
                
-           </Container>
-            <Container className="pt-4" fluid="xl">
-                <Row>
+          
+                <Row className="mx-0">
                     <Col md={12} ref={ref}>
                        
                         <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData.map(item => (
-                                <SlideCard  onClick={handleClick} classBody="pb-0" className="bg-white shadow-none p-0" src={item.img}>
-                                   <div>
-                                      <h4>{item.title}</h4>
-                                      <p className="fs-6">{item.subtitle}</p>
-                                   </div>
-                                   {/* <div className="popup bg-blue p-3 text-white pe-4">
-                                        <small> “We looked at several tools, including Monday.com, Basecamp, and Asana, but none could offer the breadth of features that Scoro has.”
-                                             feat. Agency
-                                        </small>
-                                         <h6 className="mb-0 mt-3">{item.title}</h6>
-                                         <p className="fs-6">{item.subtitle}</p>
-                                   </div> */}
-                                   <Overlay
-                                        show={show}
-                                        target={target}
-                                        placement="right-end"
-                                        container={ref}
-                                        containerPadding={20}
-                                    >
-                                        <Popover className="bg-blue" id="popover-contained">
-                                        
-                                        <Popover.Body>
-                                            <small className="text-white"> “We looked at several tools, including Monday.com, Basecamp, and Asana, but none could offer the breadth of features that Scoro has.”
-                                                feat. Agency
-                                            </small>
-                                            <h6 className="mb-0 mt-3 text-white">{item.title}</h6>
-                                            <p className="fs-6 text-white">{item.subtitle}</p>
-                                        </Popover.Body>
-                                        </Popover>
-                                    </Overlay>
+                           
+                                <SlideCard  classBody="pb-0 p-0" className="bg-white p-0 border-0">
+                                   <Row className="align-items-start mx-0">
+                                     <Col sm={4}>
+                                       <img src={Union} alt="" />
+                                     </Col>
+                                     <Col sm={8}  className="">
+                                     <p className="mb-md-5 mb-3 pt-3 pe-md-5 pe-3 pe-md-0">“We looked at several tools, including Monday.com, Basecamp, and Asana, but none could offer the breadth of features that Scoro has.”</p>
+                                      <h4 className="mb-1">Attila Probáld, CEO</h4>
+                                      <p className="">feat. Agency</p>
+                                     </Col>
+                                     
+                                   </Row>
+                                   
                                 </SlideCard>
-                            ))}
+                                <SlideCard  classBody="pb-0 p-0" className="bg-white p-0 border-0">
+                                   <Row className="align-items-start mx-0">
+                                     <Col sm={4}>
+                                       <img src={Union} alt="" />
+                                     </Col>
+                                     <Col sm={8}  className="px-3 px-md-0">
+                                     <p className="mb-md-5 mb-3 pt-3 pe-md-5 pe-3">“We looked at several tools, including Monday.com, Basecamp, and Asana, but none could offer the breadth of features that Scoro has.”</p>
+                                      <h4 className="mb-1">Attila Probáld, CEO</h4>
+                                      <p className="">feat. Agency</p>
+                                     </Col>
+                                     
+                                   </Row>
+                                   
+                                </SlideCard>
+                         
                         </Slider>
                         
                     </Col>

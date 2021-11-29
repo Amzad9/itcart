@@ -6,7 +6,7 @@ body{
     font-weight: 400 !important;
 }
 .container-xxl{
-    max-width: 1260px !important;
+    max-width: 1360px !important;
     @media(min-width: 1500px) {
         max-width: 1440px !important;
     }
@@ -21,6 +21,14 @@ h2{
     text-align: center;
     color: #000000;
 }
+.px-6 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+    @media (max-width: 576px) {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+}
 .fw-semibold{
     font-weight: 600;
   }
@@ -34,8 +42,8 @@ h2{
 .service{
     .card{
         min-height: 380px;
-        width: 380px !important;
-        background: #F1F1F1;
+        // width: 380px !important;
+        // background: #F1F1F1;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         img{
@@ -62,7 +70,7 @@ h2{
 
 .mar-nagative{
     margin-top: -64px;
-    padding-top: 200px;
+    padding-top: 61px;
 }
 .nav-pills{
     @media(max-width: 1024px){
@@ -119,12 +127,12 @@ h2{
 //   content: '';
 // }
 .nav-pills .nav-link.active{
-    background-color: #fff;
+    background-color: transparent;
     color: #DD87B8;
 }
 
 .solutuon{
-    padding-top: 100px;
+    padding-top: 40px;
     .nav-pills{
         .nav-link.active{
             color:#1CAFE1 !important;
@@ -172,9 +180,13 @@ h2{
     border:0;
     .dropdown-item{
         padding: 0.8rem 1rem;
+        font-weight: 500;
+        img{
+            margin-right: 20px;
+        }
         &:hover{
-            background-color: #E86275 !important;
-            color: #fff !important;
+            background-color: rgba(250, 237, 245, 0.5) !important;
+            color: #000000 !important;
         }
     }
 }

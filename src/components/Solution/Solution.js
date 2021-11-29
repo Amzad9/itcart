@@ -141,13 +141,13 @@ const Solution = () => {
     </svg>;
     return (
         <section className="clients service solutuon pb-5">
-           <Container fluid="xxl">
+           <Container fluid="xxl" className="bg-business rounded-8 px-6 pt-5 pb-4">
                <Row>
                    <Col classNAme="text-center" md="12">
                        <h2>Our Solution</h2>
                    </Col>
                </Row>
-               <Row className="mt-5 mb-4">
+               <Row className="my-5 pb-4">
                    <Col md={12}>
                         <TabContainer activeTab="HRMS">
                             <Tabs ClassName="justify-content-start justify-content-md-center">
@@ -161,16 +161,15 @@ const Solution = () => {
                    </Col>
                </Row>
              
-           </Container>
-            <Container className="pt-4" fluid="xl">
+         
             {index === 0 ? 
                       <Row>
                          {hrm.map(item => (
                             <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light front px-3 pt-3 pb-0" src={item.img}>
+                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-white front px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
                                 </SlideCard>
-                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                      <h5 className="text-black">{item.title}</h5>
                                      <ul className="text-start list">
                                          <li>{iconC }Stored centrally, access from anywhere</li>
@@ -204,10 +203,10 @@ const Solution = () => {
                     <Row>
                     {cms.map(item => (
                         <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
-                            <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
+                            <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                 <h6>{item.title}</h6>
                             </SlideCard>
-                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
@@ -234,10 +233,10 @@ const Solution = () => {
                         <Row>
                            {businE.map(item => (
                              <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
+                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
                                 </SlideCard>
-                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                      <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
@@ -264,10 +263,10 @@ const Solution = () => {
                         <Row>
                             {enterP.map(item => (
                                 <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-light px-3 pt-3 pb-0" src={item.img}>
+                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
                                 </SlideCard>
-                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-light back px-3 pt-3 pb-0">
+                                <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
                                         <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>

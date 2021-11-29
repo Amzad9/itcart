@@ -3,8 +3,8 @@ import { Container, Row, Col} from 'react-bootstrap';
 import './Comparison.scss'
 const Comparison = () => {
     return (
-        <section className="bg-warning py-5 comparison">
-            <Container>
+        <section className="py-0 comparison">
+            <Container fluid="xxl" className="bg-warning rounded-8 px-6 pt-5 pb-5">
                 <Row className="mb-5">
                     <Col>
                     <h2>Comparison</h2>

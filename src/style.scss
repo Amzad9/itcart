@@ -31,7 +31,21 @@ $theme-colors: (
 .text-blue{
   color: $blue;
 }
-
+.bg-service{
+   background: rgba(221, 135, 184, 0.15);
+}
+.bg-business{
+  background: rgba(72, 193, 198, 0.15);
+}
+.bg-team{
+  background: rgba(238, 137, 152, 0.15);
+}
+.bg-contact{
+  background: rgba(72, 193, 198, 0.15);
+}
+.rounded-8{
+  border-radius: 50px;
+}
 .bg-blue{
   background-color: $blue;
 }
