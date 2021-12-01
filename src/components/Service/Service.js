@@ -143,8 +143,8 @@ const Service = () => {
       </svg>;
       
     return (
-        <section className="clients service py-b mar-nagative bg-white">
-           <Container fluid="xxl" className="bg-service rounded-8 px-6 pt-5 pb-4">
+        <section className="clients service pt-5 mar-nagative bg-white">
+           <Container fluid="xxl" className="bg-service rounded-8 px-6 pt-5 pb-4  mt-6">
                <Row>
                    <Col classNAme="text-center" md="12">
                        <h2>Our Services</h2>
