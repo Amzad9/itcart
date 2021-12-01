@@ -37,28 +37,28 @@ const ContactUs = () => {
                                 {/* <p className="mt-4 fs-6 fw-semibold text-dark">Interested in IT Cart’s software? Just pick up the phone to chat with a member of our sales team.</p>
                                 <h4>+91 11 7127 9211</h4> */}
                             <Row className="w-100 text-start justify-content-center mb-5 mt-5 pt-4"> 
-                                <Col sm={2}>
+                                <Col xs={2}>
                                      <img   src={Phone} alt="" className="m-0" />
                                 </Col>
-                                <Col sm={7}>
+                                <Col xs={7}>
                                     <p className="mb-0 text-white">+1 323-913-4688</p>
                                     <p className="text-white">+1 323-888-4554</p>
                                 </Col>
                             </Row>
                             <Row className="w-100 text-start justify-content-center mb-5"> 
-                                <Col sm={2}>
+                                <Col xs={2}>
                                      <img   src={Mail} alt="" className="m-0" />
                                 </Col>
-                                <Col sm={7}>
+                                <Col xs={7}>
                                     <p className="mb-0 text-white">mail@demolimk.org</p>
                                     <p className="text-white">info@demolimk.org</p>
                                 </Col>
                             </Row>
                             <Row className="w-100 text-start justify-content-center  mb-5 pb-5"> 
-                                <Col sm={2}>
+                                <Col xs={2}>
                                      <img   src={Map} alt="" className="m-0" />
                                 </Col>
-                                <Col sm={7}>
+                                <Col xs={7}>
                                     <p className="mb-0 text-white">4730 Crystal Springs Dr, Los Angeles, CA 90027</p>
                                   
                                 </Col>

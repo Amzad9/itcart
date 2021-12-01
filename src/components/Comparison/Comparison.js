@@ -24,7 +24,7 @@ const Comparison = () => {
                 <Row  className="justify-content-center">
                     <Col md={12} lg={10}>
                        <div className="d-flex justify-content-center align-items-center ms-1">
-                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-4">
+                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-6 col-md-4">
                                 <h6 className="mb-0 fw-500">High Cost</h6>
                                 <div className="circle">
                                     <div>
@@ -36,12 +36,12 @@ const Comparison = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-4"><h6 className="mb-0 fw-500">Affordable</h6></div>
+                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-6 col-md-4"><h6 className="mb-0 fw-500">Affordable</h6></div>
                        </div>
                     </Col>
                     <Col md={12} lg={10} className="mt-4">
                        <div className="d-flex justify-content-center align-items-center ms-1">
-                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-4">
+                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-6 col-md-4">
                                 <h6 className="mb-0 fw-500">Complex for end users</h6>
                                 <div className="circle">
                                     <div>
@@ -53,12 +53,12 @@ const Comparison = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-4"><h6 className="mb-0 fw-500">Easy to use</h6></div>
+                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-6 col-md-4"><h6 className="mb-0 fw-500">Easy to use</h6></div>
                        </div>
                     </Col>
                     <Col md={12} lg={10} className="mt-4">
                        <div className="d-flex justify-content-center align-items-center ms-1">
-                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-4">
+                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-6 col-md-4">
                                 <h6 className="mb-0 fw-500">Irregular Support</h6>
                                 <div className="circle">
                                     <div>
@@ -71,12 +71,12 @@ const Comparison = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-4"><h6 className="mb-0 fw-500">Solid Support System</h6></div>
+                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-6 col-md-4"><h6 className="mb-0 fw-500">Solid Support System</h6></div>
                        </div>
                     </Col>
                     <Col md={12} lg={10} className="mt-4">
                        <div className="d-flex justify-content-center align-items-center ms-1">
-                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-4">
+                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-6 col-md-4">
                                 <h6 className="mb-0 fw-500">System Issues/Breakdowns</h6>
                                 <div className="circle">
                                     <div>
@@ -88,12 +88,12 @@ const Comparison = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-4"><h6 className="mb-0 fw-500">Robust Development</h6></div>
+                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-6 col-md-4"><h6 className="mb-0 fw-500">Robust Development</h6></div>
                        </div>
                     </Col>
                     <Col md={12} lg={10} className="mt-4">
                        <div className="d-flex justify-content-center align-items-center ms-1">
-                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-4">
+                            <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-6 col-md-4">
                                 <h6 className="mb-0 fw-500">Dimensional Development</h6>
                                 <div className="circle">
                                     <div>
@@ -105,7 +105,7 @@ const Comparison = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-4"><h6 className="mb-0 fw-500">360° Technology Consultation</h6></div>
+                            <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-6 col-md-4"><h6 className="mb-0 fw-500">360° Technology Consultation</h6></div>
                        </div>
                     </Col>
                 </Row>

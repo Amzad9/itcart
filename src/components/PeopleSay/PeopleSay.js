@@ -95,10 +95,10 @@ const PeopleSay = () => {
                            
                                 <SlideCard  classBody="pb-0 p-0" className="bg-white p-0 border-0">
                                    <Row className="align-items-start mx-0">
-                                     <Col sm={4}>
+                                     <Col sm={12} md={4}>
                                        <img src={Union} alt="" />
                                      </Col>
-                                     <Col sm={8}  className="">
+                                     <Col sm={12} md={8} className="">
                                      <p className="mb-md-5 mb-3 pt-3 pe-md-5 pe-3 pe-md-0">“We looked at several tools, including Monday.com, Basecamp, and Asana, but none could offer the breadth of features that Scoro has.”</p>
                                       <h4 className="mb-1">Attila Probáld, CEO</h4>
                                       <p className="">feat. Agency</p>
@@ -109,10 +109,10 @@ const PeopleSay = () => {
                                 </SlideCard>
                                 <SlideCard  classBody="pb-0 p-0" className="bg-white p-0 border-0">
                                    <Row className="align-items-start mx-0">
-                                     <Col sm={4}>
+                                     <Col sm={12} md={4}>
                                        <img src={Union} alt="" />
                                      </Col>
-                                     <Col sm={8}  className="px-3 px-md-0">
+                                     <Col sm={12} md={8}  className="px-3 px-md-0">
                                      <p className="mb-md-5 mb-3 pt-3 pe-md-5 pe-3">“We looked at several tools, including Monday.com, Basecamp, and Asana, but none could offer the breadth of features that Scoro has.”</p>
                                       <h4 className="mb-1">Attila Probáld, CEO</h4>
                                       <p className="">feat. Agency</p>
