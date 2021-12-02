@@ -21,7 +21,7 @@ const Comparison = () => {
                     <h4>IT Cart, Affordable Enterprise Solutions</h4>
                     </Col>
                 </Row>
-                <Row  className="justify-content-center">
+                {/* <Row  className="justify-content-center">
                     <Col md={12} lg={10}>
                        <div className="d-flex justify-content-center align-items-center ms-1">
                             <div className="bg-white shadow-sm py-2 br-left pe-8 position-relative text-end col-6 col-md-4">
@@ -108,14 +108,96 @@ const Comparison = () => {
                             <div className="bg-secondary shadow-sm py-2 text-start ps-8 text-white br-right col-6 col-md-4"><h6 className="mb-0 fw-500">360° Technology Consultation</h6></div>
                        </div>
                     </Col>
+                </Row> */}
+                    <Row  className="justify-content-center">
+                    <Col md={12} lg={5}>
+                   
+                       <div className="d-flex justify-content-center align-items-center ms-1">
+                       <div className="bg-white shadow-sm py-2 ps-2 ps-md-4 br-left position-relative" style={{width: '215px'}}>
+                                <h6 className="mb-0">High Cost</h6>
+                         
+                                <div className="circle">
+                                    <div>
+                                    <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59411 0.0371094C8.1784 0.0371094 8.65207 0.51077 8.65207 1.09506V24.37C8.65207 24.9543 8.1784 25.4279 7.59411 25.4279C7.00982 25.4279 6.53616 24.9543 6.53616 24.37V1.09506C6.53616 0.51077 7.00982 0.0371094 7.59411 0.0371094Z" fill="#404040"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.58288 5.66393C2.4757 4.77111 3.68662 4.26953 4.94926 4.26953H12.8839C13.4682 4.26953 13.9418 4.74319 13.9418 5.32748C13.9418 5.91177 13.4682 6.38543 12.8839 6.38543H4.94926C4.24779 6.38543 3.57506 6.66409 3.07905 7.1601C2.58303 7.65611 2.30438 8.32885 2.30438 9.03031C2.30438 9.73178 2.58303 10.4045 3.07905 10.9005C3.57506 11.3965 4.24779 11.6752 4.94926 11.6752H10.239C11.5016 11.6752 12.7126 12.1768 13.6054 13.0696C14.4982 13.9624 14.9998 15.1733 14.9998 16.436C14.9998 17.6986 14.4982 18.9095 13.6054 19.8023C12.7126 20.6952 11.5016 21.1967 10.239 21.1967H1.24643C0.662137 21.1967 0.188477 20.7231 0.188477 20.1388C0.188477 19.5545 0.662137 19.0808 1.24643 19.0808H10.239C10.9405 19.0808 11.6132 18.8022 12.1092 18.3062C12.6052 17.8102 12.8839 17.1374 12.8839 16.436C12.8839 15.7345 12.6052 15.0618 12.1092 14.5658C11.6132 14.0697 10.9405 13.7911 10.239 13.7911H4.94926C3.68662 13.7911 2.4757 13.2895 1.58288 12.3967C0.690058 11.5039 0.188477 10.2929 0.188477 9.03031C0.188477 7.76767 0.690058 6.55675 1.58288 5.66393Z" fill="#404040"/>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="bg-secondary shadow-sm py-2 text-end pe-2 pe-md-4 text-white br-right" style={{width: '212px'}}><h6 className="mb-0">Affordable</h6></div>
+                           
+                       </div>
+                    </Col>
                 </Row>
-                
-                {/* 
-                
+                <Row  className="justify-content-center mt-4">
+                  
+                <Col md={12} lg={8}>
+                <div className="d-flex justify-content-center align-items-center pe-0 pe-md-5 me-0 me-md-5">
+                <div className="bg-white shadow-sm py-2 ps-2 ps-md-4 br-left position-relative" style={{width: '320px'}}>
+                                <h6 className="mb-0 fw-500">Complex for end users</h6>
+                                <div className="circle">
+                                <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59411 0.0371094C8.1784 0.0371094 8.65207 0.51077 8.65207 1.09506V24.37C8.65207 24.9543 8.1784 25.4279 7.59411 25.4279C7.00982 25.4279 6.53616 24.9543 6.53616 24.37V1.09506C6.53616 0.51077 7.00982 0.0371094 7.59411 0.0371094Z" fill="#404040"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.58288 5.66393C2.4757 4.77111 3.68662 4.26953 4.94926 4.26953H12.8839C13.4682 4.26953 13.9418 4.74319 13.9418 5.32748C13.9418 5.91177 13.4682 6.38543 12.8839 6.38543H4.94926C4.24779 6.38543 3.57506 6.66409 3.07905 7.1601C2.58303 7.65611 2.30438 8.32885 2.30438 9.03031C2.30438 9.73178 2.58303 10.4045 3.07905 10.9005C3.57506 11.3965 4.24779 11.6752 4.94926 11.6752H10.239C11.5016 11.6752 12.7126 12.1768 13.6054 13.0696C14.4982 13.9624 14.9998 15.1733 14.9998 16.436C14.9998 17.6986 14.4982 18.9095 13.6054 19.8023C12.7126 20.6952 11.5016 21.1967 10.239 21.1967H1.24643C0.662137 21.1967 0.188477 20.7231 0.188477 20.1388C0.188477 19.5545 0.662137 19.0808 1.24643 19.0808H10.239C10.9405 19.0808 11.6132 18.8022 12.1092 18.3062C12.6052 17.8102 12.8839 17.1374 12.8839 16.436C12.8839 15.7345 12.6052 15.0618 12.1092 14.5658C11.6132 14.0697 10.9405 13.7911 10.239 13.7911H4.94926C3.68662 13.7911 2.4757 13.2895 1.58288 12.3967C0.690058 11.5039 0.188477 10.2929 0.188477 9.03031C0.188477 7.76767 0.690058 6.55675 1.58288 5.66393Z" fill="#404040"/>
+                                        </svg>
+                                    </div>
+                                  
+
+                                    </div>
+                              
+                             
+                             
+                            <div className="bg-secondary shadow-sm py-2 text-end pe-2 pe-md-4 text-white br-right" style={{width: '219px'}}><h6 className="mb-0">Easy to use</h6></div>
+                            </div>
+                         
+                    </Col>
+                </Row>
+                <Row  className="justify-content-center">
+                  
+                     
+                    <Col md={12} lg={10} className="mt-4">
+                        <div className="d-flex justify-content-center align-items-center ms-0 ms-md-4 ps-1">
+                              <div className="bg-white shadow-sm py-2 ps-2 ps-md-4 br-left position-relative" style={{width: '281px'}}>
+                                <h6 className="mb-0 fw-500">Irregular Support</h6>
+                                   <div className="circle">
+                                     
+
+                                    </div>
+                               </div>
+                               
+                               <div className="bg-secondary shadow-sm py-2 text-end pe-2 pe-md-4 text-white br-right" style={{width: '303px'}}><h6 className="mb-0">Solid Support System</h6></div>                           
+                          
+                          
+                            </div>
+                    </Col>
+                </Row>
+                <Row  className="justify-content-center  mt-4">
+                    <Col md={12} lg={10}>
+                    <div className="d-flex justify-content-center align-items-center me-0 me-md-5">
+                       <div className="bg-white shadow-sm py-2 ps-2 ps-md-4 br-left position-relative" style={{width: '357px'}}>
+                       <h6 className="mb-0 fw-500">System Issues/Breakdowns</h6>
+                                <div className="circle">
+                                   
+                                   <div>
+                                   <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2781 7.66826C18.6665 8.0044 18.7088 8.5917 18.3726 8.98002L11.9326 16.4197C11.7647 16.6137 11.5241 16.7297 11.2677 16.7402C11.0114 16.7508 10.762 16.6549 10.5787 16.4754L7.71911 13.6738C7.35223 13.3144 7.34618 12.7256 7.7056 12.3588C8.06503 11.9919 8.65381 11.9858 9.0207 12.3453L11.1738 14.4546L16.9664 7.76274C17.3025 7.37442 17.8898 7.33212 18.2781 7.66826Z" fill="#404040"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6369 0.0824231C12.8803 -0.0274744 13.1591 -0.0274744 13.4025 0.0824231C18.026 2.17049 20.1015 2.83762 25.2211 3.75595C25.6426 3.83157 25.958 4.18531 25.985 4.61274C26.9678 20.1903 14.326 25.5853 13.3671 25.9715C13.1442 26.0613 12.8952 26.0613 12.6723 25.9715C11.7134 25.5853 -0.928424 20.1903 0.0544271 4.61274C0.0813954 4.18531 0.396794 3.83157 0.818347 3.75595C5.9379 2.83762 8.01341 2.17049 12.6369 0.0824231ZM1.87525 5.45379C1.43676 18.1415 10.9472 23.1565 13.0197 24.0964C15.0922 23.1565 24.6026 18.1415 24.1641 5.45379C19.5377 4.59493 17.3 3.86756 13.0197 1.9497C8.73944 3.86756 6.50169 4.59493 1.87525 5.45379Z" fill="#404040"/>
+                                        </svg>
+
+                                   </div>
+
+                                 </div>
+                                </div>
+                                <div className="bg-secondary shadow-sm py-2 text-end pe-2 pe-md-4 text-white br-right" style={{width: '303px'}}><h6 className="mb-0">Robust Development</h6></div>
+                       </div>
+                    </Col>
+                </Row>
               
                 <Row  className="justify-content-center  mt-4">
-                    <Col md={12} lg={7}>
-                       <div className="d-flex justify-content-center align-items-center ms-0 ms-md-4">
+                <Col md={12} lg={10}>
+                      <div className="d-flex justify-content-center align-items-center me-0 me-md-5">
                             <div className="bg-white shadow-sm py-2 ps-2 ps-md-4 br-left position-relative" style={{width: '355px'}}>
                                 <h6 className="mb-0">Dimensional Development</h6>
                                 <div className="circle">
@@ -130,10 +212,9 @@ const Comparison = () => {
 
                                  </div>
                                 </div>
-                            <div className="bg-secondary shadow-sm py-2 text-end pe-2 pe-md-4 text-white br-right" style={{width: '373px'}}><h6 className="mb-0">360° Technology Consultation</h6></div>
-                       </div>
+                                <div className="bg-secondary shadow-sm py-2 text-end pe-2 pe-md-4 text-white br-right" style={{width: '303px'}}><h6 className="mb-0">Robust Development</h6></div>                       </div>
                     </Col>
-                </Row> */}
+                </Row>
             </Container>
         </section>
     )
