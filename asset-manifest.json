@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/itcart/static/css/main.63d618bb.chunk.css",
-    "main.js": "/itcart/static/js/main.8a4bd381.chunk.js",
-    "main.js.map": "/itcart/static/js/main.8a4bd381.chunk.js.map",
-    "runtime-main.js": "/itcart/static/js/runtime-main.3ffe68a0.js",
-    "runtime-main.js.map": "/itcart/static/js/runtime-main.3ffe68a0.js.map",
-    "static/js/2.2724dddd.chunk.js": "/itcart/static/js/2.2724dddd.chunk.js",
-    "static/js/2.2724dddd.chunk.js.map": "/itcart/static/js/2.2724dddd.chunk.js.map",
-    "static/js/3.134a8315.chunk.js": "/itcart/static/js/3.134a8315.chunk.js",
-    "static/js/3.134a8315.chunk.js.map": "/itcart/static/js/3.134a8315.chunk.js.map",
+    "main.css": "/itcart/static/css/main.0d67547d.chunk.css",
+    "main.js": "/itcart/static/js/main.ad29d32f.chunk.js",
+    "main.js.map": "/itcart/static/js/main.ad29d32f.chunk.js.map",
+    "runtime-main.js": "/itcart/static/js/runtime-main.de40bafb.js",
+    "runtime-main.js.map": "/itcart/static/js/runtime-main.de40bafb.js.map",
+    "static/js/2.01fe69ad.chunk.js": "/itcart/static/js/2.01fe69ad.chunk.js",
+    "static/js/2.01fe69ad.chunk.js.map": "/itcart/static/js/2.01fe69ad.chunk.js.map",
+    "static/js/3.4327f4f3.chunk.js": "/itcart/static/js/3.4327f4f3.chunk.js",
+    "static/js/3.4327f4f3.chunk.js.map": "/itcart/static/js/3.4327f4f3.chunk.js.map",
     "index.html": "/itcart/index.html",
-    "static/css/main.63d618bb.chunk.css.map": "/itcart/static/css/main.63d618bb.chunk.css.map",
-    "static/js/2.2724dddd.chunk.js.LICENSE.txt": "/itcart/static/js/2.2724dddd.chunk.js.LICENSE.txt",
+    "static/css/main.0d67547d.chunk.css.map": "/itcart/static/css/main.0d67547d.chunk.css.map",
+    "static/js/2.01fe69ad.chunk.js.LICENSE.txt": "/itcart/static/js/2.01fe69ad.chunk.js.LICENSE.txt",
     "static/media/1.4324a88c.png": "/itcart/static/media/1.4324a88c.png",
     "static/media/3.38d6f8d0.png": "/itcart/static/media/3.38d6f8d0.png",
     "static/media/3.65100bf2.png": "/itcart/static/media/3.65100bf2.png",
@@ -27,9 +27,9 @@
     "static/media/team2.9adce458.png": "/itcart/static/media/team2.9adce458.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ffe68a0.js",
-    "static/js/2.2724dddd.chunk.js",
-    "static/css/main.63d618bb.chunk.css",
-    "static/js/main.8a4bd381.chunk.js"
+    "static/js/runtime-main.de40bafb.js",
+    "static/js/2.01fe69ad.chunk.js",
+    "static/css/main.0d67547d.chunk.css",
+    "static/js/main.ad29d32f.chunk.js"
   ]
 }
