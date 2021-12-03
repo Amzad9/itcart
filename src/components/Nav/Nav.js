@@ -8,6 +8,13 @@ import W from '../assets/w.png';
 import A from '../assets/a.png';
 import B from '../assets/b.png';
 import T from '../assets/t.png';
+ 
+import News from '../assets/news.png';
+import Customer from '../assets/customer.png';
+import Case from '../assets/case.png';
+
+import Meet from '../assets/meet.png';
+import Contact from '../assets/contact.png';
 
 import Logo from '../assets/logo-f.png'
 const  Navigation = () => {
@@ -31,25 +38,24 @@ const  Navigation = () => {
                   </NavDropdown>
                 
                   <NavDropdown title="Solutions" id="Products-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">HRMS</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.1">E-Services</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">MIS</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Enterprise Solutions</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1"><img src={W} alt="" /> HRMS Automation</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1"><img src={A} alt="" /> E-Services Automation</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2"><img src={B} alt="" /> MIS Solution</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3"><img src={T} alt="" /> Enterprise Solution</NavDropdown.Item>
                   </NavDropdown>
 
                    <NavDropdown title="Resources" id="Resources-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">News</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Blog</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Case Study</NavDropdown.Item>
+                    <NavDropdown.Item className="resources" href="#action/3.1"><img src={News} alt="" /> News, Help Center</NavDropdown.Item>
+                    <NavDropdown.Item className="resources" href="#action/3.2"><img src={Customer} alt="" /> Customer Blogs</NavDropdown.Item>
+                    <NavDropdown.Item className="resources" href="#action/3.3"><img src={Case} alt="" /> Case Studies</NavDropdown.Item>
                    </NavDropdown>
                    <Nav.Item>
                     <Link className="nav-link" to="careers">Careers</Link>
                    </Nav.Item>
                   
                    <NavDropdown title="Get in touch" id="get-in-touch">
-                    <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.1">Our Team</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Contact Us</NavDropdown.Item>
+                    <NavDropdown.Item className="meet-item" href="#action/3.1"><img src={Meet} alt="" /> Meet the Team</NavDropdown.Item>
+                    <NavDropdown.Item className="meet-item" href="#action/3.2"><img src={Contact} alt="" /> Contact Us</NavDropdown.Item>
                    
                   </NavDropdown>
                    

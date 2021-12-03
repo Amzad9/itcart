@@ -96,51 +96,122 @@ const Service = () => {
     //     {id: 4, img: Static, title: 'App Development'}
     //   ]
       const web = [
-        {id: 1, img: Digital, title: 'Digital (DX) Collaboration Portal'},
-        {id: 2, img: Corporate,  title: 'Corporate Internet Portal'},
-        {id: 3, img: Document, title: 'Document Management System (DMS)'},
-        {id: 4, img: Learning, title: 'Digital Learning Platform'},
-        {id: 5, img: Process, title: 'Digital Process Management'},
-        {id: 6, img: Project, title: 'Project Management System'}
+        {
+            id: 1, img: Digital, title: 'Digital (DX) Collaboration Portal',
+            items:['Collaboration Platform', 'Corporate Events','Document Management', 'App Integration', 'Social Media Integration', 'Live Conferencing'] 
+        },
+        {
+            id: 2, img: Corporate,  title: 'Corporate Public Website',
+            items:['Brand Identity','Offerings','Testimonials','Masterful Copy','Social Media Integration','Mobile Responsive'] 
+        },
+        {
+            id: 3, img: Document, title: 'Document Management System (DMS)',
+            items:['Workflow Automation', 'Document Indexing','Keyword Search', 'Document Editing', 'Document Security', 'Document Processing']
+           
+        },
+        {
+            id: 4, img: Learning, title: 'Digital Learning Platform',
+            items:['Centralized Learning Platform', 'Online Training ','Collaboration ', 'Keyword Search', 'Reports & Analysis', 'Rewards & Appraisals'] 
+        },
+        {
+            id: 5, img: Process, title: 'Digital Process Management',
+            items:['Visual Workflow ', 'Process Automation','Role based access', 'Reports & Analytics', 'Performance KPIs', 'System Integration']
+        },
+        {
+            id: 6, img: Project, title: 'Project Management System',
+            items:['Planning & Scheduling', 'Project Budgeting','Resource Management', 'Task Management', 'Time Tracking', 'Reporting & Analytics']
+        }
       ]
       const appd = [
-        {id: 1, img: Customer, title: 'Customer Service Apps'},
-        {id: 2, img: Business,  title: 'Business Process Apps'},
-        {id: 3, img: Utility, title: 'Utility & Tools Apps'},
-        {id: 4, img: Commerce, title: 'E-Commerce Apps'},
-        {id: 5, img: Apps, title: 'Digital Learning Apps'},
-        {id: 6, img: Employee, title: 'Employee E-Service Apps'}
+        {
+            id: 1, img: Customer, title: 'Customer Service Apps',
+            items:['User Management ', 'Product/Service Screen','Search & Filter', 'Order Management ', 'Reviews & Ratings', 'Real-Time Analytics']
+        },
+        {
+            id: 2, img: Business,  title: 'Business Process Apps',
+            items:['Process Building', 'Workflow & Checklist Assignees','Completion notification', 'Team Collaboration', 'Automating Tasks with Triggers', 'Reports & Analytics']
+        },
+        {
+            id: 3, img: Utility, title: 'Utility & Tools Apps',
+            items:['Account Management', 'Custom Features','Billing & Invoicing ', 'Push Notifications', 'Customer Support', 'Secure Server']
+        },
+        {
+            id: 4, img: Commerce, title: 'E-Commerce Apps',
+            items:['Seamless Onboarding', 'Friendly Interface','Indexed Product Screen', 'Secure Payment Gateway', 'Order Management', 'Personalized Offerings']
+        },
+        {
+            id: 5, img: Apps, title: 'Digital Learning Apps',
+            items:['Intuitive Interface', 'Multimedia Support','Push Notifications', 'Gamification', 'In-App Communication', 'LMS & Assessment']
+        },
+        {
+            id: 6, img: Employee, title: 'Employee E-Service Apps',
+            items:['Profile Management', 'Online Applications','Tax Returns', 'KYC Management', 'Payment services', 'Service Request/Approval']
+        }
       ]
       const businessd = [
-        {id: 1, img: Management, title: 'Employee Management automation'},
-        {id: 2, img: Supply,  title: 'Supply Chain Automation'},
-        {id: 3, img: Business1, title: 'Business Workflow Automation'},
-        {id: 4, img: Customer1, title: 'Customer Support Automation'},
-        {id: 5, img: Department, title: 'Inter-Department Review Automation'},
-        {id: 6, img: Document1, title: 'Document management Automation'}
+        {
+            id: 1, img: Management, title: 'Employee Management automation',
+            items:['Applicant Tracking System', 'Recruitment & Onboarding','Salary & Payroll', 'Training & Development', 'Attendance & Leaves', 'Exit & off-Boardings']
+        },
+        {
+            id: 2, img: Supply,  title: 'Supply Chain Automation',
+            items:['Process Automation', 'Workflow Management','Integrated Supply Partners', 'Inventory Management', 'Demand Forecasting', 'Return Management']
+        },
+        {
+            id: 3, img: Business1, title: 'Business Workflow Automation',
+            items:['Intuitive Workflow Designer', 'Role-Based access','Task Management', 'SLA Indicators', 'Real-Time Notifications', 'KPI based Reporting']
+        },
+        {
+            id: 4, img: Customer1, title: 'Customer Support Automation',
+            items:['Customizable Ticket Templates', 'Ticket Submission Form','Ticket Automation', 'Ticket Tags', 'Role-Based Access', 'Ticket Resolution/Deflection']
+        },
+        {
+            id: 5, img: Department, title: 'Inter-Department Review Automation',
+            items:['Process Review', 'Information Review','Resource Sharing', '360 feedback system', 'Real-time Collaboration', 'Resolution metrics']
+        },
+        {
+            id: 6, img: Document1, title: 'Document management Automation',
+            items:['Workflow Automation', 'Document Indexing & Search','Comment, Approve, Deny', 'Document Integration', 'Permission based access', 'Reports & Audit']
+        }
       ]
       const Technologyd = [
-        {id: 1, img: solutions, title: 'Digital Transformation (DX) solutions'},
-        {id: 2, img: SaaS,  title: 'E-Commerce (SaaS) solutions'},
-        {id: 3, img: SharePoint, title: 'SharePoint Online solutions'},
-        {id: 4, img: Office, title: 'Office 365 solutions'},
-        {id: 5, img: Premise, title: 'SharePoint On Premise solutions'},
-        {id: 6, img: Azure, title: 'Azure Cloud solutions'}
+        {
+            id: 1, img: solutions, title: 'Technology Makeover',
+            items:['Technology Makeover', 'Process Automation','Customer Experience', 'Data Driven Changes', 'System Integration', 'Organizational Enhancement']
+        },
+        {
+            id: 2, img: SaaS,  title: 'E-Commerce (SaaS) solutions',
+            items:['Seamless Onboarding', 'Friendly Interface','Indexed Product Screen', 'Secure Payment Gateway', 'Order Management', 'Personalized Offerings']
+        },
+        {
+            id: 3, img: SharePoint, title: 'SharePoint Online solutions',
+            items:['Intranet Consultation', 'HR Portal','Document Management', 'Workflow Automation', 'Employee Training', 'Security & Compliance']
+        },
+        {
+            id: 4, img: Office, title: 'Office 365 solutions',
+            items:['Office 365 Consultation', 'Solution Implementation','Customization ', 'Data Migration', 'System Integration', 'Managed Services/Support']
+        },
+        {
+            id: 5, img: Premise, title: 'SharePoint On Premise solutions',
+            items:['Business Analysis', 'Technical Specification','Custom Design', 'Development', 'Testing', 'On-Premise Deployment ']
+        },
+        {
+            id: 6, img: Azure, title: 'Azure Cloud solutions',
+            items:['Feasibility Assessment', 'Azure Implementation','Migration Strategy', 'Process Description & Policies', 'Platform Based Development', 'Cloud Native Architectures']
+        }
       ]
      
-    
-
-
-    //   const SlideData2 = [
-    //     {id: 1, img: Static, title: 'Websites'},
-    //     {id: 2, img: Dynamic,  title: 'Dynamic'},
-    //     {id: 3, img: Ecommerce, title: 'Commerce'},
-    //     {id: 4, img: Static, title: 'Development'}
-    //   ]
+  
       const iconC = <svg className="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M7.55548 15.111C11.7283 15.111 15.111 11.7283 15.111 7.55548C15.111 3.38271 11.7283 0 7.55548 0C3.3827 0 0 3.38271 0 7.55548C0 11.7283 3.3827 15.111 7.55548 15.111Z" fill="#DD87B8"/>
       <path d="M6.80691 10.4377C6.63693 10.438 6.47147 10.383 6.33548 10.2811L6.32705 10.2747L4.55141 8.91642C4.46917 8.85338 4.40016 8.77475 4.34831 8.68503C4.29646 8.59531 4.2628 8.49625 4.24923 8.39352C4.23566 8.29079 4.24245 8.18639 4.26923 8.08629C4.296 7.98618 4.34223 7.89233 4.40528 7.81009C4.46832 7.72786 4.54694 7.65884 4.63665 7.60699C4.72637 7.55514 4.82543 7.52146 4.92817 7.50789C5.0309 7.49432 5.13531 7.50112 5.23541 7.5279C5.33552 7.55467 5.42936 7.6009 5.5116 7.66395L6.66172 8.54591L9.37949 5.00025C9.44251 4.91805 9.52111 4.84906 9.61079 4.79724C9.70047 4.74541 9.79949 4.71176 9.90218 4.6982C10.0049 4.68463 10.1092 4.69143 10.2093 4.7182C10.3093 4.74497 10.4032 4.79118 10.4854 4.8542L10.4856 4.85438L10.4687 4.87781L10.486 4.85438C10.6519 4.98183 10.7604 5.16989 10.7878 5.37725C10.8151 5.58462 10.7591 5.79436 10.6319 5.96046L7.43523 10.1291C7.36127 10.2251 7.26618 10.3028 7.15733 10.3562C7.04849 10.4096 6.92881 10.4371 6.80759 10.4368L6.80691 10.4377Z" fill="white"/>
       </svg>;
+
+
+   
+   
+   
+
       
     return (
         <section className="clients service pt-5 mar-nagative bg-white">
@@ -164,12 +235,10 @@ const Service = () => {
                    </Col>
                </Row>
              
-          
-               
-                     
                    {index === 0 ? 
                       <Row>
                          {web.map(item => (
+                             
                             <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
                                 <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-white front px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
@@ -177,16 +246,11 @@ const Service = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-2 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
-                                     
-                                     <ul className="text-start list">
-                                         <li>{iconC }Build your knowledge base online</li>
-                                         <li>{iconC }Provide a centralized learning platform</li>
-                                         <li>{iconC }Employees who learn and contribute</li>
-                                         <li>{iconC }Promote and celebrate top contributors</li>
-                                         <li>{iconC }Search by keywords, topics, expertise</li>
-                                         <li>{iconC }Conduct assessments and surveys</li>
-                                      
-                                     </ul>
+                                       <ul className="text-start list">
+                                           {item.items && item.items.map((val, index) => (
+                                               <li key={index}>{iconC } {val}</li>
+                                           ))}
+                                       </ul>
                                      <Row className="btn-wrapper justify-content-between mx-0 mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
@@ -216,8 +280,12 @@ const Service = () => {
                             </SlideCard>
                             <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
-                                     <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper justify-content-between px-3 mt-5">
+                                    <ul className="text-start list">
+                                           {item.items && item.items.map((val, index) => (
+                                               <li key={index}>{iconC } {val}</li>
+                                           ))}
+                                       </ul>
+                                       <Row className="btn-wrapper justify-content-between mx-0 mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -227,7 +295,7 @@ const Service = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4">
+                                       <Col sm={12} className="mt-3">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
@@ -246,8 +314,12 @@ const Service = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
-                                     <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper justify-content-between px-3 mt-5">
+                                    <ul className="text-start list">
+                                           {item.items && item.items.map((val, index) => (
+                                               <li key={index}>{iconC } {val}</li>
+                                           ))}
+                                       </ul>
+                                       <Row className="btn-wrapper justify-content-between mx-0 mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -257,7 +329,7 @@ const Service = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4">
+                                       <Col sm={12} className="mt-3">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
@@ -275,8 +347,12 @@ const Service = () => {
                             </SlideCard>
                             <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                  <h5 className="text-black">{item.title}</h5>
-                                 <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                 <Row className="btn-wrapper justify-content-between px-3 mt-5">
+                                       <ul className="text-start list">
+                                           {item.items && item.items.map((val, index) => (
+                                               <li key={index}>{iconC } {val}</li>
+                                           ))}
+                                       </ul>
+                                       <Row className="btn-wrapper justify-content-between mx-0 mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -286,9 +362,9 @@ const Service = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4">
+                                       <Col sm={12} className="mt-3">
                                    
-                                       <Button className="text-white w-100 bg-primary btn-b">Get Brochure</Button>
+                                       <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
                                      </Row>
                              </SlideCard>

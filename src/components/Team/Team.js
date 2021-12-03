@@ -48,10 +48,7 @@ const PeopleSay = () => {
                </Row>
                
            
-                <Row className="mt-5">
-                    
-                       
-                       
+                <Row className="mt-5 gx-7">
                             {SlideData.map(item => (
                              <Col className="mb-4 mb-xl-0" sm={12} md={6} xl={4} ref={ref}>
                                 <SlideCard  onClick={handleClick} classBody="pb-0" className="box-shadow-sm border-0 bg-white  p-0" src={item.img}>
@@ -59,13 +56,8 @@ const PeopleSay = () => {
                                       <h4>{item.title}</h4>
                                       <p className="fs-6">{item.subtitle}</p>
                                    </div>
-                                   {/* <div className="popup bg-blue p-3 text-white pe-4">
-                                        <small> “We looked at several tools, including Monday.com, Basecamp, and Asana, but none could offer the breadth of features that Scoro has.”
-                                             feat. Agency
-                                        </small>
-                                         <h6 className="mb-0 mt-3">{item.title}</h6>
-                                         <p className="fs-6">{item.subtitle}</p>
-                                   </div> */}
+                                  
+                                 
                                    <Overlay
                                         show={show}
                                         target={target}

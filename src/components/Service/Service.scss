@@ -25,3 +25,40 @@
     }
 }
 
+// base
+.flip {
+    position: relative;
+    >.front,
+    >.back {
+        
+        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+        transition-duration: 1.7s;
+        transition-property: transform, opacity;
+    }
+    >.front {
+        transform: rotateY(0deg);
+    }
+    >.back {
+        position: absolute;
+        opacity: 0;
+        top:0;
+        left: 3%;
+        width: 94%;
+        height: 100%;
+        transform: rotateY(-180deg);
+    }
+    &:hover {
+        >.front {
+            transform: rotateY(180deg);
+            box-shadow: none !important;
+        }
+        >.back {
+            opacity: 1;
+            background-color: #fff !important;
+            transform: rotateY(0deg);
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+        }
+    }
+ 
+}
+

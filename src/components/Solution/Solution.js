@@ -97,44 +97,112 @@ const Solution = () => {
     //       ]
     //   };
     const hrm = [
-        {id: 1, img:Emp, title: 'Employee Management'},
-        {id: 2, img:Recru,  title: 'Recruitment Process Management'},
-        {id: 3, img:Onboarding, title: 'Onboarding Process Management'},
-        {id: 4, img:Attendance, title: 'Attendance & Time Logs Management'},
-        {id: 5, img:Employee, title: 'Employee Leave Management'},
-        {id: 6, img:Travel, title: 'Travel & Expense Claims Processing'}
+        {
+            id: 1, img:Emp, title: 'Employee Management',
+            items:['Employee Database', 'Documentation','Birthdays & Social Events', 'Search & Find Filters', 'Employee Roster', 'Notes']
+        },
+        {
+            id: 2, img:Recru,  title: 'Recruitment Process Management',
+            items:['Job Description', 'Job Board Integration','Sourcing', 'References', 'Interview Process', 'Internal Hiring']
+        },
+        {
+            id: 3, img:Onboarding, title: 'Onboarding Process Management',
+            items:['Background Check', 'Documentation','Salary Break-down', 'Joining Letter', 'Probation Process', 'Asset Allocation']
+        },
+        {
+            id: 4, img:Attendance, title: 'Attendance & Time Logs Management',
+            items:['Check-in/out Tracker ', 'Attendance Tracking','Project Time Tracking', 'Overtime Tracking', 'Rounding Rules & Exceptions', 'GPS Tracking ']
+        },
+        {
+            id: 5, img:Employee, title: 'Employee Leave Management',
+            items:['Time-off Requests', 'Leave Application','Online Leave Management', 'Holiday Calendar', 'Vacation Tracking', 'Leave Tracking']
+        },
+        {
+            id: 6, img:Travel, title: 'Travel & Expense Claims Processing',
+            items:['Travel Policies', 'Pre-approved Trips','Travel Booking', 'Scan & Attach Receipts', 'Expense Review', 'Reimbursement']
+        }
       ]
       const cms = [
-        {id: 1, img:Document, title: 'Document Change Request (DCR)'},
-        {id: 2, img:Business,  title: 'Business Change Request (BCR)'},
-        {id: 3, img:Non, title: 'Non-Conformity Reporting (NCR)'},
-        {id: 4, img:Service, title: 'IT Service Request & Approval'},
-        {id: 5, img:Capital, title: 'Capital Expenditure Note Approval (CapEx)'},
-        {id: 6, img:KYC, title: 'KYC Update Request and Approval'}
+        {
+            id: 1, img:Document, title: 'Document Change Request (DCR)',
+            items:['Change Request Form', 'Change Control','Request a Change', 'Review & Analyze', 'Submit the Request', 'Approval']
+        },
+        {
+            id: 2, img:Business,  title: 'Business Change Request (BCR)',
+            items:['Requester Details', 'Requested Change','Functional Specifications', 'Intended Outcome', 'Assessment of Viability', 'Implementation']
+        },
+        {
+            id: 3, img:Non, title: 'Non-Conformity Reporting (NCR)',
+            items:['Failure/Deviation Identification', 'Statement of NCR','Audit Evidence', 'Acceptance of NCR', 'Actions Required', 'Correction Accepted']
+        },
+        {
+            id: 4, img:Service, title: 'IT Services Management',
+            items:['Incident Management', 'Problem Management','Change request', 'Ticket Management', 'Request Approval', 'Service Delivery']
+        },
+        {
+            id: 5, img:Capital, title: 'Capital Expenditure Note Approval (CapEx)',
+            items:['CapEx Buy/Lease Request', 'Request Review','Request Submitted', 'Request Rejected', 'Multilevel Approval', 'Purchase order released']
+        },
+        {
+            id: 6, img:KYC, title: 'KYC Update Request and Approval',
+            items:['Customer Acceptance Policy', 'Identification Procedures','Address Verification', 'Bank Verification', 'Legal Verification', 'Risk & Compliance']
+        }
       ]
       const businE = [
-        {id: 1, img:Digital, title: 'Digital Transformation (DX) Management'},
-        {id: 2, img:Corporate,  title: 'Corporate Document Management'},
-        {id: 3, img:Department, title: 'Business Workflow Automation'},
-        {id: 4, img: Asset, title: 'Department Data Management'},
-        {id: 5, img: Management, title: 'IT Asset Management'},
-        {id: 6, img: Customer, title: 'KYC Management'}
+        {
+            id: 1, img:Digital, title: 'Digital Transformation ',
+            items:['Technology Makeover', 'Process Automation','Customer Experience', 'Data Driven Changes', 'System Integration', 'Organizational Enhancement']
+        },
+        {
+            id: 2, img:Corporate,  title: 'Document Management',
+            items:['Workflow Automation', 'Document Indexing','Keyword Search', 'Document Editing', 'Document Security', 'Document Processing']
+        },
+        {
+            id: 3, img:Department, title: 'Data Management',
+            items:['Collecting & organizing data', 'Master Data Management','Metadata Rules', 'Data Privacy & Security', 'Real-time Reports & Analytics', 'Data-driven Decisionss']
+        },
+       
+        {
+            id: 5, img: Management, title: 'IT Asset Management',
+            items:['Monitor Assets in Real-Time', 'Request Assessment','Asset Deployment', 'Server Management ', 'Permission-based access', 'Reporting']
+        },
+        {
+            id: 6, img: Customer, title: 'KYC Management',
+            items:['Customer Acceptance Policy', 'Identification Procedures','Address Verification', 'Bank Verification', 'Legal Verification', 'Risk & Compliance']
+        },
+        {
+            id: 4, img: Asset, title: 'Ticket Management',
+            items:['Customizable Ticket Templates', 'Ticket Submission Form','Ticket Automation', 'Ticket Tags', 'Role-Based Access', 'Ticket Resolution/Deflection']
+        }
       ]
       const enterP = [
-        {id: 1, img: degree, title: '360 degree Digital Transformation (DX)'},
-        {id: 2, img: Real,  title: 'Real Estate Digital Solution'},
-        {id: 3, img: Performance, title: 'Performance Management Automation'},
-        {id: 4, img: Industrial, title: 'Industrial Process Automation'},
-        {id: 5, img: Healthcare, title: 'Healthcare Management System'},
-        {id: 6, img: Procurement, title: 'Procurement Management System '}
+        {
+            id: 1, img: degree, title: '360* Digital Transformation',
+            items:['Complete Technology Makeover', 'Business Process Automation','Improved Customer Experience', 'Data Driven Changes', 'System Integration', '360* Organizational Change']
+        },
+        {
+            id: 2, img: Real,  title: 'Real-Estate Solutions',
+            items:['Lead generation', 'Marketing Automation','Digital Makeover', 'Schedule Visits', 'Documentation ', 'Legal Verification/Support']
+        },
+        {
+            id: 3, img: Performance, title: 'Performance Management',
+            items:['Goal Management', 'Flexible Review forms','Continuous Performance Review', '360* feedback', 'Rewards & Recognition', 'Improvement Plans']
+        },
+        {
+            id: 4, img: Industrial, title: 'Process Automation',
+            items:['Process Mapping', 'Automated Workflows','Workflow Tracking', 'Alerts & Notifications', 'Data Security', 'Reports & Analytics']
+        },
+        {
+            id: 5, img: Healthcare, title: 'Healthcare Management',
+            items:['Staff Management', 'Asset/Equipment Management','Patient Databases', 'Pharmacy Inventory', 'Account Management', 'Reports & Analytics ']
+        },
+        {
+            id: 6, img: Procurement, title: 'Procurement Management System',
+            items:['Requirement analysis', 'Purchase Requisition','Evaluation & Contract', 'Order Management', 'Invoice, Approvals & Disputes', 'Performance Review']
+        }
       ]
       
-    //   const SlideData = [
-    //     {id: 1, img: Attendance, title: 'Attendance Module'},
-    //     {id: 2, img: Payroll,  title: 'Payroll Management'},
-    //     {id: 3, img: Performance, title: 'Performance Management'},
-    //     {id: 1, img: Attendance, title: 'Attendance Module'}
-    //   ]
+  
     const iconC = <svg className="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M7.55548 15.111C11.7283 15.111 15.111 11.7283 15.111 7.55548C15.111 3.38271 11.7283 0 7.55548 0C3.3827 0 0 3.38271 0 7.55548C0 11.7283 3.3827 15.111 7.55548 15.111Z" fill="#DD87B8"/>
     <path d="M6.80691 10.4377C6.63693 10.438 6.47147 10.383 6.33548 10.2811L6.32705 10.2747L4.55141 8.91642C4.46917 8.85338 4.40016 8.77475 4.34831 8.68503C4.29646 8.59531 4.2628 8.49625 4.24923 8.39352C4.23566 8.29079 4.24245 8.18639 4.26923 8.08629C4.296 7.98618 4.34223 7.89233 4.40528 7.81009C4.46832 7.72786 4.54694 7.65884 4.63665 7.60699C4.72637 7.55514 4.82543 7.52146 4.92817 7.50789C5.0309 7.49432 5.13531 7.50112 5.23541 7.5279C5.33552 7.55467 5.42936 7.6009 5.5116 7.66395L6.66172 8.54591L9.37949 5.00025C9.44251 4.91805 9.52111 4.84906 9.61079 4.79724C9.70047 4.74541 9.79949 4.71176 9.90218 4.6982C10.0049 4.68463 10.1092 4.69143 10.2093 4.7182C10.3093 4.74497 10.4032 4.79118 10.4854 4.8542L10.4856 4.85438L10.4687 4.87781L10.486 4.85438C10.6519 4.98183 10.7604 5.16989 10.7878 5.37725C10.8151 5.58462 10.7591 5.79436 10.6319 5.96046L7.43523 10.1291C7.36127 10.2251 7.26618 10.3028 7.15733 10.3562C7.04849 10.4096 6.92881 10.4371 6.80759 10.4368L6.80691 10.4377Z" fill="white"/>
@@ -172,15 +240,11 @@ const Solution = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                      <h5 className="text-black">{item.title}</h5>
                                      <ul className="text-start list">
-                                         <li>{iconC }Stored centrally, access from anywhere</li>
-                                         <li>{iconC }Manage employment details</li>
-                                         <li>{iconC }Manage personal information</li>
-                                         <li>{iconC }Manage employee documents</li>
-                                         <li>{iconC }Automated document workflows</li>
-                                         <li>{iconC }Celebrate birthdays & anniversaries</li>
-                                      
-                                     </ul>
-                                     <Row className="btn-wrapper-solution justify-content-between  mt-4">
+                                           {item.items && item.items.map((val, index) => (
+                                               <li key={index}>{iconC } {val}</li>
+                                           ))}
+                                       </ul>
+                                     <Row className="btn-wrapper-solution justify-content-between mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -190,7 +254,7 @@ const Solution = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4">
+                                       <Col sm={12} className="mt-3">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
@@ -209,8 +273,12 @@ const Solution = () => {
                                  <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
-                                     <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper-solution justify-content-between  mt-5">
+                                    <ul className="text-start list">
+                                           {item.items && item.items.map((val, index) => (
+                                               <li key={index}>{iconC } {val}</li>
+                                           ))}
+                                       </ul>
+                                       <Row className="btn-wrapper-solution justify-content-between mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -220,7 +288,7 @@ const Solution = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4">
+                                       <Col sm={12} className="mt-3">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
@@ -239,8 +307,12 @@ const Solution = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
-                                     <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                     <Row className="btn-wrapper-solution justify-content-between mt-5">
+                                    <ul className="text-start list">
+                                           {item.items && item.items.map((val, index) => (
+                                               <li key={index}>{iconC } {val}</li>
+                                           ))}
+                                       </ul>
+                                       <Row className="btn-wrapper-solution justify-content-between mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -250,7 +322,7 @@ const Solution = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4">
+                                       <Col sm={12} className="mt-3">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
@@ -269,8 +341,12 @@ const Solution = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
-                                        <p className="fs4">Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-                                        <Row className="btn-wrapper-solution justify-content-between  mt-5">
+                                    <ul className="text-start list">
+                                           {item.items && item.items.map((val, index) => (
+                                               <li key={index}>{iconC } {val}</li>
+                                           ))}
+                                       </ul>
+                                       <Row className="btn-wrapper-solution justify-content-between mt-4">
                                        <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
@@ -280,7 +356,7 @@ const Solution = () => {
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
                                        </Col>
-                                       <Col sm={12} className="mt-4">
+                                       <Col sm={12} className="mt-3">
                                    
                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
                                       </Col>
