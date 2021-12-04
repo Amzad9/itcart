@@ -20,7 +20,7 @@ const ContactUs = () => {
     return (
         <section className="contactus py-5">
           
-            <Container fluid="xxl" className="bg-contact rounded-8 px-6 pt-5 pb-4">
+            <Container fluid="xxl" className="bg-contact rounded-8 px-6 pt-5 pb-6">
                <Row className="mb-5">
                    <Col className="text-center" md="12">
                        <h2>Get in Touch</h2>
@@ -54,7 +54,7 @@ const ContactUs = () => {
                                     <p className="text-white">info@demolimk.org</p>
                                 </Col>
                             </Row>
-                            <Row className="w-100 text-start justify-content-center  mb-5 pb-5"> 
+                            <Row className="w-100 text-start justify-content-center  mb-9 pb-5"> 
                                 <Col xs={2}>
                                      <img   src={Map} alt="" className="m-0" />
                                 </Col>

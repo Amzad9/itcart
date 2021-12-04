@@ -12,13 +12,13 @@ const Comparison = () => {
                 </Row>
                 <Row className="jsutify-content-center mb-5">
                     <Col className="text-end">
-                    <h4>Regular Technology Consultant</h4>
+                    <h4>IT Cart  Solutions</h4>
                     </Col>
                     <Col md={2} className="text-center">
                     <h3 className="text-secondary fw-semibold">V/S</h3>
                     </Col>
                     <Col className="text-start">
-                    <h4>IT Cart, Affordable Enterprise Solutions</h4>
+                    <h4>IT Cart  Solutions</h4>
                     </Col>
                 </Row>
                 {/* <Row  className="justify-content-center">

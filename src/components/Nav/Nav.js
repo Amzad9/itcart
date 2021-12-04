@@ -38,10 +38,10 @@ const  Navigation = () => {
                   </NavDropdown>
                 
                   <NavDropdown title="Solutions" id="Products-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1"><img src={W} alt="" /> HRMS Automation</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.1"><img src={A} alt="" /> E-Services Automation</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2"><img src={B} alt="" /> MIS Solution</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3"><img src={T} alt="" /> Enterprise Solution</NavDropdown.Item>
+                    <NavDropdown.Item className="solu" href="#action/3.1"><img src={W} alt="" /> HRMS Automation</NavDropdown.Item>
+                    <NavDropdown.Item className="solu" href="#action/3.1"><img src={A} alt="" /> E-Services Automation</NavDropdown.Item>
+                    <NavDropdown.Item className="solu" href="#action/3.2"><img src={B} alt="" /> MIS Solution</NavDropdown.Item>
+                    <NavDropdown.Item className="solu" href="#action/3.3"><img src={T} alt="" /> Enterprise Solution</NavDropdown.Item>
                   </NavDropdown>
 
                    <NavDropdown title="Resources" id="Resources-nav-dropdown">

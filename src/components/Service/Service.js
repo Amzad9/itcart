@@ -246,13 +246,13 @@ const Service = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-2 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
-                                       <ul className="text-start list">
+                                       <ul className="text-start list  mt-3">
                                            {item.items && item.items.map((val, index) => (
                                                <li key={index}>{iconC } {val}</li>
                                            ))}
                                        </ul>
                                      <Row className="btn-wrapper justify-content-between mx-0 mt-4">
-                                       <Col sm={6} className="text-start">
+                                       {/* <Col sm={6} className="text-start">
                                         <Button className="text-whites fs-6 btn2">Explore</Button>
                                    
                                        </Col>
@@ -260,10 +260,9 @@ const Service = () => {
                                        
                                         <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
                                        
-                                       </Col>
+                                       </Col> */}
                                        <Col sm={12} className="mt-3">
-                                   
-                                       <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
+                                          <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
                                       </Col>
                                      </Row>
                                </SlideCard>
@@ -280,7 +279,7 @@ const Service = () => {
                             </SlideCard>
                             <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
-                                    <ul className="text-start list">
+                                    <ul className="text-start list  mt-3">
                                            {item.items && item.items.map((val, index) => (
                                                <li key={index}>{iconC } {val}</li>
                                            ))}
@@ -314,7 +313,7 @@ const Service = () => {
                                 <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                     <h5 className="text-black">{item.title}</h5>
                                     
-                                    <ul className="text-start list">
+                                    <ul className="text-start list  mt-3">
                                            {item.items && item.items.map((val, index) => (
                                                <li key={index}>{iconC } {val}</li>
                                            ))}
@@ -347,7 +346,7 @@ const Service = () => {
                             </SlideCard>
                             <SlideCard classBody="pb-0 text-center" className="border-0 bg-white back px-3 pt-3 pb-0">
                                  <h5 className="text-black">{item.title}</h5>
-                                       <ul className="text-start list">
+                                       <ul className="text-start list  mt-3">
                                            {item.items && item.items.map((val, index) => (
                                                <li key={index}>{iconC } {val}</li>
                                            ))}
