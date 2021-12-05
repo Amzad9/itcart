@@ -9,7 +9,7 @@ import './Header.scss';
 function Header() {
     return (
         <header>
-            <Container fluid="xxl">
+            <Container fluid>
                 <Row>
                   <Col sm={12} md={12} lg={12}>
                        <Slider {...Header_SLIDER_SETTINGS}>

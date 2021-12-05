@@ -113,15 +113,15 @@ function FormControl() {
                             <Form.Check type="checkbox" className="border-secondary" label="" />
                         </Dropdown.Item>
                         <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-2">
-                            <span>HRMS Automation</span>
+                            <span>E-Services Automation</span>
                             <Form.Check type="checkbox" className="border-secondary" label="" />
                         </Dropdown.Item>
                         <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-3">
-                            <span>HRMS Automation</span>
+                            <span>MIS Automation</span>
                             <Form.Check type="checkbox" className="border-secondary" label="" />
                         </Dropdown.Item>
                         <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-3">
-                            <span>HRMS Automation</span>
+                            <span>Enterprise Solutions</span>
                             <Form.Check type="checkbox" className="border-secondary" label="" />
                         </Dropdown.Item>
                         </Dropdown.Menu>

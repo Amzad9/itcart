@@ -55,7 +55,7 @@ function Footer() {
                         </Navbar>
                     </Col>
                     <Col sm={12} className="text-center pt-5">
-                        <p>Copyright &copy; ItCart - All rights reserved. Powered by ItCart</p>
+                        <p>Copyright &copy; 2021 IT Cart - All rights reserved.</p>
                     </Col>
                 </Row>
             </Container>
