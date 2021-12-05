@@ -8,6 +8,10 @@ import W from '../assets/w.png';
 import A from '../assets/a.png';
 import B from '../assets/b.png';
 import T from '../assets/t.png';
+import Hrms from '../assets/hrms.png';
+import Eservices from '../assets/e-services.png';
+import Mis from '../assets/mis.png';
+import Tnterp from '../assets/enterp.png';
  
 import News from '../assets/news.png';
 import Customer from '../assets/customer.png';
@@ -38,10 +42,10 @@ const  Navigation = () => {
                   </NavDropdown>
                 
                   <NavDropdown title="Solutions" id="Products-nav-dropdown">
-                    <NavDropdown.Item className="solu" href="#action/3.1"><img src={W} alt="" /> HRMS Automation</NavDropdown.Item>
-                    <NavDropdown.Item className="solu" href="#action/3.1"><img src={A} alt="" /> E-Services Automation</NavDropdown.Item>
-                    <NavDropdown.Item className="solu" href="#action/3.2"><img src={B} alt="" /> MIS Solution</NavDropdown.Item>
-                    <NavDropdown.Item className="solu" href="#action/3.3"><img src={T} alt="" /> Enterprise Solution</NavDropdown.Item>
+                    <NavDropdown.Item className="solu" href="#action/3.1"><img src={Hrms} alt="" /> HRMS Automation</NavDropdown.Item>
+                    <NavDropdown.Item className="solu" href="#action/3.1"><img src={Eservices} alt="" /> E-Services Automation</NavDropdown.Item>
+                    <NavDropdown.Item className="solu" href="#action/3.2"><img src={Mis} alt="" /> MIS Solution</NavDropdown.Item>
+                    <NavDropdown.Item className="solu" href="#action/3.3"><img src={Tnterp} alt="" /> Enterprise Solution</NavDropdown.Item>
                   </NavDropdown>
 
                    <NavDropdown title="Resources" id="Resources-nav-dropdown">
