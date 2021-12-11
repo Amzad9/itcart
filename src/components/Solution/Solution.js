@@ -51,51 +51,6 @@ const Solution = () => {
    
     const [index, setIndex] = useState(0)
 
-
-
-    // const SERVICE_SLIDER_SETTINGS = {
-    //     dots: false,
-    //     arrows: true,
-    //     infinite: true,
-    //     autoPlay: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     adaptiveHeight: true,
-    //     // centerMode: true,
-    //     centerPadding: '0px',
-    //     nextArrow: <NextArrow />,
-    //     prevArrow: <PrevArrow />,
-    //     responsive: [
-    //         {
-    //           breakpoint: 1023,
-    //           settings: {
-    //             slidesToShow: 2,
-    //             slidesToScroll: 1,
-    //             infinite: true,
-    //             dots: false,
-    //             arrows: false,
-    //           }
-    //         },
-    //         {
-    //           breakpoint: 600,
-    //           settings: {
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1,
-    //             initialSlide: 1,
-    //             arrows: false,
-    //           }
-    //         },
-    //         {
-    //           breakpoint: 480,
-    //           settings: {
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1,
-    //             arrows: false,
-    //           }
-    //         }
-    //       ]
-    //   };
     const hrm = [
         {
             id: 1, img:Emp, title: 'Employee Management',

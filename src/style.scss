@@ -1,4 +1,5 @@
 $primary: #E86275;
+$primary-light:#FFDBDB;
 $secondary: #48C1C6;
 $success: #3e8d63;
 $info: #D1EFF1;
@@ -17,6 +18,7 @@ $text-sky:#1CAFE1;
 // this is used to map colors. change accordingly.
 $theme-colors: (
   primary: $primary,
+  primary-light: $primary-light,
   secondary: $secondary,
   success: $success,
   info: $info,
@@ -39,10 +41,24 @@ $spacers: (
   7: $spacer * 6.6,
   8: $spacer * 4,
   9: $spacer * 8,
+  10: $spacer * 10.4,
 );
 .text-blue{
   color: $blue;
 }
+.bg-light2{
+  background: rgba(226, 232, 249, 0.5);
+}
+.bg-light3{
+  background: rgba(226 ,249, 232, 0.5);
+}
+.bg-light4{
+  background: rgba(249, 249, 226, 0.5);
+}
+.bg-light5{
+ background: rgba(249, 234, 226, 0.5);
+}
+
 .bg-service{
    background: rgba(221, 135, 184, 0.15);
 }

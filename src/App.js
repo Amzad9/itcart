@@ -3,6 +3,9 @@ import Navigation from './components/Nav/Nav';
 import LandingPage from './LandingPage'
 import Footer from './components/Footer/Footer';
 import Careers from './components/Careers/Careers'
+import Resources from './components/Resources/Resources';
+import OurTeam from './components/OurTeam/OurTeam';
+import CartSolution from './components/CartSolution/CartSolution';
 import { BrowserRouter as Router, Switch , Route } from 'react-router-dom';
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
           <Switch>
             <Route exact path='/' component={LandingPage} />  
             <Route path='/careers' component={Careers} />  
+            <Route path='/resources' component={Resources} />
+            <Route path='/ourteam' component={OurTeam} />
+            <Route path='/cartsolution' component={CartSolution} />
           </Switch>
           <Footer />
         </Router>

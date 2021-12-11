@@ -31,5 +31,25 @@ export const SolutionData = [
     {key: 'Enterprise', title: 'Enterprise Solutions'},
 ]
 
+export const careerData = [
+    {key: 'Students and garduates', title: 'Students and garduates'},
+    {key: 'Job Areas', title: 'Job Areas'},
+    {key: 'Joining IT Cart', title: 'Joining IT Cart'},
+    {key: 'Who we are', title: 'Who we are'},
+]
+export const ResourcesData = [
+    {key: 'Blogs', title: 'Blogs'},
+    {key: 'Case studies', title: 'Case studies'},
+    {key: 'News', title: 'News'},
+    {key: 'Help Center', title: 'Help Center'},
+]
+
+export const Solution = [
+    {key: 'Product 1', title: 'Product 1'},
+    {key: 'Product 2', title: 'Product 2'},
+    {key: 'Product 3', title: 'Product 3'},
+    {key: 'Product 4', title: 'Product 4'},
+]
+
 
  

@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import Slider from "react-slick";
-import { Container, Row, Col, Nav, Overlay, Popover} from 'react-bootstrap';
+import { Container, Row, Col, Nav} from 'react-bootstrap';
 import SlideCard from '../Card/SlideCard';
 import NextArrow from '../Client/NextArrow';  
 import PrevArrow from '../Client/PrevArrow';
@@ -95,7 +95,7 @@ const PeopleSay = () => {
                            
                                 <SlideCard  classBody="pb-0 p-0" className="bg-white p-0 border-0">
                                    <Row className="align-items-start mx-0">
-                                     <Col sm={12} md={4}>
+                                     <Col sm={12} md={4} className="p-3">
                                        <img src={Union} alt="" />
                                      </Col>
                                      <Col sm={12} md={8} className="">
@@ -109,7 +109,7 @@ const PeopleSay = () => {
                                 </SlideCard>
                                 <SlideCard  classBody="pb-0 p-0" className="bg-white p-0 border-0">
                                    <Row className="align-items-start mx-0">
-                                     <Col sm={12} md={4}>
+                                     <Col sm={12} md={4} className="p-3">
                                        <img src={Union} alt="" />
                                      </Col>
                                      <Col sm={12} md={8}  className="px-3 px-md-0">
