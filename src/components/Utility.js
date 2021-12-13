@@ -1,7 +1,7 @@
 export const SLIDER_DATA = [
     {title: "Business Problems? Technology Solutions!", subtitle: "IT Cart is a multi-window digital solution provider that primarily focuses on Business problems and approaches in a consultative manner with befitting Technology Solutions!"},
     {title: "Making Technology accessible!", subtitle: "We take great pride in our domain expertise and decades of rich experience in Business automation, Digital transformations & Enterprise Solutions!"},
-    {title: "Are you Stuck in your Business?IT Cart helps you find that flow!", subtitle: "Feel free to get in touch to get a free session with our consultant for your Technology needs!"}
+    {title: "À la Carte IT Solutions", subtitle: "Pic and chose from IT Cart,Tools and Modules that fit the part!"}
 ];
 
 export const Header_SLIDER_SETTINGS = {
@@ -45,10 +45,10 @@ export const ResourcesData = [
 ]
 
 export const Solution = [
-    {key: 'Product 1', title: 'Product 1'},
-    {key: 'Product 2', title: 'Product 2'},
-    {key: 'Product 3', title: 'Product 3'},
-    {key: 'Product 4', title: 'Product 4'},
+    {key: 'Web Development', title: 'Web Development'},
+    {key: 'App Development', title: 'App Development'},
+    {key: 'Businesss Automation', title: 'Businesss Automation'},
+    {key: 'Technology Consulting', title: 'Technology Consulting'},
 ]
 
 

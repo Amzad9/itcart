@@ -10,7 +10,7 @@ import Adit1 from '../assets/odit1.png';
 import Adit2 from '../assets/odit2.png';
 import PeopleSay from '../PeopleSay/PeopleSay'
 
-function CartSolution() {
+function OurService() {
 
     const [index, setIndex] = useState(0)
     const  handle = (e) => {
@@ -19,9 +19,9 @@ function CartSolution() {
     return (
         <>
            <Banner 
-            className='bg-light8'
+           className='bg-light6'
             subtitle='Did you Digitally Streamline your Business?' 
-            title ='Our Solutions' 
+            title ='Our Services' 
             bodytext="Don't worry, IT Cart does it for you!
             We cover that extra mile to ensure your technology needs are meet with the best in the class expertise, services & support!" />
            
@@ -282,7 +282,7 @@ function CartSolution() {
                       </Container>
                     </section>
                     <section>
-                    <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
+                    <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-3 px-6 py-5">
                       <Row>
                             <Col xs={12} md={12} className="text-center pb-5 pt-4">
                                 <h2>Audit and Quality Management</h2>
@@ -316,7 +316,7 @@ function CartSolution() {
                        
                         <Row>
                             <Col md={12} className="pt-6">
-                               <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
+                               <Nav.Link className="fs-6 text-blue text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
                             </Col>
                         </Row>
                       </Container>
@@ -436,8 +436,8 @@ function CartSolution() {
                             </Col>
                         </Row>
                       </Container>
-                    </section> */}
-                    {/* <section className="bg-light5 py-5">
+                    </section>
+                    <section className="bg-light5 py-5">
                     <Container fluid="xxl">
                        <Row>
                             <Col xs={12} md={12} className="text-center py-5">
@@ -504,4 +504,5 @@ function CartSolution() {
     )
 }
 
-export default CartSolution
+export default OurService;
+

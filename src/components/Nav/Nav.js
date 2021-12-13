@@ -37,10 +37,10 @@ const  Navigation = () => {
               <Navbar.Collapse id="basic-navbar-nav">
                <Nav className="ms-auto">
                   <NavDropdown title="Services" id="Services-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1"><img src={W} alt="" /> Web Development</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2"><img src={A} alt="" /> App Development</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3"><img src={B} alt="" /> Business Automation</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3"><img src={T} alt="" /> Technology Consulting</NavDropdown.Item>
+                  <Link className="dropdown-item resources" to="ourservice"><img src={W} alt="" /> Web Development</Link>
+                  <Link className="dropdown-item resources" to="ourservice"><img src={A} alt="" /> App Development</Link>
+                  <Link className="dropdown-item resources" to="ourservice"><img src={B} alt="" /> Business Automation</Link>
+                  <Link className="dropdown-item resources" to="ourservice"><img src={T} alt="" /> Technology Consulting</Link>
                   </NavDropdown>
                 
                   <NavDropdown title="Solutions" id="Products-nav-dropdown">

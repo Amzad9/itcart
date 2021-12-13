@@ -9,7 +9,7 @@ $light: #F1F1F1;
 $light1:#EAEAEA;
 $dark: #000000;
 $white: #ffffff;
-
+$light6:#FAEDF5;
 $accent : #C4C4C4;
 $blue: #DD87B8;
 $text-sky:#1CAFE1;
@@ -28,6 +28,8 @@ $theme-colors: (
   dark: $dark,
   accent: $accent,
   blue:$blue,
+  light6:$light6,
+  sky-blue:$text-sky,
 );
 $spacer: 1rem;
 $spacers: (
@@ -46,8 +48,17 @@ $spacers: (
 .text-blue{
   color: $blue;
 }
+.text-sky-blue{
+  color: #1CAFE1;
+}
 .bg-light2{
   background: rgba(226, 232, 249, 0.5);
+}
+.bg-light7{
+  background-color: rgba(255, 242, 203 ,0.5);
+}
+.bg-light8{
+  background-color: rgba(221, 243, 251,0.5);
 }
 .bg-light3{
   background: rgba(226 ,249, 232, 0.5);

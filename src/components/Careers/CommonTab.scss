@@ -1,7 +1,16 @@
-.bg-primary-light{
+.tabs-container{
     .nav-pills {
         .nav-item{
             border-right: 0 !important;
+            .nav-link{
+                padding: 3rem 2.5rem !important;
+            }
+            .nav-link.active{
+                border-bottom: 7px solid #DD87B8;
+            }
         }
+        
     }
 }
+
+

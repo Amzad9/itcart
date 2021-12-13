@@ -131,6 +131,9 @@ h2{
     background-color: transparent;
     color: #DD87B8;
 }
+.fw-900{
+    font-weight: 900;
+}
 
 .solutuon{
     padding-top: 40px;
@@ -183,5 +186,12 @@ h2{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-
+.rounded-top-8{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.rounded-bottom-8{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 
