@@ -10,6 +10,20 @@ import Adit1 from '../assets/odit1.png';
 import Adit2 from '../assets/odit2.png';
 import PeopleSay from '../PeopleSay/PeopleSay'
 
+import Img1 from '../assets/service/1.png';
+import Img2 from '../assets/service/2.png';
+import Img3 from '../assets/service/3.png';
+import Img4 from '../assets/service/4.png';
+import Img5 from '../assets/service/5.png';
+import Img6 from '../assets/service/6.png';
+import Img7 from '../assets/service/7.png';
+import Img8 from '../assets/service/8.png';
+import Img9 from '../assets/service/9.png';
+import Img10 from '../assets/service/10.png';
+import Img11 from '../assets/service/11.png';
+import Img12 from '../assets/service/12.png';
+
+
 function OurService() {
 
     const [index, setIndex] = useState(0)
@@ -52,17 +66,13 @@ function OurService() {
                                 <p>Work from anywhere in the world by making your office mobile withour Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
                             </Col>
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                              <img src={Img1} alt="" className='img-fluid'/>
                             </Col>
                             
                         </Row>
                         <Row className="align-items-center mt-7">
                            <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                              <img src={Img2} alt="" className='img-fluid'/>
                             </Col>
                             
                             <Col  xs={12} md={6} className="ps-5">
@@ -92,17 +102,13 @@ function OurService() {
                                 <p>Work from anywhere in the world by making your office mobile with our Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
                             </Col>
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                               <img src={Img3} alt="" className='img-fluid'/>
                             </Col>
                             
                         </Row>
                         <Row className="align-items-center mt-7">
                            <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                              <img src={Img4} alt="" className='img-fluid'/>
                             </Col>
                             
                             <Col  xs={12} md={6} className="ps-5">
@@ -132,18 +138,14 @@ function OurService() {
                                 <p>Become accessible to all your potential market by going online and establishing your company’s corporate website!</p>
                             </Col>
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                            <img src={Img5} alt="" className='img-fluid'/>
                             </Col>
                             
                         </Row>
                         <Row className="align-items-center mt-7">
                             
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                            <img src={Img6} alt="" className='img-fluid'/>
                             </Col>
                             <Col  xs={12} md={6} className="ps-5">
                                 <h4 className='mb-4'>Position your Brand like never before</h4>
@@ -173,18 +175,14 @@ function OurService() {
                                 <p>Now you can bring subject matter experts and the students from anywhere in the world into classes in engaging & effective ways!</p>
                             </Col>
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                            <img src={Img7} alt="" className='img-fluid'/>
                             </Col>
                             
                         </Row>
                         <Row className="align-items-center mt-7">
                             
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                            <img src={Img8} alt="" className='img-fluid'/>
                             </Col>
                             <Col  xs={12} md={6} className="ps-5">
                                 <h4 className='mb-4'>Scalable, Organized and Transparent</h4>
@@ -215,17 +213,13 @@ function OurService() {
                                 <p>We help you create and establish visual workflows of complex processes to enhance process efficiency, effectiveness & productivity</p>
                             </Col>
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                            <img src={Img9} alt="" className='img-fluid'/>
                             </Col>
                             
                         </Row>
                         <Row className="align-items-center mt-7">
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                            <img src={Img10} alt="" className='img-fluid'/>
                             </Col>
                             <Col  xs={12} md={6} className="ps-5">
                                 <h4 className='mb-4'>Track the performance with KPIs</h4>
@@ -255,17 +249,13 @@ function OurService() {
                                 <p>Now plan, schedule and manage development stages easily with our built-in program that ups  your project management game!</p>
                             </Col>
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                            <img src={Img11} alt="" className='img-fluid'/>
                             </Col>
                             
                         </Row>
                         <Row className="align-items-center mt-7">
                             <Col  xs={12} md={6}>
-                                <SlideCard className="box-shadow-sm p-4">
-                                
-                                </SlideCard>
+                            <img src={Img12} alt="" className='img-fluid'/>
                             </Col>
                             <Col  xs={12} md={6} className="ps-5">
                                 <h4 className='mb-4'>Never miss your deadlines again</h4>
