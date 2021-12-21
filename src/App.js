@@ -7,25 +7,25 @@ import Resources from './components/Resources/Resources';
 import OurTeam from './components/OurTeam/OurTeam';
 import CartSolution from './components/CartSolution/CartSolution';
 import OurService from './components/OurService/OurService';
-import { BrowserRouter as Router, Switch , Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      
-        <Router>
+
+      <Router>
         <Navigation />
-          <Switch>
-            <Route exact path='/' component={LandingPage} />  
-            <Route path='/careers' component={Careers} />  
-            <Route path='/resources' component={Resources} />
-            <Route path='/ourteam' component={OurTeam} />
-            <Route path='/cartsolution' component={CartSolution} />
-            <Route path='/ourservice' component={OurService} />
-          </Switch>
-          <Footer />
-        </Router>
-     
+        <Switch>
+          <Route exact path='/' component={LandingPage} />
+          <Route path='/careers' component={Careers} />
+          <Route path='/resources' component={Resources} />
+          <Route path='/ourteam' component={OurTeam} />
+          <Route path='/cartsolution' component={CartSolution} />
+          <Route path='/ourservice' component={OurService} />
+        </Switch>
+        <Footer />
+      </Router>
+
     </div>
   );
 }
