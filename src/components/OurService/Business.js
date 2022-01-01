@@ -22,14 +22,14 @@ function Business() {
                 <Container className="bg-light6 rounded-top-8 px-6 py-5" fluid="xxl">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Corporate Intranet Portal</h2>
+                            <h2>Employment Process</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Virtual Office</h4>
-                            <p>Work from anywhere in the world by making your office mobile withour Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
+                            <h4 className='mb-4'>Streamline your Hiring & Firing!</h4>
+                            <p>We help you create digital employment processes that is custom designed to your organizational needs!  </p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img1} alt="" className='img-fluid' />
@@ -42,8 +42,8 @@ function Business() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage employees with Intranet</h4>
-                            <p>Get things done the right way with individuals & teams on real-time basis through our collaboration tools!</p>
+                            <h4 className='mb-4'>Manage Payroll effectively</h4>
+                            <p>Our systems help you manage the salaries and payrolls across all the divisions and branches of your employees and your client’s resources in case of staffing services!</p>
                         </Col>
 
                     </Row>
@@ -58,14 +58,14 @@ function Business() {
                 <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Corporate Public Websites</h2>
+                            <h2>Supply Chain Process</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Online Presence</h4>
-                            <p>Work from anywhere in the world by making your office mobile with our Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
+                            <h4 className='mb-4'>Automate orders to prevent crises </h4>
+                            <p>Our systems enable automated orders via email & SMS when the inventory reaches a certain threshold thereby alleviating the crises before it arises!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img3} alt="" className='img-fluid' />
@@ -78,8 +78,8 @@ function Business() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage employees with Intranet</h4>
-                            <p>Get things done the right way with individuals & teams on real-time basis through our collaboration tools!</p>
+                            <h4 className='mb-4'>Vendor Management made easy</h4>
+                            <p>Assign the vendors for various deliverables and manage them on the predefined performance metric, helping you eliminate poor vendors and manage resourceful vendors!</p>
                         </Col>
 
                     </Row>
@@ -94,14 +94,14 @@ function Business() {
                 <Container fluid="xxl" className="bg-light7 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Document Management</h2>
+                            <h2>Business Workflow</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Online Presence</h4>
-                            <p>Become accessible to all your potential market by going online and establishing your company’s corporate website!</p>
+                            <h4 className='mb-4'>Custom Create your workflows</h4>
+                            <p>We enable you to create a visual workflow from a series of predefined templates to fit your processes properly! </p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img5} alt="" className='img-fluid' />
@@ -114,8 +114,8 @@ function Business() {
                             <img src={Img6} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Position your Brand like never before</h4>
-                            <p>What better way to blow your trumpet than your corporate website. Create your unique website with us, in cohesion with your brand philosophy!</p>
+                            <h4 className='mb-4'>Manage workflows in Real-Time</h4>
+                            <p>Track the process performance based off of the predefined KPIs and manage the resources assigned accordingly!</p>
                         </Col>
 
                     </Row>
@@ -131,14 +131,14 @@ function Business() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Digital Learning Platform</h2>
+                            <h2>Customer Support Tickets</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create collaborative learning platforms</h4>
-                            <p>Now you can bring subject matter experts and the students from anywhere in the world into classes in engaging & effective ways!</p>
+                            <h4 className='mb-4'>Role based processing</h4>
+                            <p>Tickets traverse through the proper channel within our system based off of your organizational needs and decisions can be made by the assigned roles!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img7} alt="" className='img-fluid' />
@@ -151,8 +151,8 @@ function Business() {
                             <img src={Img8} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Scalable, Organized and Transparent</h4>
-                            <p>Streamline and track your organization’s training & development process with our scalable solutions which is custom created for your learning needs!</p>
+                            <h4 className='mb-4'>Organize issue handling</h4>
+                            <p>Segment and prioritize the issues and then put it in a proper workflow to ensure timely solution!</p>
                         </Col>
 
                     </Row>
@@ -169,14 +169,14 @@ function Business() {
                 <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Digital Process Management</h2>
+                            <h2>Business Automation</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Establish Visual Workflows</h4>
-                            <p>We help you create and establish visual workflows of complex processes to enhance process efficiency, effectiveness & productivity</p>
+                            <h4 className='mb-4'>Create Organizational Cohesion!</h4>
+                            <p>Interdepartmental review systems allows companies to get together and work as a unit by working on the inhibiting factors and improving on the favourable! </p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img9} alt="" className='img-fluid' />
@@ -188,8 +188,8 @@ function Business() {
                             <img src={Img10} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Track the performance with KPIs</h4>
-                            <p>Gauge the performance of key elements in the processes with specialized indicators generating reports in real-time</p>
+                            <h4 className='mb-4'>Complete feedback circle!</h4>
+                            <p>Get an outsider take on processes to understand dependencies and improve overall effectiveness within the organization!</p>
                         </Col>
 
                     </Row>
@@ -205,14 +205,14 @@ function Business() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Project Management Portal</h2>
+                            <h2>Document Workflow</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Complex projects into workable Modules </h4>
-                            <p>Now plan, schedule and manage development stages easily with our built-in program that ups  your project management game!</p>
+                            <h4 className='mb-4'>Find documents in simple search</h4>
+                            <p>Discover documents easily with simple search options like filters and structured indexing!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img11} alt="" className='img-fluid' />
@@ -224,8 +224,44 @@ function Business() {
                             <img src={Img12} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never miss your deadlines again</h4>
-                            <p>With our real-time progress tracking, resource management & performance indicators, you can always be ahead of delivery date!</p>
+                            <h4 className='mb-4'>Organize and manage document access </h4>
+                            <p>Now your confidential documents will be safe & secure as you can give limited access to users based on their positions in organizational hierarchies!</p>
+                        </Col>
+
+                    </Row>
+
+                    <Row>
+                        <Col md={12} className="pt-6">
+                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section>
+                <Container fluid="xxl" className="bg-light5 px-6 py-5">
+                    <Row>
+                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
+                            <h2>SLA Tracking</h2>
+
+                        </Col>
+                    </Row>
+                    <Row className="align-items-center">
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Customize your SLA parameters</h4>
+                            <p>Create case based legal compliance & performance criteria for your SLA from our predefined templates!</p>
+                        </Col>
+                        <Col xs={12} md={6}>
+                            <img src={Img11} alt="" className='img-fluid' />
+                        </Col>
+
+                    </Row>
+                    <Row className="align-items-center mt-7">
+                        <Col xs={12} md={6}>
+                            <img src={Img12} alt="" className='img-fluid' />
+                        </Col>
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Manage critical failures</h4>
+                            <p>Prescribe predefined remedial measures for any deviation or failure from the set parameters in SLA and system shall implement it in such cases!</p>
                         </Col>
 
                     </Row>

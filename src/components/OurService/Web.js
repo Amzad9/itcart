@@ -29,7 +29,7 @@ function Web() {
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
                             <h4 className='mb-4'>Create your Virtual Office</h4>
-                            <p>Work from anywhere in the world by making your office mobile withour Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
+                            <p>Work from anywhere in the world by making your office mobile with our Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img1} alt="" className='img-fluid' />
@@ -65,7 +65,7 @@ function Web() {
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
                             <h4 className='mb-4'>Create your Online Presence</h4>
-                            <p>Work from anywhere in the world by making your office mobile with our Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
+                            <p>Become accessible to all your potential market by going online and establishing your company’s corporate website!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img3} alt="" className='img-fluid' />
@@ -78,8 +78,8 @@ function Web() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage employees with Intranet</h4>
-                            <p>Get things done the right way with individuals & teams on real-time basis through our collaboration tools!</p>
+                            <h4 className='mb-4'>Position your Brand like never before</h4>
+                            <p>What better way to blow your trumpet than your corporate website. Create your unique website with us, in cohesion with your brand philosophy!</p>
                         </Col>
 
                     </Row>

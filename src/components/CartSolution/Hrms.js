@@ -278,6 +278,86 @@ function Hrms() {
                     </Row>
                 </Container>
             </section>
+            <section>
+                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
+                    <Row>
+                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
+                            <h2>E-Learning & Continuous</h2>
+
+                        </Col>
+                    </Row>
+                    <Row className="align-items-center">
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Schedule company wide programs </h4>
+                            <p>Customize, design and schedule the training programs for your teams across various divisions tailored for their needs!</p>
+                        </Col>
+                        <Col xs={12} md={6}>
+                            <div>
+                                <img src={Adit1} className='img-fluid' alt="" />
+                            </div>
+                        </Col>
+
+                    </Row>
+                    <Row className="align-items-center mt-7">
+                        <Col xs={12} md={6}>
+                            <div>
+                                <img src={Adit2} className='img-fluid' alt="" />
+                            </div>
+                        </Col>
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Live Training support</h4>
+                            <p>You can now train your teams in real-time with the trainers from around the world with proper engagement & assessment tools!</p>
+                        </Col>
+
+                    </Row>
+
+                    <Row>
+                        <Col md={12} className="pt-6">
+                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section>
+                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
+                    <Row>
+                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
+                            <h2>Performance & Appraisals</h2>
+
+                        </Col>
+                    </Row>
+                    <Row className="align-items-center">
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>KPI based appraisals </h4>
+                            <p>Now you can judge the performance of your team objectively with predefined KPIs, thereby ensuring merit based appraisals!</p>
+                        </Col>
+                        <Col xs={12} md={6}>
+                            <div>
+                                <img src={Adit1} className='img-fluid' alt="" />
+                            </div>
+                        </Col>
+
+                    </Row>
+                    <Row className="align-items-center mt-7">
+                        <Col xs={12} md={6}>
+                            <div>
+                                <img src={Adit2} className='img-fluid' alt="" />
+                            </div>
+                        </Col>
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Clear & Transparent Tracking</h4>
+                            <p>Employees and management can track real-time analytics of the key performance indicators and calibrate the efforts accordingly!</p>
+                        </Col>
+
+                    </Row>
+
+                    <Row>
+                        <Col md={12} className="pt-6">
+                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
         </>
     )
 }

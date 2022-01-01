@@ -22,14 +22,14 @@ function Technology() {
                 <Container className="bg-light6 rounded-top-8 px-6 py-5" fluid="xxl">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Corporate Intranet Portal</h2>
+                            <h2>Digital Transformation (DX)</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Virtual Office</h4>
-                            <p>Work from anywhere in the world by making your office mobile withour Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
+                            <h4 className='mb-4'>Let Technology take over your Business</h4>
+                            <p>We deploy latest technological solutions to your organizations processes, data and the resources to align them optimally into a systematic digital business!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img1} alt="" className='img-fluid' />
@@ -42,8 +42,8 @@ function Technology() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage employees with Intranet</h4>
-                            <p>Get things done the right way with individuals & teams on real-time basis through our collaboration tools!</p>
+                            <h4 className='mb-4'>Let Data dictate your key decisions</h4>
+                            <p>Your Business will start to grow tremendously once you implement data driven changes in the business, allowing performance indicate the direction!</p>
                         </Col>
 
                     </Row>
@@ -58,14 +58,14 @@ function Technology() {
                 <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Corporate Public Websites</h2>
+                            <h2>E-Commerce Platform</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Online Presence</h4>
-                            <p>Work from anywhere in the world by making your office mobile with our Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
+                            <h4 className='mb-4'>From traditional trade to E-commerce </h4>
+                            <p>We work with traditional trade business and employ necessary functional & technological changes to take them on their e-commerce journey, thereby opening global horizons for them!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img3} alt="" className='img-fluid' />
@@ -78,8 +78,8 @@ function Technology() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage employees with Intranet</h4>
-                            <p>Get things done the right way with individuals & teams on real-time basis through our collaboration tools!</p>
+                            <h4 className='mb-4'>Process Management & Support</h4>
+                            <p>We don’t just create the system and leave you to it, rather we become your technology consultant and every pivotal moment in your digital journey, by managing and aligning business processes to your growing market demand!</p>
                         </Col>
 
                     </Row>
@@ -94,14 +94,14 @@ function Technology() {
                 <Container fluid="xxl" className="bg-light7 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Document Management</h2>
+                            <h2>SharePoint Online</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Online Presence</h4>
-                            <p>Become accessible to all your potential market by going online and establishing your company’s corporate website!</p>
+                            <h4 className='mb-4'>Microsoft’s secure Intranet</h4>
+                            <p>We take pride in our years of expertise with working MS SharePoint for creating some of the secure intranet systems in the industry!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img5} alt="" className='img-fluid' />
@@ -114,8 +114,8 @@ function Technology() {
                             <img src={Img6} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Position your Brand like never before</h4>
-                            <p>What better way to blow your trumpet than your corporate website. Create your unique website with us, in cohesion with your brand philosophy!</p>
+                            <h4 className='mb-4'>Scalable Intranet Solutions</h4>
+                            <p>WThe Intranet system is tailored to suit your company’s structure, however we can always scale it up and revamp it to match your anticipated changes & growth!</p>
                         </Col>
 
                     </Row>
@@ -131,14 +131,14 @@ function Technology() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Digital Learning Platform</h2>
+                            <h2>Office 365 Solution</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create collaborative learning platforms</h4>
-                            <p>Now you can bring subject matter experts and the students from anywhere in the world into classes in engaging & effective ways!</p>
+                            <h4 className='mb-4'>Ideal Document management services</h4>
+                            <p>We deliver, deploy and give expert consultation on the best document management system in the world, ie. MS Office solutions for your company’s document management needs</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img7} alt="" className='img-fluid' />
@@ -151,8 +151,8 @@ function Technology() {
                             <img src={Img8} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Scalable, Organized and Transparent</h4>
-                            <p>Streamline and track your organization’s training & development process with our scalable solutions which is custom created for your learning needs!</p>
+                            <h4 className='mb-4'>Data Migration & System Integration Support</h4>
+                            <p>We provide cloud data migration and implement system support with the technology systems in function esp. Microsoft systems!</p>
                         </Col>
 
                     </Row>
@@ -169,14 +169,14 @@ function Technology() {
                 <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Digital Process Management</h2>
+                            <h2>SharePoint On Premise</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Establish Visual Workflows</h4>
-                            <p>We help you create and establish visual workflows of complex processes to enhance process efficiency, effectiveness & productivity</p>
+                            <h4 className='mb-4'>Customized SharePoint Intranet</h4>
+                            <p>We can customize your SharePoint Intranet to a greater degree of organizational fitment and provide support and maintenance services! </p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img9} alt="" className='img-fluid' />
@@ -188,8 +188,8 @@ function Technology() {
                             <img src={Img10} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Track the performance with KPIs</h4>
-                            <p>Gauge the performance of key elements in the processes with specialized indicators generating reports in real-time</p>
+                            <h4 className='mb-4'>Deploy on your private server</h4>
+                            <p>Depending upon your needs we can deploy the SharePoint Intranet to your on premise server giving you direct and singular control over your precious data!</p>
                         </Col>
 
                     </Row>
@@ -205,14 +205,14 @@ function Technology() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Project Management Portal</h2>
+                            <h2>Azure Cloud Solutions</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Complex projects into workable Modules </h4>
-                            <p>Now plan, schedule and manage development stages easily with our built-in program that ups  your project management game!</p>
+                            <h4 className='mb-4'>Business assessment & Server Consulting</h4>
+                            <p>Let our experts assess your business requirements & give you a proper fitment report on the server requisites, deployment and maintenance!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img11} alt="" className='img-fluid' />
@@ -224,8 +224,44 @@ function Technology() {
                             <img src={Img12} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never miss your deadlines again</h4>
-                            <p>With our real-time progress tracking, resource management & performance indicators, you can always be ahead of delivery date!</p>
+                            <h4 className='mb-4'>Platform Development Consulting</h4>
+                            <p>We can provide platform based native development services if the situation so demands thereby enabling smooth functioning of your system during the development time!</p>
+                        </Col>
+
+                    </Row>
+
+                    <Row>
+                        <Col md={12} className="pt-6">
+                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section>
+                <Container fluid="xxl" className="bg-light5 px-6 py-5">
+                    <Row>
+                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
+                            <h2>Microsoft Full Stack</h2>
+
+                        </Col>
+                    </Row>
+                    <Row className="align-items-center">
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Microsoft full-stack Consulting</h4>
+                            <p>We take great pride in having in-house technology experts offering full spectrum of Microsoft services & support!</p>
+                        </Col>
+                        <Col xs={12} md={6}>
+                            <img src={Img11} alt="" className='img-fluid' />
+                        </Col>
+
+                    </Row>
+                    <Row className="align-items-center mt-7">
+                        <Col xs={12} md={6}>
+                            <img src={Img12} alt="" className='img-fluid' />
+                        </Col>
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Integrate Systems & data migration</h4>
+                            <p>We help companies manage their data accurately preventing duplication and erroneous entries across all the platforms with robust system integration!</p>
                         </Col>
 
                     </Row>

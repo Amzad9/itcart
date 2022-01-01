@@ -22,14 +22,14 @@ function ServiceApp() {
                 <Container className="bg-light6 rounded-top-8 px-6 py-5" fluid="xxl">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Corporate Intranet Portal</h2>
+                            <h2>Customer Service Apps</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Virtual Office</h4>
-                            <p>Work from anywhere in the world by making your office mobile withour Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
+                            <h4 className='mb-4'>Take your service Business to the cloud</h4>
+                            <p>No need to rent an office when you can offer your services direct to customer at designated spaces!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img1} alt="" className='img-fluid' />
@@ -42,8 +42,8 @@ function ServiceApp() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage employees with Intranet</h4>
-                            <p>Get things done the right way with individuals & teams on real-time basis through our collaboration tools!</p>
+                            <h4 className='mb-4'>Promote and scale your services</h4>
+                            <p>We create highly scalable app solutions that are robust in nature and provide proper growth consultation!</p>
                         </Col>
 
                     </Row>
@@ -58,14 +58,14 @@ function ServiceApp() {
                 <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Corporate Public Websites</h2>
+                            <h2>Business Process Apps</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Online Presence</h4>
-                            <p>Work from anywhere in the world by making your office mobile with our Intranet systems, without compromising discipline, productivity, vigilance & much needed security!</p>
+                            <h4 className='mb-4'>Manage workflows on your fingertips</h4>
+                            <p>Now create, start, assign, & remove a workflows directly from your app and put things into immediate effect!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img3} alt="" className='img-fluid' />
@@ -78,8 +78,8 @@ function ServiceApp() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage employees with Intranet</h4>
-                            <p>Get things done the right way with individuals & teams on real-time basis through our collaboration tools!</p>
+                            <h4 className='mb-4'>Communicate and Collaborate</h4>
+                            <p>Now engage your teams on a certain process in real-time with the mobile app custom created to suit your business needs!</p>
                         </Col>
 
                     </Row>
@@ -94,14 +94,14 @@ function ServiceApp() {
                 <Container fluid="xxl" className="bg-light7 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Document Management</h2>
+                            <h2>Utility & Tools Apps</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create your Online Presence</h4>
-                            <p>Become accessible to all your potential market by going online and establishing your company’s corporate website!</p>
+                            <h4 className='mb-4'>Custom create smart features</h4>
+                            <p>Our experts can help turn your business idea of any utility feature in a smart phone into reality, thereby building a brand for you!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img5} alt="" className='img-fluid' />
@@ -114,8 +114,8 @@ function ServiceApp() {
                             <img src={Img6} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Position your Brand like never before</h4>
-                            <p>What better way to blow your trumpet than your corporate website. Create your unique website with us, in cohesion with your brand philosophy!</p>
+                            <h4 className='mb-4'>Effortless Management</h4>
+                            <p>You can now manage your app user onboarding, payments, engagements & reporting seamlessly!</p>
                         </Col>
 
                     </Row>
@@ -131,14 +131,14 @@ function ServiceApp() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Digital Learning Platform</h2>
+                            <h2>E-Commerce Apps</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create collaborative learning platforms</h4>
-                            <p>Now you can bring subject matter experts and the students from anywhere in the world into classes in engaging & effective ways!</p>
+                            <h4 className='mb-4'>Take your Products out to the World</h4>
+                            <p>Now whole world can be your market and you can make it a reality with e-commerce apps, custom created to your business!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img7} alt="" className='img-fluid' />
@@ -151,8 +151,8 @@ function ServiceApp() {
                             <img src={Img8} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Scalable, Organized and Transparent</h4>
-                            <p>Streamline and track your organization’s training & development process with our scalable solutions which is custom created for your learning needs!</p>
+                            <h4 className='mb-4'>Scale up with Sales automation</h4>
+                            <p>The robust development enables thousands of customers to purchase your products simultaneously in real-time saving some dreaded effort on your sales/billing team!</p>
                         </Col>
 
                     </Row>
@@ -169,14 +169,14 @@ function ServiceApp() {
                 <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Digital Process Management</h2>
+                            <h2>Digital Learning Apps</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Establish Visual Workflows</h4>
-                            <p>We help you create and establish visual workflows of complex processes to enhance process efficiency, effectiveness & productivity</p>
+                            <h4 className='mb-4'>Create collaborative learning platforms</h4>
+                            <p>Now you can bring subject matter experts and the students from anywhere in the world into classes in engaging & effective ways!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img9} alt="" className='img-fluid' />
@@ -188,8 +188,8 @@ function ServiceApp() {
                             <img src={Img10} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Track the performance with KPIs</h4>
-                            <p>Gauge the performance of key elements in the processes with specialized indicators generating reports in real-time</p>
+                            <h4 className='mb-4'>Scalable, Organized and Transparent</h4>
+                            <p>Streamline and track your organization’s training & development process with our scalable solutions which is custom created for your learning needs!</p>
                         </Col>
 
                     </Row>
@@ -205,14 +205,14 @@ function ServiceApp() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Project Management Portal</h2>
+                            <h2>E-Services Apps</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Complex projects into workable Modules </h4>
-                            <p>Now plan, schedule and manage development stages easily with our built-in program that ups  your project management game!</p>
+                            <h4 className='mb-4'>Create your custom e-services app </h4>
+                            <p>We help you develop various e-services app ranging from commercial e-services app for your clients, corporate e-services app for your employees and even consumer e-services app for end-users!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img11} alt="" className='img-fluid' />
@@ -224,8 +224,44 @@ function ServiceApp() {
                             <img src={Img12} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never miss your deadlines again</h4>
-                            <p>With our real-time progress tracking, resource management & performance indicators, you can always be ahead of delivery date!</p>
+                            <h4 className='mb-4'>Vendor management</h4>
+                            <p>For commercial e-services we provide a separate module for clients/vendors for exchanging services and manage progress in real-time!</p>
+                        </Col>
+
+                    </Row>
+
+                    <Row>
+                        <Col md={12} className="pt-6">
+                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section>
+                <Container fluid="xxl" className="bg-light5 px-6 py-5">
+                    <Row>
+                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
+                            <h2>Digital Healthcare Apps</h2>
+
+                        </Col>
+                    </Row>
+                    <Row className="align-items-center">
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Digitally Transform your healthcare system!</h4>
+                            <p>Monitor & Manage the doctors, support staff, patients’ data, operations and accounts on your fingertips with our digital healthcare app!</p>
+                        </Col>
+                        <Col xs={12} md={6}>
+                            <img src={Img11} alt="" className='img-fluid' />
+                        </Col>
+
+                    </Row>
+                    <Row className="align-items-center mt-7">
+                        <Col xs={12} md={6}>
+                            <img src={Img12} alt="" className='img-fluid' />
+                        </Col>
+                        <Col xs={12} md={6} className="ps-5">
+                            <h4 className='mb-4'>Scheduling doctors’ appointments</h4>
+                            <p>Now enable your patients with the tool to book their respective visits to the requested doctors directly from their phones!</p>
                         </Col>
 
                     </Row>

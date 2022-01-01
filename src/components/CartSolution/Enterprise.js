@@ -23,14 +23,14 @@ function Enterprise() {
                 <Container className="bg-light2 rounded-top-8 px-6 py-5" fluid="xxl">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Employee Management</h2>
+                            <h2>360* Digital Transformation</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never forget important events</h4>
-                            <p>Be at the forefront of important events of your employees with our HRMS, giving your notifications & reminders of such events!</p>
+                            <h4 className='mb-4'>Let Technology take over your Business</h4>
+                            <p>We deploy latest technological solutions to your organizations processes, data and the resources to align them optimally into a systematic digital business!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img1} alt="" className='img-fluid' />
@@ -43,8 +43,8 @@ function Enterprise() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>All Employment data in one place</h4>
-                            <p>The employment information can be difficult to organize in one place, however with our HRMS it becomes automatically gets organized in a proper format!</p>
+                            <h4 className='mb-4'>Let Data dictate your key decisions</h4>
+                            <p>Your Business will start to grow tremendously once you implement data driven changes in the business, allowing performance indicate the direction!</p>
                         </Col>
 
                     </Row>
@@ -59,14 +59,14 @@ function Enterprise() {
                 <Container fluid="xxl" className="bg-light6 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Recruitment Process</h2>
+                            <h2>Real-Estate Solutions</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Source candidates seamlessly</h4>
-                            <p>Create Job descriptions with our master templates and post them across social media and Job portals. Get the sourced candidates directly from your mail into the system with our HRMS</p>
+                            <h4 className='mb-4'>Create a digital Realty solution</h4>
+                            <p>We help you create an online real-estate agency which helps you create requirements and post them on social media and realty advertisement portals! </p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img3} alt="" className='img-fluid' />
@@ -79,8 +79,8 @@ function Enterprise() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage in Real Time</h4>
-                            <p>Organize, schedule and manage interviews in real-time with reminders and notifications to the candidates and the recruiters/hiring managers!</p>
+                            <h4 className='mb-4'>Schedule visits and manage leads </h4>
+                            <p>Manage your leads and create, schedule and notify them of their visits and engage with them with our pipeline management features!</p>
                         </Col>
 
                     </Row>
@@ -95,14 +95,14 @@ function Enterprise() {
                 <Container fluid="xxl" className="bg-light7 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Onboarding Process</h2>
+                            <h2>Performance Management Automation</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Streamline your Hiring & Firing!</h4>
-                            <p>We help you create digital employment processes that is custom designed to your organizational needs!  </p>
+                            <h4 className='mb-4'>KPI based appraisals </h4>
+                            <p>Now you can judge the performance of your team objectively with predefined KPIs, thereby ensuring merit based appraisals!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img5} alt="" className='img-fluid' />
@@ -115,8 +115,8 @@ function Enterprise() {
                             <img src={Img6} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Easy Documentation</h4>
-                            <p>Create and customize your company’s offer letters, joining letters and experience cum release letters  from our library of templates!</p>
+                            <h4 className='mb-4'>Clear & Transparent Tracking</h4>
+                            <p>Employees and management can track real-time analytics of the key performance indicators and calibrate the efforts accordingly!</p>
                         </Col>
 
                     </Row>
@@ -132,14 +132,14 @@ function Enterprise() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Attendance and Time Logs</h2>
+                            <h2>Automation Process Automation</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Know their whereabouts in Real-time</h4>
-                            <p>Now track the whereabouts of your workforce whether they’re in office, on break or gone out for a client meet!</p>
+                            <h4 className='mb-4'>Create custom process workflows </h4>
+                            <p>You can customize and create unique visual workflows based on your specific production processes with our enterprise solutions!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img7} alt="" className='img-fluid' />
@@ -152,8 +152,8 @@ function Enterprise() {
                             <img src={Img8} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create & assess project involvements</h4>
-                            <p>Customize project based resource deployment and track their log-ins & log-offs from the projects! </p>
+                            <h4 className='mb-4'>Identify Failures instantly</h4>
+                            <p>Instantly manage and implement corrective measures if and when failures are identified with our system!</p>
                         </Col>
 
                     </Row>
@@ -170,14 +170,14 @@ function Enterprise() {
                 <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Employee Leaves</h2>
+                            <h2>Healthcare Management</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Online leave application </h4>
-                            <p>Employees can create a leave request and the manager has the option to approve or disapprove the same!</p>
+                            <h4 className='mb-4'>Transform your healthcare system!</h4>
+                            <p>Monitor & Manage the doctors, support staff, patients’ data, operations and accounts on your fingertips with our digital healthcare app!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img9} alt="" className='img-fluid' />
@@ -189,8 +189,8 @@ function Enterprise() {
                             <img src={Img10} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Track & manage overall leaves</h4>
-                            <p>The HR and the employees can track their leave quota across several major headings like casual  & sick leaves!</p>
+                            <h4 className='mb-4'>Manage the pharmacy, digitally</h4>
+                            <p>Create and organize the inventory of medicine on real-time and manage renewal of stock based on inventory consumption!</p>
                         </Col>
 
                     </Row>
@@ -206,14 +206,14 @@ function Enterprise() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Travel & Expense Claims</h2>
+                            <h2>Procurement Management</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Accurate Travel Reimbursement</h4>
-                            <p>Our HRMS allows accurate assessment of the travel expenses and provides immediate reimbursement options!</p>
+                            <h4 className='mb-4'>Automate orders to prevent crises </h4>
+                            <p>Our systems enable automated orders via email & SMS when the inventory reaches a certain threshold thereby alleviating the crises before it arises!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img11} alt="" className='img-fluid' />
@@ -225,8 +225,8 @@ function Enterprise() {
                             <img src={Img12} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Business Trip Management</h4>
-                            <p>Whether it is individual travel or group trips, made for company purposes our HRMS provides measures to properly account for transportation and stay expenses!</p>
+                            <h4 className='mb-4'>Supplier Management made easy</h4>
+                            <p>Assign the suppliers for various deliverables and manage them on the predefined performance metric, helping you eliminate poor suppliers and manage resourceful suppliers!</p>
                         </Col>
 
                     </Row>
@@ -242,14 +242,14 @@ function Enterprise() {
                 <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Salary & Payroll Processing</h2>
+                            <h2>Freight Billing System</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Manage salary, deductions & incentives</h4>
-                            <p>Get a proper breakdown of employee salaries in a designated format accounting for the tax & other deductions and perks/incentives with our HRMS!</p>
+                            <h4 className='mb-4'>Transform your freight business</h4>
+                            <p>Manage your freight contracts, penalties and finances with our freight billing management system!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <div>
@@ -265,8 +265,8 @@ function Enterprise() {
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Generate reports & pay slips</h4>
-                            <p>Create salary slips from our predefined customizable templates and get reports and analytics on CTC of employees! </p>
+                            <h4 className='mb-4'>Generate real-time reports & analytics</h4>
+                            <p>Understand your business performance in real-time with immediate reporting and business analytics and take decisions accordingly!</p>
                         </Col>
 
                     </Row>

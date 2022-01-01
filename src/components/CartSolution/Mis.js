@@ -23,14 +23,14 @@ function Mis() {
                 <Container className="bg-light2 rounded-top-8 px-6 py-5" fluid="xxl">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Employee Management</h2>
+                            <h2>Digital Transformation Management</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never forget important events</h4>
-                            <p>Be at the forefront of important events of your employees with our HRMS, giving your notifications & reminders of such events!</p>
+                            <h4 className='mb-4'>Let Technology take over your Business</h4>
+                            <p>We deploy latest technological solutions to your organizations processes, data and the resources to align them optimally into a systematic digital business!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img1} alt="" className='img-fluid' />
@@ -43,8 +43,8 @@ function Mis() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>All Employment data in one place</h4>
-                            <p>The employment information can be difficult to organize in one place, however with our HRMS it becomes automatically gets organized in a proper format!</p>
+                            <h4 className='mb-4'>Let Data dictate your key decisions</h4>
+                            <p>Your Business will start to grow tremendously once you implement data driven changes in the business, allowing performance indicate the direction!</p>
                         </Col>
 
                     </Row>
@@ -59,14 +59,14 @@ function Mis() {
                 <Container fluid="xxl" className="bg-light6 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Recruitment Process</h2>
+                            <h2>Document Management</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Source candidates seamlessly</h4>
-                            <p>Create Job descriptions with our master templates and post them across social media and Job portals. Get the sourced candidates directly from your mail into the system with our HRMS</p>
+                            <h4 className='mb-4'>Never misplace important files again!</h4>
+                            <p>You can now search any documents within an organization within seconds with the help of AI-based search algorithms in our MIS</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img3} alt="" className='img-fluid' />
@@ -79,8 +79,8 @@ function Mis() {
                         </Col>
 
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage in Real Time</h4>
-                            <p>Organize, schedule and manage interviews in real-time with reminders and notifications to the candidates and the recruiters/hiring managers!</p>
+                            <h4 className='mb-4'>Secure your documents with our MIS</h4>
+                            <p>Permit and block access from users based on their position within the organizational hierarchies in order to safeguard the confidential files!</p>
                         </Col>
 
                     </Row>
@@ -95,14 +95,14 @@ function Mis() {
                 <Container fluid="xxl" className="bg-light7 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Onboarding Process</h2>
+                            <h2>Data Management</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Streamline your Hiring & Firing!</h4>
-                            <p>We help you create digital employment processes that is custom designed to your organizational needs!  </p>
+                            <h4 className='mb-4'>We structure & organize your data</h4>
+                            <p>The MIS creates the database management system that collects, organizes, reports and analyzes data within a framework created specifically for your organization!  </p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img5} alt="" className='img-fluid' />
@@ -115,8 +115,8 @@ function Mis() {
                             <img src={Img6} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Easy Documentation</h4>
-                            <p>Create and customize your company’s offer letters, joining letters and experience cum release letters  from our library of templates!</p>
+                            <h4 className='mb-4'>MIS enables Data driven decisions</h4>
+                            <p>Your Business will start to grow tremendously once you implement data driven changes in the business, allowing performance indicate the direction</p>
                         </Col>
 
                     </Row>
@@ -132,14 +132,14 @@ function Mis() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Attendance and Time Logs</h2>
+                            <h2>IT Asset Management</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Know their whereabouts in Real-time</h4>
-                            <p>Now track the whereabouts of your workforce whether they’re in office, on break or gone out for a client meet!</p>
+                            <h4 className='mb-4'>Track and manage your IT assets </h4>
+                            <p>Know, at any given time, the status of IT assets allocated to the teams and individuals within each department! </p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img7} alt="" className='img-fluid' />
@@ -152,8 +152,8 @@ function Mis() {
                             <img src={Img8} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create & assess project involvements</h4>
-                            <p>Customize project based resource deployment and track their log-ins & log-offs from the projects! </p>
+                            <h4 className='mb-4'>Repair or Replace process </h4>
+                            <p>In case of a requirement a request form can be filled and processed and the responder can decide whether to repair the asset or replace it entirely!</p>
                         </Col>
 
                     </Row>
@@ -170,14 +170,14 @@ function Mis() {
                 <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Employee Leaves</h2>
+                            <h2>KYC Management</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Online leave application </h4>
-                            <p>Employees can create a leave request and the manager has the option to approve or disapprove the same!</p>
+                            <h4 className='mb-4'>Role based processing </h4>
+                            <p>Tickets traverse through the proper channel within our system based off of your organizational needs and decisions can be made by the assigned roles!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img9} alt="" className='img-fluid' />
@@ -189,8 +189,8 @@ function Mis() {
                             <img src={Img10} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Track & manage overall leaves</h4>
-                            <p>The HR and the employees can track their leave quota across several major headings like casual  & sick leaves!</p>
+                            <h4 className='mb-4'>Organize issue handling</h4>
+                            <p>Segment and prioritize the issues and then put it in a proper workflow to ensure timely solution!</p>
                         </Col>
 
                     </Row>
@@ -206,14 +206,14 @@ function Mis() {
                 <Container fluid="xxl" className="bg-light5 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Travel & Expense Claims</h2>
+                            <h2>Venders Management</h2>
 
                         </Col>
                     </Row>
                     <Row className="align-items-center">
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Accurate Travel Reimbursement</h4>
-                            <p>Our HRMS allows accurate assessment of the travel expenses and provides immediate reimbursement options!</p>
+                            <h4 className='mb-4'>Understand Business Requirement with MIS</h4>
+                            <p>Our systems enable business need analysis through series of predefined templates and helps you document and process it!</p>
                         </Col>
                         <Col xs={12} md={6}>
                             <img src={Img11} alt="" className='img-fluid' />
@@ -225,8 +225,8 @@ function Mis() {
                             <img src={Img12} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Business Trip Management</h4>
-                            <p>Whether it is individual travel or group trips, made for company purposes our HRMS provides measures to properly account for transportation and stay expenses!</p>
+                            <h4 className='mb-4'>Vendor Management made easy</h4>
+                            <p>Assign the vendors for various deliverables and manage them on the predefined performance metric, helping you eliminate poor vendors and manage resourceful vendors!</p>
                         </Col>
 
                     </Row>
