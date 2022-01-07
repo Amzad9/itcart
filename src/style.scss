@@ -13,6 +13,7 @@ $light6:#FAEDF5;
 $accent : #C4C4C4;
 $blue: #DD87B8;
 $text-sky:#1CAFE1;
+$yellow: #FFC300;
  
 
 // this is used to map colors. change accordingly.
@@ -30,6 +31,7 @@ $theme-colors: (
   blue:$blue,
   light6:$light6,
   sky-blue:$text-sky,
+  yellow: $yellow,
 );
 $spacer: 1rem;
 $spacers: (

@@ -130,7 +130,7 @@ function FormControl() {
                 </Col>
                 <Col sm={12} md={12} className="mb-3 mb-md-0">
                     <Form.Group className="mb-3 mt-0 mt-md-4" controlId="exampleForm.ControlTextarea1">
-                        <Form.Control className="pt-4" as="textarea" rows="11" placeholder="Tell us all about it...." />
+                        <Form.Control className="pt-4" as="textarea" rows="7" placeholder="Tell us all about it...." />
                     </Form.Group>
                 </Col>
                 <Col sm={12} md={8} className="pt-3 pt-md-3">

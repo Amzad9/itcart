@@ -35,6 +35,11 @@ padding: 8px !important;
    
   
         .dropdown-menu{
+            .services.dropdown-item{
+                &:hover{
+                    background-color: #FAEDF5 !important;
+                }
+            }
             .solu.dropdown-item{
                 &:hover{
                     background-color: #DDF3FB !important;

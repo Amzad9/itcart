@@ -6,6 +6,13 @@
             max-height: initial !important;
             border-radius: 10px 10px 0px 0px !important;
         }
+        &:hover{
+            .card-img-overlay{
+               display: flex;
+               transition: all 1s linear;
+               transform: scale(1);
+            }
+        }
     }
     .card-body{
           padding: 15px 10px 32px 25px;
@@ -25,4 +32,13 @@
  
     border-bottom: 26px solid #E86275 !important;
   
+}
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: calc(100% - 103px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+    transform: scale(0);
 }

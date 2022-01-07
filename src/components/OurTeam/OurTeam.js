@@ -32,6 +32,7 @@ function OurTeam() {
             <Col xs={12} md={4} >
               <SlideCard classBody="p-0" className="box-shadow-sm text-start">
                 <img src={Team1} alt="" className="img-fluid" />
+               
                 <div className='py-3 px-3'>
                   <h5 className="text-primary mb-1">Siraj uddin </h5>
                   <p className='mb-0'>Chief Executive Officer</p>

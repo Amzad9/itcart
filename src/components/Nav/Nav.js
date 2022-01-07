@@ -37,17 +37,17 @@ const Navigation = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <NavDropdown title="Services" id="Services-nav-dropdown">
-                <Link className="dropdown-item resources" to="ourservice"><img src={W} alt="" /> Web Development</Link>
-                <Link className="dropdown-item resources" to="ourservice"><img src={A} alt="" /> App Development</Link>
-                <Link className="dropdown-item resources" to="ourservice"><img src={B} alt="" /> Business Automation</Link>
-                <Link className="dropdown-item resources" to="ourservice"><img src={T} alt="" /> Technology Consulting</Link>
+                <Link className="dropdown-item services" to="ourservice"><img src={W} alt="" /> Web Development</Link>
+                <Link className="dropdown-item services" to="ourservice"><img src={A} alt="" /> App Development</Link>
+                <Link className="dropdown-item services" to="ourservice"><img src={B} alt="" /> Business Automation</Link>
+                <Link className="dropdown-item services" to="ourservice"><img src={T} alt="" /> Technology Consulting</Link>
               </NavDropdown>
 
               <NavDropdown title="Solutions" id="Products-nav-dropdown">
-                <Link className="dropdown-item resources" to="cartsolution"><img src={Hrms} alt="" /> HRMS Automation</Link>
-                <Link className="dropdown-item resources" to="cartsolution"><img src={Eservices} alt="" /> E-Services Automation</Link>
-                <Link className="dropdown-item resources" to="cartsolution"><img src={Mis} alt="" /> MIS Solution</Link>
-                <Link className="dropdown-item resources" to="cartsolution"><img src={Tnterp} alt="" /> Enterprise Solution</Link>
+                <Link className="dropdown-item solu" to="cartsolution"><img src={Hrms} alt="" /> HRMS Automation</Link>
+                <Link className="dropdown-item solu" to="cartsolution"><img src={Eservices} alt="" /> E-Services Automation</Link>
+                <Link className="dropdown-item solu" to="cartsolution"><img src={Mis} alt="" /> MIS Solution</Link>
+                <Link className="dropdown-item solu" to="cartsolution"><img src={Tnterp} alt="" /> Enterprise Solution</Link>
               </NavDropdown>
 
               <NavDropdown title="Resources" id="Resources-nav-dropdown">
@@ -60,8 +60,8 @@ const Navigation = () => {
               </Nav.Item>
 
               <NavDropdown title="Get in touch" id="get-in-touch">
-                <Link className="dropdown-item resources" to="ourteam"> <img src={Meet} alt="" /> Meet the Team</Link>
-                <Link className="dropdown-item resources" to="contact"> <img src={Contact} alt="" /> Contact Us</Link>
+                <Link className="dropdown-item solu" to="ourteam"> <img src={Meet} alt="" /> Meet the Team</Link>
+                <Link className="dropdown-item solu" to="contact"> <img src={Contact} alt="" /> Contact Us</Link>
               </NavDropdown>
 
             </Nav>

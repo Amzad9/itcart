@@ -18,7 +18,7 @@ const ContactUs = () => {
 
 
     return (
-        <section className="contactus py-5">
+        <section className="contactus pb-5">
 
             <Container fluid="xxl" className="bg-contact rounded-8 px-6 pt-5 pb-6">
                 <Row className="mb-5">
@@ -28,15 +28,15 @@ const ContactUs = () => {
                     </Col>
                 </Row>
 
-                <Row className="justify-content-center mt-5">
+                <Row className="justify-content-center">
                     <Col sm={12} md={12} lg={5} xxl={5}>
                         <Row className=" flex-column mx-0">
-                            <Card className="bg-secondary align-items-center text-center justify-content-center shadow-none py-5">
+                            <Card className="bg-secondary align-items-center text-center justify-content-center shadow-none pt-5">
                                 <img src={Contat} alt="" className="m-0 img-fluid" />
 
                                 {/* <p className="mt-4 fs-6 fw-semibold text-dark">Interested in IT Cart’s software? Just pick up the phone to chat with a member of our sales team.</p>
                                 <h4>+91 11 7127 9211</h4> */}
-                                <Row className="w-100 text-start justify-content-center mb-5 mt-5 pt-4">
+                                <Row className="w-100 text-start justify-content-center mb-5 mt-4 pt-4">
                                     <Col xs={2}>
                                         <img src={Phone} alt="" className="m-0" />
                                     </Col>
@@ -54,7 +54,7 @@ const ContactUs = () => {
                                         <p className="text-white">info@demolimk.org</p>
                                     </Col>
                                 </Row>
-                                <Row className="w-100 text-start justify-content-center  mb-9 pb-5">
+                                <Row className="w-100 text-start justify-content-center  mb-3 pb-5">
                                     <Col xs={2}>
                                         <img src={Map} alt="" className="m-0" />
                                     </Col>

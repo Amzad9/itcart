@@ -285,19 +285,9 @@ const Service = () => {
                                             ))}
                                         </ul>
                                         <Row className="btn-wrapper justify-content-between mx-0 mt-4">
-                                            <Col sm={6} className="text-start">
-                                                <Button className="text-whites fs-6 btn2">Explore</Button>
-
-                                            </Col>
-                                            <Col sm={6} className="text-end">
-
-                                                <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
-
-                                            </Col>
-                                            <Col sm={12} className="mt-3">
-
-                                                <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
-                                            </Col>
+                                        <Col sm={12} className="mt-3">
+                                            <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
+                                        </Col>
                                         </Row>
                                     </SlideCard>
                                 </Col>
@@ -319,18 +309,8 @@ const Service = () => {
                                                 ))}
                                             </ul>
                                             <Row className="btn-wrapper justify-content-between mx-0 mt-4">
-                                                <Col sm={6} className="text-start">
-                                                    <Button className="text-whites fs-6 btn2">Explore</Button>
-
-                                                </Col>
-                                                <Col sm={6} className="text-end">
-
-                                                    <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
-
-                                                </Col>
-                                                <Col sm={12} className="mt-3">
-
-                                                    <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
+                                                    <Col sm={12} className="mt-3">
+                                                    <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
                                                 </Col>
                                             </Row>
                                         </SlideCard>
@@ -352,19 +332,9 @@ const Service = () => {
                                                     ))}
                                                 </ul>
                                                 <Row className="btn-wrapper justify-content-between mx-0 mt-4">
-                                                    <Col sm={6} className="text-start">
-                                                        <Button className="text-whites fs-6 btn2">Explore</Button>
-
-                                                    </Col>
-                                                    <Col sm={6} className="text-end">
-
-                                                        <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
-
-                                                    </Col>
-                                                    <Col sm={12} className="mt-3">
-
-                                                        <Button className="text-white w-100 bg-secondary btn-b">Get Brochure</Button>
-                                                    </Col>
+                                                <Col sm={12} className="mt-3">
+                                            <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
+                                        </Col>
                                                 </Row>
                                             </SlideCard>
                                         </Col>
