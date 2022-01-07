@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/itcart/static/css/main.776b4d8a.chunk.css",
-    "main.js": "/itcart/static/js/main.e3846615.chunk.js",
-    "main.js.map": "/itcart/static/js/main.e3846615.chunk.js.map",
-    "runtime-main.js": "/itcart/static/js/runtime-main.727abca8.js",
-    "runtime-main.js.map": "/itcart/static/js/runtime-main.727abca8.js.map",
-    "static/js/2.5a99a43b.chunk.js": "/itcart/static/js/2.5a99a43b.chunk.js",
-    "static/js/2.5a99a43b.chunk.js.map": "/itcart/static/js/2.5a99a43b.chunk.js.map",
-    "static/js/3.cd617236.chunk.js": "/itcart/static/js/3.cd617236.chunk.js",
-    "static/js/3.cd617236.chunk.js.map": "/itcart/static/js/3.cd617236.chunk.js.map",
+    "main.css": "/itcart/static/css/main.db667af6.chunk.css",
+    "main.js": "/itcart/static/js/main.c5c276e8.chunk.js",
+    "main.js.map": "/itcart/static/js/main.c5c276e8.chunk.js.map",
+    "runtime-main.js": "/itcart/static/js/runtime-main.736d8e37.js",
+    "runtime-main.js.map": "/itcart/static/js/runtime-main.736d8e37.js.map",
+    "static/js/2.09834442.chunk.js": "/itcart/static/js/2.09834442.chunk.js",
+    "static/js/2.09834442.chunk.js.map": "/itcart/static/js/2.09834442.chunk.js.map",
+    "static/js/3.fbff90a7.chunk.js": "/itcart/static/js/3.fbff90a7.chunk.js",
+    "static/js/3.fbff90a7.chunk.js.map": "/itcart/static/js/3.fbff90a7.chunk.js.map",
     "index.html": "/itcart/index.html",
-    "static/css/main.776b4d8a.chunk.css.map": "/itcart/static/css/main.776b4d8a.chunk.css.map",
-    "static/js/2.5a99a43b.chunk.js.LICENSE.txt": "/itcart/static/js/2.5a99a43b.chunk.js.LICENSE.txt",
+    "static/css/main.db667af6.chunk.css.map": "/itcart/static/css/main.db667af6.chunk.css.map",
+    "static/js/2.09834442.chunk.js.LICENSE.txt": "/itcart/static/js/2.09834442.chunk.js.LICENSE.txt",
     "static/media/1.4324a88c.png": "/itcart/static/media/1.4324a88c.png",
     "static/media/1.565e0935.png": "/itcart/static/media/1.565e0935.png",
     "static/media/1.bc76d956.png": "/itcart/static/media/1.bc76d956.png",
@@ -53,9 +53,9 @@
     "static/media/team2.9adce458.png": "/itcart/static/media/team2.9adce458.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.727abca8.js",
-    "static/js/2.5a99a43b.chunk.js",
-    "static/css/main.776b4d8a.chunk.css",
-    "static/js/main.e3846615.chunk.js"
+    "static/js/runtime-main.736d8e37.js",
+    "static/js/2.09834442.chunk.js",
+    "static/css/main.db667af6.chunk.css",
+    "static/js/main.c5c276e8.chunk.js"
   ]
 }
