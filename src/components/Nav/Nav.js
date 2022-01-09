@@ -51,9 +51,10 @@ const Navigation = () => {
               </NavDropdown>
 
               <NavDropdown title="Resources" id="Resources-nav-dropdown">
-                <Link className="dropdown-item resources" to="resources"> <img src={News} alt="" />News</Link>
-                <Link className="dropdown-item resources" to="resources"> <img src={Customer} alt="" /> Customer Blogs</Link>
+              <Link className="dropdown-item resources" to="resources"> <img src={Customer} alt="" /> Blogs</Link>
                 <Link className="dropdown-item resources" to="resources"> <img src={Case} alt="" /> Case Studies</Link>
+                <Link className="dropdown-item resources" to="resources"> <img src={News} alt="" />News</Link>
+                <Link className="dropdown-item resources" to="resources"> <img src={News} alt="" />Help Center</Link>
               </NavDropdown>
               <Nav.Item>
                 <Link className="nav-link" to="careers">Careers</Link>

@@ -14,6 +14,8 @@ $accent : #C4C4C4;
 $blue: #DD87B8;
 $text-sky:#1CAFE1;
 $yellow: #FFC300;
+$career-bg: #FCEDF0;
+$resorce: #FFF8E5;
  
 
 // this is used to map colors. change accordingly.
@@ -32,6 +34,8 @@ $theme-colors: (
   light6:$light6,
   sky-blue:$text-sky,
   yellow: $yellow,
+  career-bg: $career-bg,
+  resource: $resorce,
 );
 $spacer: 1rem;
 $spacers: (

@@ -1,0 +1,11 @@
+.modal-dialog{
+    max-width: 1332px;
+    .modal-content{
+        height: auto;
+        box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+    img{
+        border-radius: 10px;
+    }
+}

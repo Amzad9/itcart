@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import Button from '../Button/button';
 import TabContainer from '../Tabs/TabContainer'
