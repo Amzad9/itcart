@@ -1,21 +1,21 @@
 import React from 'react'
 import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
-import Adit1 from '../assets/odit1.png';
-import Adit2 from '../assets/odit2.png';
+import Img13 from '../assets/solution/enterprise/13.png';
+import Img14 from '../assets/solution/enterprise/14.png';
 
 
-import Img1 from '../assets/solution/1.png';
-import Img2 from '../assets/solution/2.png';
-import Img3 from '../assets/solution/3.png';
-import Img4 from '../assets/solution/4.png';
-import Img5 from '../assets/solution/5.png';
-import Img6 from '../assets/solution/6.png';
-import Img7 from '../assets/solution/7.png';
-import Img8 from '../assets/solution/8.png';
-import Img9 from '../assets/solution/9.png';
-import Img10 from '../assets/solution/10.png';
-import Img11 from '../assets/solution/11.png';
-import Img12 from '../assets/solution/12.png';
+import Img1 from '../assets/solution/enterprise/1.png';
+import Img2 from '../assets/solution/enterprise/2.png';
+import Img3 from '../assets/solution/enterprise/3.png';
+import Img4 from '../assets/solution/enterprise/4.png';
+import Img5 from '../assets/solution/enterprise/5.png';
+import Img6 from '../assets/solution/enterprise/6.png';
+import Img7 from '../assets/solution/enterprise/7.png';
+import Img8 from '../assets/solution/enterprise/8.png';
+import Img9 from '../assets/solution/enterprise/9.png';
+import Img10 from '../assets/solution/enterprise/10.png';
+import Img11 from '../assets/solution/enterprise/11.png';
+import Img12 from '../assets/solution/enterprise/12.png';
 function Enterprise() {
     return (
         <>
@@ -253,7 +253,7 @@ function Enterprise() {
                         </Col>
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
+                                <img src={Img13} className='img-fluid' alt="" />
                             </div>
                         </Col>
 
@@ -261,7 +261,7 @@ function Enterprise() {
                     <Row className="align-items-center mt-7">
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
+                                <img src={Img14} className='img-fluid' alt="" />
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="ps-5">

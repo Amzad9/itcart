@@ -13,7 +13,7 @@ import './Footer.scss'
 function Footer() {
     return (
         <footer className="py-5">
-            <Container fluid="xxxl">
+            <Container fluid="xxl">
                 <Row className='mx-0'>
                    <Col sm="12" md="2" className='mb-5'>
                          <Navbar.Brand href="#home">

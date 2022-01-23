@@ -1,19 +1,19 @@
 import React from 'react'
 import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
-import Img1 from '../assets/service/1.png';
-import Img2 from '../assets/service/2.png';
-import Img3 from '../assets/service/3.png';
-import Img4 from '../assets/service/4.png';
-import Img5 from '../assets/service/5.png';
-import Img6 from '../assets/service/6.png';
-import Img7 from '../assets/service/7.png';
-import Img8 from '../assets/service/8.png';
-import Img9 from '../assets/service/9.png';
-import Img10 from '../assets/service/10.png';
-import Img11 from '../assets/service/11.png';
-import Img12 from '../assets/service/12.png';
-import Adit1 from '../assets/odit1.png';
-import Adit2 from '../assets/odit2.png';
+import Img1 from '../assets/service/app/1.png';
+import Img2 from '../assets/service/app/2.png';
+import Img3 from '../assets/service/app/3.png';
+import Img4 from '../assets/service/app/4.png';
+import Img5 from '../assets/service/app/5.png';
+import Img6 from '../assets/service/app/6.png';
+import Img7 from '../assets/service/app/7.png';
+import Img8 from '../assets/service/app/8.png';
+import Img9 from '../assets/service/app/9.png';
+import Img10 from '../assets/service/app/10.png';
+import Img11 from '../assets/service/app/11.png';
+import Img12 from '../assets/service/app/12.png';
+import Adit1 from '../assets/service/app/13.png';
+import Adit2 from '../assets/service/app/14.png';
 
 function ServiceApp() {
     return (
@@ -238,7 +238,7 @@ function ServiceApp() {
                 </Container>
             </section>
             <section>
-                <Container fluid="xxl" className="bg-light5 px-6 py-5">
+                <Container fluid="xxl" className="bg-light3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
                             <h2>Digital Healthcare Apps</h2>
@@ -251,13 +251,13 @@ function ServiceApp() {
                             <p>Monitor & Manage the doctors, support staff, patients’ data, operations and accounts on your fingertips with our digital healthcare app!</p>
                         </Col>
                         <Col xs={12} md={6}>
-                            <img src={Img11} alt="" className='img-fluid' />
+                            <img src={Adit1} alt="" className='img-fluid' />
                         </Col>
 
                     </Row>
                     <Row className="align-items-center mt-7">
                         <Col xs={12} md={6}>
-                            <img src={Img12} alt="" className='img-fluid' />
+                            <img src={Adit2} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
                             <h4 className='mb-4'>Scheduling doctors’ appointments</h4>
@@ -273,7 +273,7 @@ function ServiceApp() {
                     </Row>
                 </Container>
             </section>
-            <section>
+            {/* <section>
                 <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
@@ -312,7 +312,7 @@ function ServiceApp() {
                         </Col>
                     </Row>
                 </Container>
-            </section>
+            </section> */}
         </>
     )
 }

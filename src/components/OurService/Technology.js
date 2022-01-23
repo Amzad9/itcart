@@ -1,19 +1,19 @@
 import React from 'react'
 import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
-import Img1 from '../assets/service/1.png';
-import Img2 from '../assets/service/2.png';
-import Img3 from '../assets/service/3.png';
-import Img4 from '../assets/service/4.png';
-import Img5 from '../assets/service/5.png';
-import Img6 from '../assets/service/6.png';
-import Img7 from '../assets/service/7.png';
-import Img8 from '../assets/service/8.png';
-import Img9 from '../assets/service/9.png';
-import Img10 from '../assets/service/10.png';
-import Img11 from '../assets/service/11.png';
-import Img12 from '../assets/service/12.png';
-import Adit1 from '../assets/odit1.png';
-import Adit2 from '../assets/odit2.png';
+import Img1 from '../assets/service/technilogy/1.png';
+import Img2 from '../assets/service/technilogy/2.png';
+import Img3 from '../assets/service/technilogy/3.png';
+import Img4 from '../assets/service/technilogy/4.png';
+import Img5 from '../assets/service/technilogy/5.png';
+import Img6 from '../assets/service/technilogy/6.png';
+import Img7 from '../assets/service/technilogy/7.png';
+import Img8 from '../assets/service/technilogy/8.png';
+import Img9 from '../assets/service/technilogy/9.png';
+import Img10 from '../assets/service/technilogy/10.png';
+import Img11 from '../assets/service/technilogy/11.png';
+import Img12 from '../assets/service/technilogy/12.png';
+import Img13 from '../assets/service/technilogy/13.png';
+import Img14 from '../assets/service/technilogy/14.png';
 
 function Technology() {
     return (
@@ -238,7 +238,7 @@ function Technology() {
                 </Container>
             </section>
             <section>
-                <Container fluid="xxl" className="bg-light5 px-6 py-5">
+                <Container fluid="xxl" className="bg-light8 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
                             <h2>Microsoft Full Stack</h2>
@@ -251,13 +251,13 @@ function Technology() {
                             <p>We take great pride in having in-house technology experts offering full spectrum of Microsoft services & support!</p>
                         </Col>
                         <Col xs={12} md={6}>
-                            <img src={Img11} alt="" className='img-fluid' />
+                            <img src={Img13} alt="" className='img-fluid' />
                         </Col>
 
                     </Row>
                     <Row className="align-items-center mt-7">
                         <Col xs={12} md={6}>
-                            <img src={Img12} alt="" className='img-fluid' />
+                            <img src={Img14} alt="" className='img-fluid' />
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
                             <h4 className='mb-4'>Integrate Systems & data migration</h4>
@@ -274,7 +274,7 @@ function Technology() {
                 </Container>
             </section>
             <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-3 px-6 py-5">
+                {/* <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-3 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
                             <h2>Audit and Quality Management</h2>
@@ -288,7 +288,7 @@ function Technology() {
                         </Col>
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
+                                <img src={Img13} className='img-fluid' alt="" />
                             </div>
                         </Col>
 
@@ -296,7 +296,7 @@ function Technology() {
                     <Row className="align-items-center mt-7">
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
+                                <img src={Img14} className='img-fluid' alt="" />
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
@@ -311,7 +311,7 @@ function Technology() {
                             <Nav.Link className="fs-6 text-blue text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
                         </Col>
                     </Row>
-                </Container>
+                </Container> */}
             </section>
         </>
     )

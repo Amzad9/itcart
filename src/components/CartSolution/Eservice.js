@@ -1,21 +1,19 @@
 import React from 'react'
 import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
-import Adit1 from '../assets/odit1.png';
-import Adit2 from '../assets/odit2.png';
-
-
-import Img1 from '../assets/solution/1.png';
-import Img2 from '../assets/solution/2.png';
-import Img3 from '../assets/solution/3.png';
-import Img4 from '../assets/solution/4.png';
-import Img5 from '../assets/solution/5.png';
-import Img6 from '../assets/solution/6.png';
-import Img7 from '../assets/solution/7.png';
-import Img8 from '../assets/solution/8.png';
-import Img9 from '../assets/solution/9.png';
-import Img10 from '../assets/solution/10.png';
-import Img11 from '../assets/solution/11.png';
-import Img12 from '../assets/solution/12.png';
+import Img13 from '../assets/solution/E-service/13.png';
+import Img14 from '../assets/solution/E-service/14.png';
+import Img1 from '../assets/solution/E-service/1.png';
+import Img2 from '../assets/solution/E-service/2.png';
+import Img3 from '../assets/solution/E-service/3.png';
+import Img4 from '../assets/solution/E-service/4.png';
+import Img5 from '../assets/solution/E-service/5.png';
+import Img6 from '../assets/solution/E-service/6.png';
+import Img7 from '../assets/solution/E-service/7.png';
+import Img8 from '../assets/solution/E-service/8.png';
+import Img9 from '../assets/solution/E-service/9.png';
+import Img10 from '../assets/solution/E-service/10.png';
+import Img11 from '../assets/solution/E-service/11.png';
+import Img12 from '../assets/solution/E-service/12.png';
 function Eservice() {
     return (
         <>
@@ -253,7 +251,7 @@ function Eservice() {
                         </Col>
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
+                                <img src={Img13} className='img-fluid' alt="" />
                             </div>
                         </Col>
 
@@ -261,7 +259,7 @@ function Eservice() {
                     <Row className="align-items-center mt-7">
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
+                                <img src={Img14} className='img-fluid' alt="" />
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
@@ -278,7 +276,7 @@ function Eservice() {
                     </Row>
                 </Container>
             </section>
-            <section>
+            {/* <section>
                 <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
@@ -293,7 +291,7 @@ function Eservice() {
                         </Col>
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
+                                <img src={Img13} className='img-fluid' alt="" />
                             </div>
                         </Col>
 
@@ -301,7 +299,7 @@ function Eservice() {
                     <Row className="align-items-center mt-7">
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
+                                <img src={Img14 } className='img-fluid' alt="" />
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
@@ -333,7 +331,7 @@ function Eservice() {
                         </Col>
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
+                                <img src={Img13} className='img-fluid' alt="" />
                             </div>
                         </Col>
 
@@ -341,7 +339,7 @@ function Eservice() {
                     <Row className="align-items-center mt-7">
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
+                                <img src={Img13} className='img-fluid' alt="" />
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
@@ -373,7 +371,7 @@ function Eservice() {
                         </Col>
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
+                                <img src={Img13} className='img-fluid' alt="" />
                             </div>
                         </Col>
 
@@ -381,7 +379,7 @@ function Eservice() {
                     <Row className="align-items-center mt-7">
                         <Col xs={12} md={6}>
                             <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
+                                <img src={Img14} className='img-fluid' alt="" />
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="ps-5">
@@ -397,9 +395,9 @@ function Eservice() {
                         </Col>
                     </Row>
                 </Container>
-            </section>
+            </section> */}
             <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
+                {/* <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
                     <Row>
                         <Col xs={12} md={12} className="text-center pb-5 pt-4">
                             <h2>Covid-19 / Emergency Incident Reporting</h2>
@@ -436,7 +434,7 @@ function Eservice() {
                             <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
                         </Col>
                     </Row>
-                </Container>
+                </Container> */}
             </section>
         </>
     )
