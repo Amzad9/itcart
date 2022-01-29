@@ -1,19 +1,18 @@
-import React, {useState, useRef} from 'react'
+import React from 'react'
 import Slider from "react-slick";
-import { Container, Row, Col, Nav, Overlay, Popover} from 'react-bootstrap';
+import { Container, Row, Col, Nav} from 'react-bootstrap';
 import NextArrow from '../Client/NextArrow';  
 import PrevArrow from '../Client/PrevArrow';
 import SlideCard from '../Card/SlideCard';
 import Union from '../assets/Union.png';
 const Blog = () => {
-    const [show, setShow] = useState(false);
-    const [target, setTarget] = useState(null);
-    const ref = useRef(null);
+    // const [target, setTarget] = useState(null);
+    // const ref = useRef(null);
   
-    const handleClick = (event) => {
-      setShow(!show);
-      setTarget(event.target);
-    };
+    // const handleClick = (event) => {
+    //   setShow(!show);
+    //   setTarget(event.target);
+    // };
 
 
     const SERVICE_SLIDER_SETTINGS = {
@@ -73,7 +72,7 @@ const Blog = () => {
             
        
              <Row className="mx-0">
-                 <Col md={12} ref={ref}>
+                 <Col md={12}>
                     
                      <Slider {...SERVICE_SLIDER_SETTINGS}>
                         

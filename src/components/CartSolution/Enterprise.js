@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import Img13 from '../assets/solution/enterprise/13.png';
 import Img14 from '../assets/solution/enterprise/14.png';
 

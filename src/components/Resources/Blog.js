@@ -12,7 +12,13 @@ function Blog() {
     const [modalShow, setModalShow] = useState(false);
     return (
         <>
-            <Container fluid="xxl" className="bg-resource rounded-8 py-5 py-md-6 px-md-6 px-3">
+            <Container fluid="xxl" className="bg-resource rounded-8 pb-5 pt-5 pb-md-6 pt-md-5 px-md-6 px-3">
+                <Row className='mb-4'>
+                    <Col>
+                        <h2>What we do!</h2>
+                        <p className='text-center'>Know about IT Cart offerings with Expert analysis and a domain specific guide!</p>
+                    </Col>
+                </Row>
                 <Row className='mx-0 px-3 gx-3'>
                     <Col sm={12} md={6}>
                         <Row>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Form, Button} from 'react-bootstrap';
 import Banner from '../banner/Banner';
-import { Link } from 'react-router-dom'
 import NewsLetter from '../NewsLetter/NewsLetter'
 import './Attachment.scss'
 function Job() {
@@ -10,8 +9,8 @@ function Job() {
              <Banner 
            className="bg-career-bg"
             subtitle='Make Your Work Efficient With' 
-            title ='Careers' 
-            bodytext='Body text body text body textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody text' />
+            title ='Join Us on Our Thrilling Journey!' 
+            bodytext='Become a valuable part of IT Cart family & fast-track your tech career and go through a trail-blazing experience of digital transformation of Businesses & Institutions in Real-time with Real Impact!' />
             <section>
             <Container fluid="xxl" className="career-section bg-career-bg my-5 rounded-8 py-6">
                       <Row className='justify-content-center'>
@@ -90,14 +89,14 @@ function Job() {
                         <Col md="12" className='attacment'>
                            <div className="pt-3">
                            <label className='fw-500'>Resume/CV <span>*</span></label>
-                        <input type="file" id="resume" class="sr-only" aria-label="Resume" />
+                        <input type="file" id="resume" className="sr-only" aria-label="Resume" />
                         <label for="resume" className="text-secondary fw-500 fst-italic ms-5" aria-hidden="true">Attach</label>
                            </div>
                         </Col>
                         <Col md="12" className='attacment mt-5 mb-5'>
                            <div className='border-bottom border-dark pb-5'>
                            <label className='fw-500'>Resume/CV <span>*</span></label>
-                        <input type="file" id="resume" class="sr-only" aria-label="Resume" />
+                        <input type="file" id="resume" className="sr-only" aria-label="Resume" />
                         <label for="resume" className="text-secondary fw-500 fst-italic ms-5" aria-hidden="true">Attach</label>
                            </div>
                         </Col>

@@ -48,7 +48,7 @@ const PeopleSay = () => {
                 </Row>
 
 
-                <Row className="mt-5 gx-7">
+                <Row className="mt-5 gx-0 gx-md-7">
                     {SlideData.map(item => (
                         <Col className="mb-4 mb-xl-0" sm={12} md={6} xl={4} ref={ref}>
                             <SlideCard onClick={handleClick} classBody="pb-0" className="box-shadow-sm border-0 bg-white  p-0" src={item.img}>
@@ -56,7 +56,7 @@ const PeopleSay = () => {
                                     <h4>{item.title}</h4>
                                     <p className="fs-6">{item.subtitle}</p>
                                 </div>
-                                <div class="card-img-overlay">
+                                <div className="card-img-overlay">
                                     <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g filter="url(#filter0_d_1542_202)">
                                             <path d="M42.2007 10H12.9906C11.3945 10 10 11.1484 10 12.7258V42.0008C10 43.5867 11.3945 45 12.9906 45H42.1921C43.7968 45 44.9999 43.5773 44.9999 42.0008V12.7258C45.0093 11.1484 43.7968 10 42.2007 10ZM20.8492 39.1742H15.8351V23.5844H20.8492V39.1742ZM18.5156 21.2141H18.4797C16.875 21.2141 15.8359 20.0195 15.8359 18.5242C15.8359 17.0016 16.9023 15.8352 18.543 15.8352C20.1836 15.8352 21.1875 16.993 21.2234 18.5242C21.2226 20.0195 20.1836 21.2141 18.5156 21.2141ZM39.1742 39.1742H34.1601V30.65C34.1601 28.6078 33.4304 27.2125 31.6164 27.2125C30.2304 27.2125 29.4101 28.15 29.0453 29.0633C28.9086 29.3914 28.8718 29.8383 28.8718 30.2945V39.1742H23.8578V23.5844H28.8718V25.7539C29.6015 24.7148 30.7414 23.2195 33.3937 23.2195C36.6851 23.2195 39.175 25.3891 39.175 30.0664L39.1742 39.1742Z" fill="white" />

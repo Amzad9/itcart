@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import Slider from "react-slick";
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import Button from '../Button/button';
 import TabContainer from '../Tabs/TabContainer'
@@ -8,8 +7,6 @@ import NavLink from '../Tabs/NavLink';
 import SlideCard from '../Card/SlideCard';
 import { NavData } from '../Utility'
 import './Service.scss'
-// import NextArrow from '../Client/NextArrow';  
-// import PrevArrow from '../Client/PrevArrow';
 import '../Client/Client.scss'
 import Digital from '../assets/Web/1.png';
 import Corporate from '../assets/Web/2.png';
@@ -45,56 +42,6 @@ const Service = () => {
 
     const [index, setIndex] = useState(0)
 
-    // const SERVICE_SLIDER_SETTINGS = {
-    //     dots: false,
-    //     arrows: true,
-    //     infinite: true,
-    //     autoplay: true,
-    //     speed: 2000,
-    //     autoplaySpeed: 2000,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     adaptiveHeight: true,
-    //     centerPadding: '0px',
-    //     nextArrow: <NextArrow />,
-    //     prevArrow: <PrevArrow />,
-    //     responsive: [
-    //         {
-    //           breakpoint: 1023,
-    //           settings: {
-    //             slidesToShow: 2,
-    //             slidesToScroll: 1,
-    //             infinite: true,
-    //             dots: false,
-    //             arrows: false,
-    //           }
-    //         },
-    //         {
-    //           breakpoint: 600,
-    //           settings: {
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1,
-    //             initialSlide: 1,
-    //             arrows: false,
-    //           }
-    //         },
-    //         {
-    //           breakpoint: 480,
-    //           settings: {
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1,
-    //             arrows: false,
-    //           }
-    //         }
-    //       ]
-    //   };
-
-    //   const SlideData = [
-    //     {id: 1, img: Static, title: 'Static Websites'},
-    //     {id: 2, img: Dynamic,  title: 'Dynamic Websites'},
-    //     {id: 3, img: Ecommerce, title: 'E-Commerce'},
-    //     {id: 4, img: Static, title: 'App Development'}
-    //   ]
     const web = [
         {
             id: 1, img: Digital, title: 'Digital (DX) Collaboration Portal',
@@ -239,7 +186,7 @@ const Service = () => {
                     <Row>
                         {web.map(item => (
 
-                            <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                            <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip" key={item.id}>
                                 <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-white front px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
                                 </SlideCard>
@@ -252,15 +199,7 @@ const Service = () => {
                                         ))}
                                     </ul>
                                     <Row className="btn-wrapper justify-content-between mx-0 mt-4">
-                                        {/* <Col sm={6} className="text-start">
-                                        <Button className="text-whites fs-6 btn2">Explore</Button>
-                                   
-                                       </Col>
-                                       <Col sm={6} className="text-end">
-                                       
-                                        <Button className="text-white fs-6 px-0 btn2">Enquire Now</Button>
-                                       
-                                       </Col> */}
+
                                         <Col sm={12} className="mt-3">
                                             <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
                                         </Col>
@@ -273,7 +212,7 @@ const Service = () => {
                     : index === 1 ?
                         <Row>
                             {appd.map(item => (
-                                <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip" key={item.id}>
                                     <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                         <h6>{item.title}</h6>
                                     </SlideCard>
@@ -285,9 +224,9 @@ const Service = () => {
                                             ))}
                                         </ul>
                                         <Row className="btn-wrapper justify-content-between mx-0 mt-4">
-                                        <Col sm={12} className="mt-3">
-                                            <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
-                                        </Col>
+                                            <Col sm={12} className="mt-3">
+                                                <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
+                                            </Col>
                                         </Row>
                                     </SlideCard>
                                 </Col>
@@ -296,7 +235,7 @@ const Service = () => {
                         : index === 2 ?
                             <Row>
                                 {businessd.map(item => (
-                                    <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                    <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip" key={item.id}>
                                         <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                             <h6>{item.title}</h6>
                                         </SlideCard>
@@ -309,7 +248,7 @@ const Service = () => {
                                                 ))}
                                             </ul>
                                             <Row className="btn-wrapper justify-content-between mx-0 mt-4">
-                                                    <Col sm={12} className="mt-3">
+                                                <Col sm={12} className="mt-3">
                                                     <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
                                                 </Col>
                                             </Row>
@@ -320,7 +259,7 @@ const Service = () => {
                             : index === 3 ?
                                 <Row>
                                     {Technologyd.map(item => (
-                                        <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                        <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip" key={item.id}>
                                             <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                                 <h6>{item.title}</h6>
                                             </SlideCard>
@@ -332,9 +271,9 @@ const Service = () => {
                                                     ))}
                                                 </ul>
                                                 <Row className="btn-wrapper justify-content-between mx-0 mt-4">
-                                                <Col sm={12} className="mt-3">
-                                            <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
-                                        </Col>
+                                                    <Col sm={12} className="mt-3">
+                                                        <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
+                                                    </Col>
                                                 </Row>
                                             </SlideCard>
                                         </Col>
@@ -342,41 +281,6 @@ const Service = () => {
                                 </Row>
                                 : null}
 
-                {/* <Col md={12}>
-                        {index === 0 ? 
-                        <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData.map(item => (
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
-                                    <h5>{item.title}</h5>
-                                </SlideCard>
-                            ))}
-                        </Slider>
-                        : index === 1 ? 
-                        <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData2.map(item => (
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
-                                    <h5>{item.title}</h5>
-                                </SlideCard>
-                            ))}
-                        </Slider>
-                        : index === 2 ? 
-                        <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData.map(item => (
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
-                                    <h5>{item.title}</h5>
-                                </SlideCard>
-                            ))}
-                        </Slider>
-                        : index === 3 ? 
-                        <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData.map(item => (
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
-                                    <h5>{item.title}</h5>
-                                </SlideCard>
-                            ))}
-                        </Slider>
-                        :null}
-                    </Col> */}
 
                 <Row>
                     <Col md={12} className="pt-5">

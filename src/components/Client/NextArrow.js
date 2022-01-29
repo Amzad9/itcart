@@ -7,7 +7,7 @@ function NextArrow(props) {
       className={className}
       style={{ ...style }}
       onClick={onClick}
-    > <i class="bi bi-chevron-right fs-2"></i> </div>
+    > <i className="bi bi-chevron-right fs-2"></i> </div>
   );
 }
 

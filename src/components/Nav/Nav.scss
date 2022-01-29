@@ -56,5 +56,37 @@ padding: 8px !important;
                 }
             }
         }
+        // .nav-item.dropdown > .nav-link{
+        //     &:hover {
+        //         .dropdown-menu{
+        //             display: block !important;
+        //         }
+        //     }
+        // }
+        .dropdown:hover .dropdown-menu {
+            display: block !important;
+            margin-top: 0;
+         }
+         @media (max-width: 991px) {
+             #basic-navbar-nav{
+                position: fixed;
+                background: #ffffff;
+                top: 0px;
+                width: 73%;
+                left: 0px;
+                height: 100vh;
+                box-shadow: 2px 0px 11px #ebe4e4;
+                flex-direction: column;
+                display: none;
+             }
+           .navbar-nav{
+               flex-direction: column;
+           }
+           .navbar-expand .navbar-nav .dropdown-menu{
+               position: relative !important;
+           }
+          
+            
+         }
    
 }

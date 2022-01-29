@@ -6,7 +6,13 @@ import './Resources.scss'
 function News() {
     return (
         <>
-            <Container fluid="xxl" className="rounded-8 bg-resource py-5 py-md-6 px-md-5 px-3">
+            <Container fluid="xxl" className="rounded-8 bg-resource py-5 pb-md-6 pt-md-5 px-md-5 px-3">
+                <Row className='mb-4'>
+                    <Col>
+                        <h2>Latest Developments</h2>
+                        <p className='text-center'>Stay updated with our upcoming events, product launches and innovations!</p>
+                    </Col>
+                </Row>
                 <Row>
                     <Col sm={12} md={6}>
                         <NewHeader title="IT Cart Wins Two Business Brilliance Awards" />

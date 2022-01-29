@@ -1,24 +1,19 @@
-import React, {useState} from 'react'
-import { Container, Row, Col, Button} from 'react-bootstrap';
+import React from 'react'
+import { Container, Row, Col} from 'react-bootstrap';
 import Banner from '../banner/Banner';
-// import SlideCard from '../Card/SlideCard';
-// import {careerData} from '../Utility'
-// import CommonTab from './CommonTab'
+
 import { Link } from 'react-router-dom'
 import Carrer from '../assets/career.png';
 function Careers() {
 
-    const [index, setIndex] = useState(0)
-    const  handle = (e) => {
-        setIndex(e)
-    }
+   
     return (
         <>
            <Banner 
            className="bg-career-bg"
             subtitle='Make Your Work Efficient With' 
-            title ='Careers' 
-            bodytext='Body text body text body textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody text' />
+            title ='Join Us on Our Thrilling Journey!' 
+            bodytext='Become a valuable part of IT Cart family & fast-track your tech career and go through a trail-blazing experience of digital transformation of Businesses & Institutions in Real-time with Real Impact!' />
            
             <section>
                 
@@ -31,8 +26,23 @@ function Careers() {
                           </Row>
                        
                           <Col  xs={12} md={8} className='text-center px-5 mt-5'>
-                            <h2>We’re growing and looking for talented people to help us change the world.</h2>
-                            <p className='fw-500 text-dark  mt-5'>What’s the best thing about working at IT Cart? Easy! People. We’re curious, creative, and diverse. We're driven to find purpose in our work, and buoyed by the joy we get from supporting each other. We build awesome stuff that helps people, and we love doing so together.</p>
+                            <h2>Internships – College to Corporate</h2>
+                            <p className='fw-500 text-dark  mt-3'>A golden opportunity for graduates to jump on the tech-wagon and get hands-on experience on real projects!</p>
+                          </Col>
+                          <Col  xs={12} md={8} className='text-center px-5 mt-3'>
+                            <h2>Development – Coders & Problems Solvers</h2>
+                            <p className='fw-500 text-dark  mt-3'>We call on the best developers around Globe to join IT Cart family on a journey to solve world problems through coding!  </p>
+                          </Col>
+                          <Col  xs={12} md={8} className='text-center px-5 mt-3'>
+                            <h2>Sales & Marketing – People |Product | Promotion</h2>
+                            <p className='fw-500 text-dark  mt-3'>Do you just love selling a technology solution?  </p>
+                            <p className='fw-500 text-dark  mt-3'>Are you a marketing researcher keen on exploring IT Market?</p>
+                            <p className='fw-500 text-dark  mt-3'>Then IT Cart might just be your working home! </p>
+                          </Col>
+                          <Col  xs={12} md={8} className='text-center px-5 mt-3'>
+                            <h2>Management – Leadership Roles</h2>
+                            <p className='fw-500 text-dark  mt-3'>“Vision, Initiative, and a seasoned Leader with loads and loads of top tier management experience!” </p>
+       
                           </Col>
                           <Col  xs={12} md={10} className='mt-6'>
                             <h2 className="text-start mb-5">Current Job Openings</h2>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
-import LogoF from '../assets/logo-f.png'
+import Logo from '../assets/Website-Logo-ITCart/Website-Logo-27.svg'
 
 import Insta from '../assets/insta.png'
 import Facebook from '../assets/facebook.png'
@@ -17,7 +17,7 @@ function Footer() {
                 <Row className='mx-0'>
                    <Col sm="12" md="2" className='mb-5'>
                          <Navbar.Brand href="#home">
-                                <img src={LogoF} alt="logo" />
+                                <img src={Logo} style={{width:'178px'}} alt="Logo" />
                             </Navbar.Brand>
                    </Col>
                    <Col sm="12" md="2">

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Form } from 'react-bootstrap';
 import Help from '../assets/help1.png';
 
 
@@ -10,7 +10,8 @@ function HelpCenter() {
 
        
             <Row className="justify-content-center py-5 mb-5">
-                <h2>Help Center</h2>
+                <h2>Help Center-Tech Tutorials</h2>
+                <p className='text-center'>Our whitepaper library, manuals and product guides to help end-users better utilize our solutions and services!</p>
                 <Col sm={12} md={9} lg={7}>
                     <Form.Group className="mb-3 mt-5 position-relative d-flex" controlId="exampleForm.ControlTextarea1">
                         <Form.Control type="email" placeholder="Search for anything*" />

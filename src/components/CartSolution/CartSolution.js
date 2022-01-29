@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Banner from '../banner/Banner';
-import SlideCard from '../Card/SlideCard';
 import { SolutionData } from '../Utility'
 import Hrms from './Hrms';
 import Eservice from './Eservice';
 import Mis from './Mis';
 import Enterprise from './Enterprise';
 import CommonTab from '../Careers/CommonTab'
-import Blog from '../Blog/Blog'
 import '../Careers/CommonTab.scss';
 import PeopleSay from '../PeopleSay/PeopleSay'
 

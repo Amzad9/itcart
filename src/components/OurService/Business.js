@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import Img1 from '../assets/service/Business/1.png';
 import Img2 from '../assets/service/Business/2.png';
 import Img3 from '../assets/service/Business/3.png';
@@ -13,7 +13,7 @@ import Img10 from '../assets/service/Business/10.png';
 import Img11 from '../assets/service/Business/11.png';
 import Img12 from '../assets/service/Business/12.png';
 import Adit1 from '../assets/service/Business/13.png';
-import Adit2 from '../assets/service/Business/14.png';
+
 
 function Business() {
     return (

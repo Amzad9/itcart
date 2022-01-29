@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Slider from "react-slick";
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import Button from '../Button/button';
 import TabContainer from '../Tabs/TabContainer'
@@ -188,7 +187,7 @@ const Solution = () => {
                 {index === 0 ?
                     <Row>
                         {hrm.map(item => (
-                            <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                            <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip" key={item.id}>
                                 <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-white front px-3 pt-3 pb-0" src={item.img}>
                                     <h6>{item.title}</h6>
                                 </SlideCard>
@@ -221,7 +220,7 @@ const Solution = () => {
                     : index === 1 ?
                         <Row>
                             {cms.map(item => (
-                                <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip" key={item.id}>
                                     <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                         <h6>{item.title}</h6>
                                     </SlideCard>
@@ -234,10 +233,10 @@ const Solution = () => {
                                             ))}
                                         </ul>
                                         <Row className="btn-wrapper-solution justify-content-between mt-4">
-                                        <Col sm={12} className="mt-3">
+                                            <Col sm={12} className="mt-3">
 
-                                        <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
-                                        </Col>
+                                                <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
+                                            </Col>
                                         </Row>
                                     </SlideCard>
                                 </Col>
@@ -246,7 +245,7 @@ const Solution = () => {
                         : index === 2 ?
                             <Row>
                                 {businE.map(item => (
-                                    <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                    <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip" key={item.id}>
                                         <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                             <h6>{item.title}</h6>
                                         </SlideCard>
@@ -259,9 +258,9 @@ const Solution = () => {
                                                 ))}
                                             </ul>
                                             <Row className="btn-wrapper-solution justify-content-between mt-4">
-                                            <Col sm={12} className="mt-3">
+                                                <Col sm={12} className="mt-3">
 
-                                                <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
+                                                    <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
                                                 </Col>
                                             </Row>
                                         </SlideCard>
@@ -271,7 +270,7 @@ const Solution = () => {
                             : index === 3 ?
                                 <Row>
                                     {enterP.map(item => (
-                                        <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip">
+                                        <Col xs={12} md={6} lg={4} xl={4} className="mb-4 flip" key={item.id}>
                                             <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 front bg-white px-3 pt-3 pb-0" src={item.img}>
                                                 <h6>{item.title}</h6>
                                             </SlideCard>
@@ -286,51 +285,15 @@ const Solution = () => {
                                                 <Row className="btn-wrapper-solution justify-content-between mt-4">
                                                     <Col sm={12} className="mt-3">
 
-                                            <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
-                                        </Col>
+                                                        <Button className="text-white w-100 bg-secondary btn-b">Know more</Button>
+                                                    </Col>
                                                 </Row>
                                             </SlideCard>
                                         </Col>
                                     ))}
                                 </Row>
                                 : null}
-                {/* <Row>
-                    <Col md={12}>
-                        {index === 0 ? 
-                        <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData.map(item => (
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
-                                    <h5>{item.title}</h5>
-                                </SlideCard>
-                            ))}
-                        </Slider>
-                        : index === 1 ? 
-                        <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData.map(item => (
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
-                                    <h5>{item.title}</h5>
-                                </SlideCard>
-                            ))}
-                        </Slider>
-                        : index === 2 ? 
-                        <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData.map(item => (
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
-                                    <h5>{item.title}</h5>
-                                </SlideCard>
-                            ))}
-                        </Slider>
-                        : index === 3 ? 
-                        <Slider {...SERVICE_SLIDER_SETTINGS}>
-                            {SlideData.map(item => (
-                                <SlideCard classBody="pb-0 d-flex align-items-center" className="border-0 bg-light px-3 pt-3 pb-0" src={item.img}>
-                                    <h5>{item.title}</h5>
-                                </SlideCard>
-                            ))}
-                        </Slider>
-                        :null}
-                    </Col>
-                </Row> */}
+
                 <Row>
                     <Col md={12} className="pt-5">
                         <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>

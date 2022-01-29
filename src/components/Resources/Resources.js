@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Banner from '../banner/Banner';
-import SlideCard from '../Card/SlideCard';
 import { ResourcesData } from '../Utility'
 import CommonTab from '../Careers/CommonTab'
-import Masonry from 'react-masonry-css'
 import NewsLetter from '../NewsLetter/NewsLetter';
 import HelpCenter from './HelpCenter';
 import News from './News';
@@ -29,8 +27,8 @@ function Resources() {
             <Banner
                 className="bg-resource"
                 subtitle='Make Your Work Efficient With'
-                title='Resources'
-                bodytext='Body text body text body textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody textbody text' />
+                title='Know your Technologies!'
+                bodytext='Keep up with our journey in the highly competitive world of Technology and experience our growth through thick and thin!' />
 
             <section>
                 <Container className='resources-tabs' fluid>

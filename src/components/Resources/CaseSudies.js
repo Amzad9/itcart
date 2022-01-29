@@ -54,7 +54,14 @@ function CaseSudies() {
     return (
         <>
 
-            <Container fluid="xxl" className="resources-section case-studies rounded-8 bg-resource py-5 py-md-6 px-md-7 px-3 mb-md-7 mb-4">
+            <Container fluid="xxl" className="resources-section case-studies rounded-8 bg-resource py-5 pb-md-6 pt-md-5 px-md-7 px-3 mb-md-7 mb-4">
+                <Row className='mb-4'>
+                    <Col>
+                        <h2>Stories that inspire!</h2>
+                        <p className='text-center'>A Transformative study showcasing the journey of a company with IT Cart!</p>
+                    </Col>
+                </Row>
+                
                 <Slider {...CLIENTS_SLIDER_SETTINGS}>
                 <Row>
                         <Col sm={12} md={12}>

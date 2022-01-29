@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React from 'react'
 import Slider from "react-slick";
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import SlideCard from '../Card/SlideCard';
@@ -16,14 +16,8 @@ import Union from '../assets/Union.png';
 
 const PeopleSay = () => {
 
-  const [show, setShow] = useState(false);
-  const [target, setTarget] = useState(null);
-  const ref = useRef(null);
 
-  const handleClick = (event) => {
-    setShow(!show);
-    setTarget(event.target);
-  };
+
 
   const SERVICE_SLIDER_SETTINGS = {
     dots: false,
@@ -71,12 +65,9 @@ const PeopleSay = () => {
     ]
   };
 
-  const SlideData = [
-    { id: 1, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency' },
-    { id: 2, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency' },
-    { id: 3, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency' },
-    { id: 1, img: Union, title: 'Attila Probáld CEO', subtitle: 'feat. Agency' }
-  ]
+
+
+ 
 
   return (
     <section className="clients  PeopleSay py-5">
@@ -89,7 +80,7 @@ const PeopleSay = () => {
 
 
         <Row className="mx-0">
-          <Col md={12} ref={ref}>
+          <Col md={12}>
 
             <Slider {...SERVICE_SLIDER_SETTINGS}>
 

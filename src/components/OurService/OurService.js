@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import Banner from '../banner/Banner';
-import SlideCard from '../Card/SlideCard';
 import { Solution } from '../Utility'
 import CommonTab from '../Careers/CommonTab'
 import PeopleSay from '../PeopleSay/PeopleSay'
@@ -9,7 +8,6 @@ import Web from './Web';
 import ServiceApp from './ServiceApp';
 import Business from './Business';
 import Technology from './Technology';
-import Blog from '../Blog/Blog'
 import '../Careers/CommonTab.scss';
 
 

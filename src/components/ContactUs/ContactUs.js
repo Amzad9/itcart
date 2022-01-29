@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap';
-// import SlideCard from '../Card/SlideCard';
 import FormControl from './FormControl'
 import Contat from '../assets/Grou.png';
 import Phone from '../assets/phone.png';
@@ -8,10 +7,7 @@ import Map from '../assets/map.png';
 import Mail from '../assets/mail.png';
 import './ContactUs.scss'
 
-// import ScrollAnimation from 'react-animate-on-scroll';
-{/* <ScrollAnimation animateIn="fadeIn">
-               Some Text
-            </ScrollAnimation> */}
+
 
 const ContactUs = () => {
 
@@ -34,8 +30,6 @@ const ContactUs = () => {
                             <Card className="bg-secondary align-items-center text-center justify-content-center shadow-none pt-5">
                                 <img src={Contat} alt="" className="m-0 img-fluid" />
 
-                                {/* <p className="mt-4 fs-6 fw-semibold text-dark">Interested in IT Cart’s software? Just pick up the phone to chat with a member of our sales team.</p>
-                                <h4>+91 11 7127 9211</h4> */}
                                 <Row className="w-100 text-start justify-content-center mb-5 mt-4 pt-4">
                                     <Col xs={2}>
                                         <img src={Phone} alt="" className="m-0" />
@@ -69,15 +63,7 @@ const ContactUs = () => {
                                 </Row>
                             </Card>
 
-                            {/* <Card  className="red px-5 align-items-center text-center justify-content-center bg-white shadow-none pt-4 mb-2">
-                                <img src={Map} alt="" className="m-0" />
-                                <p className="mt-4 fs-6 fw-semibold text-dark">25 First Street, 2nd Floor Cambridge, MA 02141 United States</p>
-                            </Card>
-
-                            <Card  className="blue align-items-center text-center justify-content-center bg-white shadow-none pt-4 mb-4">
-                                <img src={Mail} alt="" className="m-0" />
-                                <p className="mt-5 fs-6 fw-semibold text-dark">contactus@itcart.in</p>
-                            </Card> */}
+                           
 
                         </Row>
                     </Col>

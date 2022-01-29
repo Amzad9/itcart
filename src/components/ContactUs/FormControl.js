@@ -1,66 +1,96 @@
-import React,{useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { Row, Col, Form, FormGroup, Dropdown } from 'react-bootstrap';
-import Button from '../Button/button';
-import './FormControl.scss'
-import emailjs  from 'emailjs-com';
+import './FormControl.scss';
 function FormControl() {
 
-    const [toSend, setToSend] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-      });
-      const onSubmit = (e) => {
-          console.log('hi')
-        e.preventDefault();
-        emailjs.sendForm(
-          'gmail',
-          'template_gueeoij',
-          toSend,
-          'user_NfXT8TFpbPyHOvVNDEwsP'
-        )
-          .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-          })
-          .catch((err) => {
-            console.log('FAILED...', err);
-          });
-      };
-      const handleChange = (e) => {
-          console.log({...toSend})
-        setToSend({ ...toSend, [e.target.name]: e.target.value });
-      };
+    const [data, setData] = useState({
+        name: "",
+        email: "",
+        phone:"",
+        message: "",
+        company: ""
+    })
+    const[employees,setEmployees] = useState([]);
+    const[selectedEmployees,setSelectedEmployees] = useState([]);
+
+
+    
+    const { name, email,phone, message, company, } = data;
+
+    const handleChange = e => {
+        
+        setData({ ...data, [e.target.name]: e.target.value })
+    }
+
+
+
+    const handleSubmit = async e => {
+       
+        e.preventDefault()
+          if(name !== "" && phone !== "" && company !== ""){
+            try {
+                await fetch("https://v1.nocodeapi.com/shadab/google_sheets/MwiXzprYYAROCodp?tabId=Sheet1", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify([[name, email, phone, message,company]]),
+                    success: function(response, data){
+                       console.log(data.message)
+                    }
+                })
+                alert("successfully")
+            } catch (err) {
+                console.log(err)
+                alert("Not successfully")
+            } 
+          }else{
+            alert('Please fill the details')
+          }
+        
+    }
+
+
+   useEffect( () => {
+    const employeesData = [
+        { id: 1, name: 'John' },
+        { id: 2, name: 'Roy' },
+        { id: 3, name: 'Albert' }
+      ]
+      setEmployees({employeesData});
+   })
 
     return (
-        <form onSubmit={onSubmit } >
+       
+        <form onSubmit={handleSubmit} >
             <Row>
                 <Col sm={12} md={12} className="mb-3 mb-md-0 pb-4">
                     <Form.Control type="text" placeholder="Name*" className="mb-2" 
-                   name="name" value={toSend.name} onChange={handleChange} />
+                   name='name' value={name} onChange={handleChange} />
                 </Col>
                 <Col sm={12} md={6} className="mb-3 mb-md-0 pb-4">
                     <Form.Control type="email" placeholder="E-email*" className="mb-2" 
-                  name="email" value={toSend.email} onChange={handleChange} />
+                  name='email' value={email} onChange={handleChange} />
                 </Col>
                 <Col sm={12} md={6} className="mb-3 mb-md-0">
                     <Form.Control type="tel" placeholder="Phone" className="mb-2" 
-                 name="phone" value={toSend.phone}  onChange={handleChange} />
+                 name='phone' value={phone}  onChange={handleChange} />
                 </Col>
                 <Col sm={12} md={6} className="mb-3 mb-md-0">
                     <Form.Control type="text" placeholder="Company’s Name" className="mb-2" 
-                 name="company" value={toSend.company}  onChange={handleChange} />
+                 name="company" value={company}  onChange={handleChange} />
                 </Col>
                 <Col sm={12} md={6} className="mb-3 mb-md-0">
+               
                     <FormGroup>
-                       
-                        <Dropdown className="emp-drop">
+
+                        <Dropdown className="emp-drop" onChange={handleChange} multiple >
                             <Dropdown.Toggle variant="" className="form-control" id="dropdown-basic">
                                 Size of your company
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu className="p-0 form-control">
-                                <Dropdown.Item href="#/action-1">0</Dropdown.Item>
+                                <Dropdown.Item href="#/action-1" >0</Dropdown.Item>
                                 <Dropdown.Item href="#/action-2">11-50</Dropdown.Item>
                                 <Dropdown.Item href="#/action-3">51-250</Dropdown.Item>
                                 <Dropdown.Item href="#/action-3">251-500</Dropdown.Item>
@@ -73,7 +103,7 @@ function FormControl() {
                 </Col>
                 <Col sm={12} md={6} className="mb-3 mb-md-0 mt-4">
                     <FormGroup>
-                      
+
                         <Dropdown className="check-drop">
                             <Dropdown.Toggle variant="" className="form-control" id="dropdown-basic">
                                 Services
@@ -102,7 +132,7 @@ function FormControl() {
                 </Col>
                 <Col sm={12} md={6} className="mb-3 mb-md-0 mt-4">
                     <FormGroup>
-                       
+
                         <Dropdown className="check-drop">
                             <Dropdown.Toggle variant="" className="form-control" id="dropdown-basic">
                                 Solutions
@@ -138,7 +168,7 @@ function FormControl() {
                     <h4 className="text-secondary mt-3">We shall get back to you shortly</h4>
                 </Col>
                 <Col sm={12} md={4} className="pt-3 pt-md-3 text-end">
-                    <Button variant="outline-secondary" type="submit"  className="py-3 px-4 bg-secondary text-white fs-6 fw-semibold rounded-4 btn-form">Send Message</Button>
+                    <button type="submit" className="btn btn-outline-secondary py-3 px-4 bg-secondary text-white fs-6 fw-semibold rounded-4 btn-form">Send Message</button>
                 </Col>
             </Row>
         </form>

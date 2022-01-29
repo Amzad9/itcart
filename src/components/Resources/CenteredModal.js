@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Container, Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import MOdalImg from '../assets/modal.jpg';
 import './Modal.scss'
 function CenteredModal(props) {
