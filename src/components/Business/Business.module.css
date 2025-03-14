@@ -1,0 +1,62 @@
+.business {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.23);
+}
+
+p {
+  font-size: 24px;
+  color: #000000;
+  line-height: 29px;
+}
+
+.enterprice .card {
+  border-radius: 20px !important;
+}
+
+.enterprice .card-header {
+  padding: 36px 20px;
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.enterprice .card-footer {
+  height: 113px;
+  border-radius: 0 0 20px 20px !important;
+}
+
+.enterprice table td {
+  font-weight: 600;
+}
+
+.formatCard .card {
+  border-radius: 20px !important;
+}
+
+.formatCard .card-header {
+  padding: 18px 50px;
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.formatCard .card-footer {
+  height: 78px;
+  border-radius: 0 0 20px 20px !important;
+}
+
+.formatCard table td {
+  font-weight: 400;
+}
+
+.basic table td {
+  font-weight: 500;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-width: 0 0px !important;
+}

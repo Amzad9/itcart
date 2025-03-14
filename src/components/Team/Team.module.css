@@ -1,0 +1,45 @@
+/* Team.module.css */
+/* Custom styles for the team section */
+
+.card {
+    min-height: auto;
+    cursor: pointer;
+}
+
+/* Card image style */
+.card img {
+    max-height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card:hover .card-img-overlay {
+    display: flex;
+    transition: all 1s;
+    transform: scale(1);
+}
+
+.card-body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.meet-overlay {
+    background-color: #E86275;
+}
+
+.meet-overlay::after {
+    border-bottom-width: 26px;
+    border-bottom-color: #E86275;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: calc(100% - 103px);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    transform: scale(0);
+}

@@ -1,0 +1,20 @@
+/* Solution.module.css */
+
+.btnWrapperSolution {
+  .btn2 {
+    padding: 11px 10px !important;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #1cafe1 !important;
+    color: #1cafe1 !important;
+    font-weight: 600;
+  }
+  .btnB {
+    padding: 14px 10px !important;
+    font-weight: 600;
+  }
+}
+
+.bgSolution {
+  background: rgba(28, 175, 225, 0.15);
+}
