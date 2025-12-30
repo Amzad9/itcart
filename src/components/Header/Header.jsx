@@ -4,8 +4,6 @@ import SliderContent from './SliderContent';
 import Button from '../Button/button';
 import { SLIDER_DATA, Header_SLIDER_SETTINGS } from '../Utility';
 import styles from './Header.module.css'; // ✅ Import CSS module
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 function Header() {
     return (
         <header className={styles.header}>

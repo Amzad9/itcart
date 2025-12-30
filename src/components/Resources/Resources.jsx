@@ -1,67 +1,62 @@
-import React, { useState } from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+'use client';
+
+import React, { useState } from 'react';
 import Banner from '../banner/Banner';
-import { ResourcesData } from '../Utility'
-import CommonTab from '../Careers/CommonTab'
+import { ResourcesData } from '../Utility';
 import NewsLetter from '../NewsLetter/NewsLetter';
 import HelpCenter from './HelpCenter';
 import News from './News';
 import CaseSudies from './CaseSudies';
 import Blog from './Blog';
-import './Resources.scss'
+
 function Resources() {
+  const [activeTab, setActiveTab] = useState(0);
 
-    const [index, setIndex] = useState(0)
-    const handle = (e) => {
-        setIndex(e)
-      
-    }
-    const breakpointColumnsObj = {
-        default: 4,
-        1100: 3,
-        700: 2,
-        500: 1
-    };
-    return (
-        <>
-            <Banner
-                className="bg-resource"
-                subtitle='Make Your Work Efficient With'
-                title='Know your Technologies!'
-                bodytext='Keep up with our journey in the highly competitive world of Technology and experience our growth through thick and thin!' />
+  const handleTabChange = (index) => {
+    setActiveTab(index);
+  };
 
-            <section>
-                <Container className='resources-tabs' fluid>
-                    <Row className='mx-0'>
-                        <Col md={12} className="">
-                            <CommonTab careerData={ResourcesData} onClick={handle} activeTab="Blogs" />
-                        </Col>
-                    </Row>
+  const tabContent = [
+    { component: <Blog />, label: 'Blogs' },
+    { component: <CaseSudies />, label: 'Case Studies' },
+    { component: <News />, label: 'News' },
+    { component: <HelpCenter />, label: 'Help Center' },
+  ];
 
-                </Container>
-              
-                
-                    {index === 0 ?
-                       
-                            <Blog />
-                       
-                        : index === 1 ?
-                            <CaseSudies />
-                            : index === 2 ?
-                                
-                                    <News />
-                               
-                                : index === 3 ?
-                                   
-                                       <HelpCenter />
-                                   
-                                    : null}
- 
+  return (
+    <>
+      <Banner
+        className="bg-resource"
+        subtitle='Make Your Work Efficient With'
+        title='Know your Technologies!'
+        bodytext='Keep up with our journey in the highly competitive world of Technology and experience our growth through thick and thin!'
+      />
 
-            </section>
-            <NewsLetter />
-        </>
-    )
+      <section className="py-12 bg-base-100">
+        <div className="container mx-auto px-4">
+          {/* DaisyUI Tabs */}
+          <div className="tabs tabs-boxed justify-center mb-8 bg-base-200">
+            {ResourcesData.map((item, index) => (
+              <button
+                key={item.key}
+                className={`tab tab-lg ${activeTab === index ? 'tab-active' : ''}`}
+                onClick={() => handleTabChange(index)}
+              >
+                {item.title}
+              </button>
+            ))}
+          </div>
+
+          {/* Tab Content */}
+          <div className="mt-8">
+            {tabContent[activeTab]?.component}
+          </div>
+        </div>
+      </section>
+
+      <NewsLetter />
+    </>
+  );
 }
 
-export default Resources
+export default Resources;

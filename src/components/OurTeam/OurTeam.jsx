@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useRef } from 'react'
 import { Container, Row, Col, Overlay, Popover } from 'react-bootstrap';
 import Banner from '../banner/Banner';

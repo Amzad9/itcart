@@ -1,6 +1,7 @@
 declare const classNames: {
   readonly business: "business";
   readonly card: "card";
+  readonly businessParagraph: "businessParagraph";
   readonly enterprice: "enterprice";
   readonly "card-header": "card-header";
   readonly "card-footer": "card-footer";

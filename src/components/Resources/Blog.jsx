@@ -1,3 +1,5 @@
+'use client';
+
 import React, {useState} from 'react'
 import { Row, Col, Container } from 'react-bootstrap';
 import SlideCard from '../Card/SlideCard';

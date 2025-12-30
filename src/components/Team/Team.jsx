@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useRef } from 'react';
 import { Container, Nav, Overlay, Popover } from 'react-bootstrap';
 import SlideCard from '../Card/SlideCard';

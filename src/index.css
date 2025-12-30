@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+/* Global styles for Business component paragraphs */
+.business-section p {
+  font-size: 24px;
+  color: #000000;
+  line-height: 29px;
+}

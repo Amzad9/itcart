@@ -1,30 +1,36 @@
-import React from 'react'
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import './Newsletter.scss'
+'use client';
+
+import React from 'react';
+import './Newsletter.scss';
+
 function NewsLetter() {
-    return (
-        <section className="bg-info py-5 newslatter">
-            <Container>
-                <Row>
-                    <Col>
-                        <h2>Join our Newsletter  </h2>
-                    </Col>
-                </Row>
-                <Row className="justify-content-center">
-                    <Col sm={12} md={9} lg={6}>
-                        <Form.Group className="mb-3 mt-5 position-relative d-flex" controlId="exampleForm.ControlTextarea1">
-                            <Form.Control type="email" placeholder="E-Mail*" />
-                            <Button
-                                variant="outline-secondary"
-                                className="fs-6 fw-semibold bg-white p btn-form">
-                                Subscribe
-                            </Button>
-                        </Form.Group>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    )
+  return (
+    <section className="bg-info py-12 newslatter">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold">Join our Newsletter</h2>
+        </div>
+        <div className="flex justify-center">
+          <div className="w-full max-w-md">
+            <form className="flex gap-2 mt-8">
+              <input
+                type="email"
+                placeholder="E-Mail*"
+                className="input input-bordered flex-1"
+                required
+              />
+              <button
+                type="submit"
+                className="btn btn-outline btn-secondary bg-white font-semibold px-6"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default NewsLetter
+export default NewsLetter;

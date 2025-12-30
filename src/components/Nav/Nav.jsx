@@ -1,8 +1,8 @@
-import React,{useState} from 'react'
-import { Link } from 'react-router-dom'
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+'use client';
 
-import './Nav.scss';
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 import W from '../assets/w.png';
 import A from '../assets/a.png';
@@ -12,99 +12,188 @@ import Hrms from '../assets/hrms.png';
 import Eservices from '../assets/e-services.png';
 import Mis from '../assets/mis.png';
 import Tnterp from '../assets/enterp.png';
-
 import News from '../assets/news.png';
 import Customer from '../assets/customer.png';
 import Case from '../assets/case.png';
-
 import Meet from '../assets/meet.png';
 import Contact from '../assets/contact.png';
-
-import Logo from '../assets/Website-Logo-ITCart/Website-Logo-27.svg'
+import Logo from '../assets/Website-Logo-ITCart/Website-Logo-27.svg';
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-const[show, setShow] = useState(true);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-const hendle = () => {
-  setShow(!show);
-}
+  const getImageSrc = (img) => {
+    return img?.src || img || '';
+  };
 
   return (
-    <div>
-      <Navbar id='navihation' sticky="top" bg="white" variant="light" expand="lg">
-        <Container fluid="xxl">
-          <Navbar.Brand>
-            <Link to="/">
-              <img src={Logo} className='' style={{width:'178px'}} alt="logo" />
-            </Link>
-          </Navbar.Brand>
-          
-          <button onClick={hendle} class="navbar-toggler" type="button" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav className="navbar bg-base-100 shadow-lg sticky top-0 z-50">
+      <div className="container mx-auto px-4">
+        <div className="flex-1">
+          <Link href="/" className="btn btn-ghost normal-case text-xl">
+            <img 
+              src={getImageSrc(Logo)} 
+              alt="logo" 
+              className="h-12 w-auto"
+            />
+          </Link>
+        </div>
+        
+        <div className="flex-none lg:hidden">
+          <button 
+            className="btn btn-square btn-ghost"
+            onClick={toggleMenu}
+            aria-label="Toggle navigation"
+          >
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              {isOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
           </button>
-          <Navbar className={show ? '' : 'd-block'} id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <li className='nav-item dropdown' id="Services-nav-dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link className="dropdown-item services" to="ourservice"><img src={W} alt="" /> Web Development</Link>
-                  <Link className="dropdown-item services" to="ourservice"><img src={A} alt="" /> App Development</Link>
-                  <Link className="dropdown-item services" to="ourservice"><img src={B} alt="" /> Business Automation</Link>
-                  <Link className="dropdown-item services" to="ourservice"><img src={T} alt="" /> Technology Consulting</Link>
+        </div>
+
+        <div className={`flex-none ${isOpen ? 'block' : 'hidden'} lg:block`}>
+          <ul className="menu menu-horizontal px-1 gap-2">
+            {/* Services Dropdown */}
+            <li>
+              <details className="dropdown dropdown-end">
+                <summary className="btn btn-ghost">Services</summary>
+                <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-64 p-2 shadow-lg border border-base-300">
+                  <li>
+                    <Link href="/ourservice" className="flex items-center gap-3">
+                      <img src={getImageSrc(W)} alt="" className="w-6 h-6" />
+                      <span>Web Development</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/ourservice" className="flex items-center gap-3">
+                      <img src={getImageSrc(A)} alt="" className="w-6 h-6" />
+                      <span>App Development</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/ourservice" className="flex items-center gap-3">
+                      <img src={getImageSrc(B)} alt="" className="w-6 h-6" />
+                      <span>Business Automation</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/ourservice" className="flex items-center gap-3">
+                      <img src={getImageSrc(T)} alt="" className="w-6 h-6" />
+                      <span>Technology Consulting</span>
+                    </Link>
+                  </li>
                 </ul>
-              </li>
+              </details>
+            </li>
 
-              <li className='nav-item dropdown' id="Products-nav-dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Solutions
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                <Link className="dropdown-item solu" to="cartsolution"><img src={Hrms} alt="" /> HRMS Automation</Link>
-                <Link className="dropdown-item solu" to="cartsolution"><img src={Eservices} alt="" /> E-Services Automation</Link>
-                <Link className="dropdown-item solu" to="cartsolution"><img src={Mis} alt="" /> MIS Solution</Link>
-                <Link className="dropdown-item solu" to="cartsolution"><img src={Tnterp} alt="" /> Enterprise Solution</Link>
+            {/* Solutions Dropdown */}
+            <li>
+              <details className="dropdown dropdown-end">
+                <summary className="btn btn-ghost">Solutions</summary>
+                <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-64 p-2 shadow-lg border border-base-300">
+                  <li>
+                    <Link href="/cartsolution" className="flex items-center gap-3">
+                      <img src={getImageSrc(Hrms)} alt="" className="w-6 h-6" />
+                      <span>HRMS Automation</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/cartsolution" className="flex items-center gap-3">
+                      <img src={getImageSrc(Eservices)} alt="" className="w-6 h-6" />
+                      <span>E-Services Automation</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/cartsolution" className="flex items-center gap-3">
+                      <img src={getImageSrc(Mis)} alt="" className="w-6 h-6" />
+                      <span>MIS Solution</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/cartsolution" className="flex items-center gap-3">
+                      <img src={getImageSrc(Tnterp)} alt="" className="w-6 h-6" />
+                      <span>Enterprise Solution</span>
+                    </Link>
+                  </li>
                 </ul>
-              </li>
+              </details>
+            </li>
 
-
-              <li className='nav-item dropdown' id="Resources-nav-dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Resources
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                <Link className="dropdown-item resources" to="resources"> <img src={Customer} alt="" /> Blogs</Link>
-                <Link className="dropdown-item resources" to="resources"> <img src={Case} alt="" /> Case Studies</Link>
-                <Link className="dropdown-item resources" to="resources"> <img src={News} alt="" />News</Link>
-                <Link className="dropdown-item resources" to="resources"> <img src={News} alt="" />Help Center</Link>
+            {/* Resources Dropdown */}
+            <li>
+              <details className="dropdown dropdown-end">
+                <summary className="btn btn-ghost">Resources</summary>
+                <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-64 p-2 shadow-lg border border-base-300">
+                  <li>
+                    <Link href="/resources" className="flex items-center gap-3">
+                      <img src={getImageSrc(Customer)} alt="" className="w-6 h-6" />
+                      <span>Blogs</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/resources" className="flex items-center gap-3">
+                      <img src={getImageSrc(Case)} alt="" className="w-6 h-6" />
+                      <span>Case Studies</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/resources" className="flex items-center gap-3">
+                      <img src={getImageSrc(News)} alt="" className="w-6 h-6" />
+                      <span>News</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/resources" className="flex items-center gap-3">
+                      <img src={getImageSrc(News)} alt="" className="w-6 h-6" />
+                      <span>Help Center</span>
+                    </Link>
+                  </li>
                 </ul>
-              </li>
+              </details>
+            </li>
 
-             
+            {/* Careers Link */}
+            <li>
+              <Link href="/careers" className="btn btn-ghost">Careers</Link>
+            </li>
 
-             
-              <Nav.Item>
-                <Link className="nav-link" to="careers">Careers</Link>
-              </Nav.Item>
-
-             
-              <li className='nav-item dropdown' id="get-in-touch">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Get in touch
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                <Link className="dropdown-item solu" to="ourteam"> <img src={Meet} alt="" /> Meet the Team</Link>
-                <Link className="dropdown-item solu" to="contact"> <img src={Contact} alt="" /> Contact Us</Link>
+            {/* Get in Touch Dropdown */}
+            <li>
+              <details className="dropdown dropdown-end">
+                <summary className="btn btn-ghost">Get in touch</summary>
+                <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-64 p-2 shadow-lg border border-base-300">
+                  <li>
+                    <Link href="/ourteam" className="flex items-center gap-3">
+                      <img src={getImageSrc(Meet)} alt="" className="w-6 h-6" />
+                      <span>Meet the Team</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="flex items-center gap-3">
+                      <img src={getImageSrc(Contact)} alt="" className="w-6 h-6" />
+                      <span>Contact Us</span>
+                    </Link>
+                  </li>
                 </ul>
-              </li>
-
-            </Nav>
-          </Navbar>
-        </Container>
-      </Navbar>
-    </div>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 

@@ -1,59 +1,62 @@
-import React, { useState } from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+'use client';
+
+import React, { useState } from 'react';
 import Banner from '../banner/Banner';
-import { SolutionData } from '../Utility'
+import { SolutionData } from '../Utility';
 import Hrms from './Hrms';
 import Eservice from './Eservice';
 import Mis from './Mis';
 import Enterprise from './Enterprise';
-import CommonTab from '../Careers/CommonTab'
-import '../Careers/CommonTab.scss';
-import PeopleSay from '../PeopleSay/PeopleSay'
-
+import PeopleSay from '../PeopleSay/PeopleSay';
 
 function CartSolution() {
+  const [activeTab, setActiveTab] = useState(0);
 
-    const [index, setIndex] = useState(0)
-    const handle = (e) => {
-        setIndex(e)
-    }
-    return (
-        <>
-            <Banner
-                className='bg-light8'
-                subtitle='Did you Digitally Streamline your Business?'
-                title='Our Solutions'
-                bodytext="Don't worry, IT Cart does it for you!
-            We cover that extra mile to ensure your technology needs are meet with the best in the class expertise, services & support!" />
+  const handleTabChange = (index) => {
+    setActiveTab(index);
+  };
 
-            <section>
-                <Container className="tabs-container" fluid>
-                    <Row>
-                        <Col md={12} className="">
-                            <CommonTab careerData={SolutionData} onClick={handle} activeTab="Web Development" />
-                        </Col>
-                    </Row>
-                </Container>
+  const tabContent = [
+    { component: <Hrms />, label: 'HRMS' },
+    { component: <Eservice />, label: 'E-Services' },
+    { component: <Mis />, label: 'MIS' },
+    { component: <Enterprise />, label: 'Enterprise Solutions' },
+  ];
 
-                <div className="career-section">
+  return (
+    <>
+      <Banner
+        className='bg-light8'
+        subtitle='Did you Digitally Streamline your Business?'
+        title='Our Solutions'
+        bodytext="Don't worry, IT Cart does it for you! We cover that extra mile to ensure your technology needs are meet with the best in the class expertise, services & support!"
+      />
 
-                    {index === 0 ?
-                        <Hrms />
-                        : index === 1 ?
-                            <Eservice />
-                            : index === 2 ?
-                                <Mis />
-                                : index === 3 ?
-                                    <Enterprise />
-                                    : null}
-                </div>
+      <section className="py-12 bg-base-100">
+        <div className="container mx-auto px-4">
+          {/* DaisyUI Tabs */}
+          <div className="tabs tabs-boxed justify-center mb-8 bg-base-200">
+            {SolutionData.map((item, index) => (
+              <button
+                key={item.key}
+                className={`tab tab-lg ${activeTab === index ? 'tab-active' : ''}`}
+                onClick={() => handleTabChange(index)}
+              >
+                {item.title}
+              </button>
+            ))}
+          </div>
 
-            </section>
+          {/* Tab Content */}
+          <div className="mt-8">
+            {tabContent[activeTab]?.component}
+          </div>
+        </div>
+      </section>
 
-            <PeopleSay />
-
-        </>
-    )
+      <PeopleSay />
+    </>
+  );
 }
 
-export default CartSolution
+export default CartSolution;

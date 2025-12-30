@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Nav } from 'react-bootstrap';
+
 import Adit1 from '../assets/odit1.png';
 import Adit2 from '../assets/odit2.png';
 

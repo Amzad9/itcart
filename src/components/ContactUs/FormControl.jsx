@@ -1,178 +1,175 @@
-import React, { useEffect, useState } from 'react'
-import { Row, Col, Form, FormGroup, Dropdown } from 'react-bootstrap';
+'use client';
+
+import React, { useState } from 'react';
 import './FormControl.scss';
+
 function FormControl() {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    company: ""
+  });
 
-    const [data, setData] = useState({
-        name: "",
-        email: "",
-        phone:"",
-        message: "",
-        company: ""
-    })
-    const[employees,setEmployees] = useState([]);
-    const[selectedEmployees,setSelectedEmployees] = useState([]);
+  const { name, email, phone, message, company } = data;
 
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
 
-    
-    const { name, email,phone, message, company, } = data;
-
-    const handleChange = e => {
-        
-        setData({ ...data, [e.target.name]: e.target.value })
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (name !== "" && phone !== "" && company !== "") {
+      try {
+        await fetch("https://v1.nocodeapi.com/shadab/google_sheets/MwiXzprYYAROCodp?tabId=Sheet1", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify([[name, email, phone, message, company]]),
+        });
+        alert("Successfully submitted");
+      } catch (err) {
+        console.log(err);
+        alert("Submission failed");
+      }
+    } else {
+      alert('Please fill the required details');
     }
+  };
 
+  return (
+    <form onSubmit={handleSubmit}>
+      <div className="space-y-4">
+        <div>
+          <input
+            type="text"
+            placeholder="Name*"
+            className="input input-bordered w-full"
+            name="name"
+            value={name}
+            onChange={handleChange}
+            required
+          />
+        </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <input
+              type="email"
+              placeholder="E-mail*"
+              className="input input-bordered w-full"
+              name="email"
+              value={email}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <input
+              type="tel"
+              placeholder="Phone*"
+              className="input input-bordered w-full"
+              name="phone"
+              value={phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
 
-    const handleSubmit = async e => {
-       
-        e.preventDefault()
-          if(name !== "" && phone !== "" && company !== ""){
-            try {
-                await fetch("https://v1.nocodeapi.com/shadab/google_sheets/MwiXzprYYAROCodp?tabId=Sheet1", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify([[name, email, phone, message,company]]),
-                    success: function(response, data){
-                       console.log(data.message)
-                    }
-                })
-                alert("successfully")
-            } catch (err) {
-                console.log(err)
-                alert("Not successfully")
-            } 
-          }else{
-            alert('Please fill the details')
-          }
-        
-    }
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <input
+              type="text"
+              placeholder="Company's Name*"
+              className="input input-bordered w-full"
+              name="company"
+              value={company}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <details className="dropdown w-full">
+              <summary className="btn btn-outline w-full justify-between">
+                Size of your company
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow border border-base-300">
+                <li><a>0</a></li>
+                <li><a>11-50</a></li>
+                <li><a>51-250</a></li>
+                <li><a>251-500</a></li>
+                <li><a>501+</a></li>
+              </ul>
+            </details>
+          </div>
+        </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <details className="dropdown w-full">
+              <summary className="btn btn-outline w-full justify-between">
+                Services
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow border border-base-300">
+                <li><label className="label cursor-pointer justify-between"><span>Web Development</span><input type="checkbox" className="checkbox" /></label></li>
+                <li><label className="label cursor-pointer justify-between"><span>App Development</span><input type="checkbox" className="checkbox" /></label></li>
+                <li><label className="label cursor-pointer justify-between"><span>Business Automation</span><input type="checkbox" className="checkbox" /></label></li>
+                <li><label className="label cursor-pointer justify-between"><span>Technology Consulting</span><input type="checkbox" className="checkbox" /></label></li>
+              </ul>
+            </details>
+          </div>
+          <div>
+            <details className="dropdown w-full">
+              <summary className="btn btn-outline w-full justify-between">
+                Solutions
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow border border-base-300">
+                <li><label className="label cursor-pointer justify-between"><span>HRMS Automation</span><input type="checkbox" className="checkbox" /></label></li>
+                <li><label className="label cursor-pointer justify-between"><span>E-Services Automation</span><input type="checkbox" className="checkbox" /></label></li>
+                <li><label className="label cursor-pointer justify-between"><span>MIS Automation</span><input type="checkbox" className="checkbox" /></label></li>
+                <li><label className="label cursor-pointer justify-between"><span>Enterprise Solutions</span><input type="checkbox" className="checkbox" /></label></li>
+              </ul>
+            </details>
+          </div>
+        </div>
 
-   useEffect( () => {
-    const employeesData = [
-        { id: 1, name: 'John' },
-        { id: 2, name: 'Roy' },
-        { id: 3, name: 'Albert' }
-      ]
-      setEmployees({employeesData});
-   })
+        <div>
+          <textarea
+            className="textarea textarea-bordered w-full min-h-[150px]"
+            placeholder="Tell us all about it...."
+            name="message"
+            value={message}
+            onChange={handleChange}
+          />
+        </div>
 
-    return (
-       
-        <form onSubmit={handleSubmit} >
-            <Row>
-                <Col sm={12} md={12} className="mb-3 mb-md-0 pb-4">
-                    <Form.Control type="text" placeholder="Name*" className="mb-2" 
-                   name='name' value={name} onChange={handleChange} />
-                </Col>
-                <Col sm={12} md={6} className="mb-3 mb-md-0 pb-4">
-                    <Form.Control type="email" placeholder="E-email*" className="mb-2" 
-                  name='email' value={email} onChange={handleChange} />
-                </Col>
-                <Col sm={12} md={6} className="mb-3 mb-md-0">
-                    <Form.Control type="tel" placeholder="Phone" className="mb-2" 
-                 name='phone' value={phone}  onChange={handleChange} />
-                </Col>
-                <Col sm={12} md={6} className="mb-3 mb-md-0">
-                    <Form.Control type="text" placeholder="Company’s Name" className="mb-2" 
-                 name="company" value={company}  onChange={handleChange} />
-                </Col>
-                <Col sm={12} md={6} className="mb-3 mb-md-0">
-               
-                    <FormGroup>
-
-                        <Dropdown className="emp-drop" onChange={handleChange} multiple >
-                            <Dropdown.Toggle variant="" className="form-control" id="dropdown-basic">
-                                Size of your company
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu className="p-0 form-control">
-                                <Dropdown.Item href="#/action-1" >0</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">11-50</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">51-250</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">251-500</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">501+</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-
-
-                    </FormGroup>
-                </Col>
-                <Col sm={12} md={6} className="mb-3 mb-md-0 mt-4">
-                    <FormGroup>
-
-                        <Dropdown className="check-drop">
-                            <Dropdown.Toggle variant="" className="form-control" id="dropdown-basic">
-                                Services
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu className="p-0 form-control">
-                                <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-1">
-                                    <span>Web Development</span>
-                                    <Form.Check type="checkbox" className="border-secondary" label="" />
-                                </Dropdown.Item>
-                                <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-2">
-                                    <span>App Development</span>
-                                    <Form.Check type="checkbox" className="border-secondary" label="" />
-                                </Dropdown.Item>
-                                <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-3">
-                                    <span>Business Automation</span>
-                                    <Form.Check type="checkbox" className="border-secondary" label="" />
-                                </Dropdown.Item>
-                                <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-3">
-                                    <span>Technology Consulting</span>
-                                    <Form.Check type="checkbox" className="border-secondary" label="" />
-                                </Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </FormGroup>
-                </Col>
-                <Col sm={12} md={6} className="mb-3 mb-md-0 mt-4">
-                    <FormGroup>
-
-                        <Dropdown className="check-drop">
-                            <Dropdown.Toggle variant="" className="form-control" id="dropdown-basic">
-                                Solutions
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu className="p-0 form-control">
-                                <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-1">
-                                    <span>HRMS Automation</span>
-                                    <Form.Check type="checkbox" className="border-secondary" label="" />
-                                </Dropdown.Item>
-                                <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-2">
-                                    <span>E-Services Automation</span>
-                                    <Form.Check type="checkbox" className="border-secondary" label="" />
-                                </Dropdown.Item>
-                                <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-3">
-                                    <span>MIS Automation</span>
-                                    <Form.Check type="checkbox" className="border-secondary" label="" />
-                                </Dropdown.Item>
-                                <Dropdown.Item className="d-flex align-iems-center justify-content-between" href="#/action-3">
-                                    <span>Enterprise Solutions</span>
-                                    <Form.Check type="checkbox" className="border-secondary" label="" />
-                                </Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </FormGroup>
-                </Col>
-                <Col sm={12} md={12} className="mb-3 mb-md-0">
-                    <Form.Group className="mb-3 mt-0 mt-md-4" controlId="exampleForm.ControlTextarea1">
-                        <Form.Control className="pt-4" as="textarea" rows="7" placeholder="Tell us all about it...." />
-                    </Form.Group>
-                </Col>
-                <Col sm={12} md={8} className="pt-3 pt-md-3">
-                    <h4 className="text-secondary mt-3">We shall get back to you shortly</h4>
-                </Col>
-                <Col sm={12} md={4} className="pt-3 pt-md-3 text-end">
-                    <button type="submit" className="btn btn-outline-secondary py-3 px-4 bg-secondary text-white fs-6 fw-semibold rounded-4 btn-form">Send Message</button>
-                </Col>
-            </Row>
-        </form>
-    )
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-4">
+          <div>
+            <h4 className="text-secondary text-lg font-semibold">We shall get back to you shortly</h4>
+          </div>
+          <div>
+            <button
+              type="submit"
+              className="btn btn-secondary text-white px-8 py-3 rounded-2xl"
+            >
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  );
 }
 
-export default FormControl
+export default FormControl;
