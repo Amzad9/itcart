@@ -1,7 +1,7 @@
 export const SLIDER_DATA = [
-    { title: "Business Problems? Technology Solutions!", subtitle: "IT Cart is a multi-window digital solution provider that primarily focuses on Business problems and approaches in a consultative manner with befitting Technology Solutions!" },
+    { title: "Business Problems? Technology Solutions!", subtitle: "Devora is a multi-window digital solution provider that primarily focuses on Business problems and approaches in a consultative manner with befitting Technology Solutions!" },
     { title: "Making Technology accessible!", subtitle: "We take great pride in our domain expertise and decades of rich experience in Business automation, Digital transformations & Enterprise Solutions!" },
-    { title: "À la Carte IT Solutions", subtitle: "Pic and chose from IT Cart,Tools and Modules that fit the part!" }
+    { title: "À la Carte IT Solutions", subtitle: "Pic and chose from Devora,Tools and Modules that fit the part!" }
 ];
 
 export const Header_SLIDER_SETTINGS = {
@@ -34,7 +34,7 @@ export const SolutionData = [
 export const careerData = [
     { key: 'Students and garduates', title: 'Students and garduates' },
     { key: 'Job Areas', title: 'Job Areas' },
-    { key: 'Joining IT Cart', title: 'Joining IT Cart' },
+    { key: 'Joining Devora', title: 'Joining Devora' },
     { key: 'Who we are', title: 'Who we are' },
 ]
 export const ResourcesData = [

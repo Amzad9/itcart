@@ -1,10 +1,17 @@
+'use client';
+
 import React from 'react'
-import { Nav} from 'react-bootstrap';
 
 const NavLink = (props) => {
     return (
         <>
-           <Nav.Link className={props.className} onClick={props.onClick} eventKey={props.eventKey}>{props.title}{props.children}</Nav.Link> 
+           <a 
+             className={`tab ${props.className || ''} ${props.activeTab === props.eventKey ? 'tab-active' : ''}`}
+             onClick={props.onClick}
+             role="tab"
+           >
+             {props.title}{props.children}
+           </a> 
         </>
     )
 }

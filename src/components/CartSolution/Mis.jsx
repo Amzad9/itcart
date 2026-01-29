@@ -1,285 +1,149 @@
-import React from 'react'
+'use client';
 
-import Img13 from '../assets/solution/MIS/13.png';
-import Img14 from '../assets/solution/MIS/14.png';
+import React from 'react';
+import { TwoCol, Section } from './SharedComponents';
+import { BarChart3, FolderOpen, Database, Cpu, Shield, Users, CreditCard } from 'lucide-react';
 
+// Splash images for MIS
+const Img1 = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop';
+const Img2 = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=650&fit=crop';
+const Img3 = 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&h=650&fit=crop';
+const Img4 = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=650&fit=crop';
+const Img5 = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=650&fit=crop';
+const Img6 = 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=650&fit=crop';
+const Img7 = 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=650&fit=crop';
+const Img8 = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=650&fit=crop';
+const Img9 = 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&h=650&fit=crop';
+const Img10 = 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=650&fit=crop';
+const Img11 = 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop';
+const Img12 = 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&h=650&fit=crop';
+const Img13 = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=650&fit=crop';
+const Img14 = 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&h=650&fit=crop';
 
-import Img1 from '../assets/solution/MIS/1.png';
-import Img2 from '../assets/solution/MIS/2.png';
-import Img3 from '../assets/solution/MIS/3.png';
-import Img4 from '../assets/solution/MIS/4.png';
-import Img5 from '../assets/solution/MIS/5.png';
-import Img6 from '../assets/solution/MIS/6.png';
-import Img7 from '../assets/solution/MIS/7.png';
-import Img8 from '../assets/solution/MIS/8.png';
-import Img9 from '../assets/solution/MIS/9.png';
-import Img10 from '../assets/solution/MIS/10.png';
-import Img11 from '../assets/solution/MIS/11.png';
-import Img12 from '../assets/solution/MIS/12.png';
-function Mis() {
-    return (
-        <>
-            <section>
-                <Container className="bg-light2 rounded-top-8 px-6 py-5" fluid="xxl">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Digital Transformation Management</h2>
+export default function Mis() {
+  const sections = [
+    { title: "Digital Transformation Management", icon: BarChart3, topRounded: true },
+    { title: "Document Management", icon: FolderOpen },
+    { title: "Data Management", icon: Database },
+    { title: "IT Asset Management", icon: Cpu },
+    { title: "KYC Management", icon: Shield },
+    { title: "Venders Management", icon: Users },
+    { title: "Salary & Payroll Processing", icon: CreditCard, bottomRounded: true },
+  ];
 
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Let Technology take over your Business</h4>
-                            <p>We deploy latest technological solutions to your organizations processes, data and the resources to align them optimally into a systematic digital business!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img1} alt="" className='img-fluid' />
-                        </Col>
+  return (
+    <>
+      <Section title={sections[0].title} index={0} topRounded icon={sections[0].icon}>
+        <TwoCol
+          title="Let Technology take over your Business"
+          desc="We deploy latest technological solutions to your organizations processes, data and the resources to align them optimally into a systematic digital business!"
+          img={Img1}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Let Data dictate your key decisions"
+            desc="Your Business will start to grow tremendously once you implement data driven changes in the business, allowing performance indicate the direction!"
+            img={Img2}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img2} alt="" className='img-fluid' />
-                        </Col>
+      <Section title={sections[1].title} index={1} icon={sections[1].icon}>
+        <TwoCol
+          title="Never misplace important files again!"
+          desc="You can now search any documents within an organization within seconds with the help of AI-based search algorithms in our MIS"
+          img={Img3}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Secure your documents with our MIS"
+            desc="Permit and block access from users based on their position within the organizational hierarchies in order to safeguard the confidential files!"
+            img={Img4}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Let Data dictate your key decisions</h4>
-                            <p>Your Business will start to grow tremendously once you implement data driven changes in the business, allowing performance indicate the direction!</p>
-                        </Col>
+      <Section title={sections[2].title} index={2} icon={sections[2].icon}>
+        <TwoCol
+          title="We structure & organize your data"
+          desc="The MIS creates the database management system that collects, organizes, reports and analyzes data within a framework created specifically for your organization!"
+          img={Img5}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="MIS enables Data driven decisions"
+            desc="Your Business will start to grow tremendously once you implement data driven changes in the business, allowing performance indicate the direction"
+            img={Img6}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light6 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Document Management</h2>
+      <Section title={sections[3].title} index={3} icon={sections[3].icon}>
+        <TwoCol
+          title="Track and manage your IT assets"
+          desc="Know, at any given time, the status of IT assets allocated to the teams and individuals within each department!"
+          img={Img7}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Repair or Replace process"
+            desc="In case of a requirement a request form can be filled and processed and the responder can decide whether to repair the asset or replace it entirely!"
+            img={Img8}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never misplace important files again!</h4>
-                            <p>You can now search any documents within an organization within seconds with the help of AI-based search algorithms in our MIS</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img3} alt="" className='img-fluid' />
-                        </Col>
+      <Section title={sections[4].title} index={4} icon={sections[4].icon}>
+        <TwoCol
+          title="Role based processing"
+          desc="Tickets traverse through the proper channel within our system based off of your organizational needs and decisions can be made by the assigned roles!"
+          img={Img9}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Organize issue handling"
+            desc="Segment and prioritize the issues and then put it in a proper workflow to ensure timely solution!"
+            img={Img10}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img4} alt="" className='img-fluid' />
-                        </Col>
+      <Section title={sections[5].title} index={5} icon={sections[5].icon}>
+        <TwoCol
+          title="Understand Business Requirement with MIS"
+          desc="Our systems enable business need analysis through series of predefined templates and helps you document and process it!"
+          img={Img11}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Vendor Management made easy"
+            desc="Assign the vendors for various deliverables and manage them on the predefined performance metric, helping you eliminate poor vendors and manage resourceful vendors!"
+            img={Img12}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Secure your documents with our MIS</h4>
-                            <p>Permit and block access from users based on their position within the organizational hierarchies in order to safeguard the confidential files!</p>
-                        </Col>
-
-                    </Row>
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light7 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Data Management</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>We structure & organize your data</h4>
-                            <p>The MIS creates the database management system that collects, organizes, reports and analyzes data within a framework created specifically for your organization!  </p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img5} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-
-                        <Col xs={12} md={6}>
-                            <img src={Img6} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>MIS enables Data driven decisions</h4>
-                            <p>Your Business will start to grow tremendously once you implement data driven changes in the business, allowing performance indicate the direction</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-7">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light5 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>IT Asset Management</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Track and manage your IT assets </h4>
-                            <p>Know, at any given time, the status of IT assets allocated to the teams and individuals within each department! </p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img7} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-
-                        <Col xs={12} md={6}>
-                            <img src={Img8} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Repair or Replace process </h4>
-                            <p>In case of a requirement a request form can be filled and processed and the responder can decide whether to repair the asset or replace it entirely!</p>
-                        </Col>
-
-                    </Row>
-
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light3 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>KYC Management</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Role based processing </h4>
-                            <p>Tickets traverse through the proper channel within our system based off of your organizational needs and decisions can be made by the assigned roles!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img9} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img10} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Organize issue handling</h4>
-                            <p>Segment and prioritize the issues and then put it in a proper workflow to ensure timely solution!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light5 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Venders Management</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Understand Business Requirement with MIS</h4>
-                            <p>Our systems enable business need analysis through series of predefined templates and helps you document and process it!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img11} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img12} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Vendor Management made easy</h4>
-                            <p>Assign the vendors for various deliverables and manage them on the predefined performance metric, helping you eliminate poor vendors and manage resourceful vendors!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Salary & Payroll Processing</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Manage salary, deductions & incentives</h4>
-                            <p>Get a proper breakdown of employee salaries in a designated format accounting for the tax & other deductions and perks/incentives with our HRMS!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img13} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img14} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Generate reports & pay slips</h4>
-                            <p>Create salary slips from our predefined customizable templates and get reports and analytics on CTC of employees! </p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-        </>
-    )
+      <Section title={sections[6].title} index={6} bottomRounded icon={sections[6].icon}>
+        <TwoCol
+          title="Manage salary, deductions & incentives"
+          desc="Get a proper breakdown of employee salaries in a designated format accounting for the tax & other deductions and perks/incentives with our HRMS!"
+          img={Img13}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Generate reports & pay slips"
+            desc="Create salary slips from our predefined customizable templates and get reports and analytics on CTC of employees!"
+            img={Img14}
+            reverse
+          />
+        </div>
+      </Section>
+    </>
+  );
 }
-
-export default Mis

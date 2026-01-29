@@ -1,14 +1,13 @@
+'use client';
+
 import React from 'react'
-import { Tab} from 'react-bootstrap';
-
-
 
 const TabContent = (props) => {
     return (
         <>
-          <Tab.Content>
+          <div className="tab-content-wrapper">
              {props.children}
-          </Tab.Content>  
+          </div>  
         </>
     )
 }

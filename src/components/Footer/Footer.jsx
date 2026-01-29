@@ -2,8 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-
-import Logo from '../assets/Website-Logo-ITCart/Website-Logo-27.svg';
+import DevoraLogo from '../Nav/DevoraLogo';
 import Insta from '../assets/insta.png';
 import Facebook from '../assets/facebook.png';
 import Linkedin from '../assets/linkedin.png';
@@ -21,11 +20,7 @@ function Footer() {
           {/* Logo */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <Link href="/" className="block mb-4">
-              <img 
-                src={getImageSrc(Logo)} 
-                alt="Logo" 
-                className="h-12 w-auto"
-              />
+              <DevoraLogo className="h-12 w-auto" showText={true} />
             </Link>
           </div>
 
@@ -155,7 +150,7 @@ function Footer() {
         <div className="divider"></div>
         <div className="text-center pt-4">
           <p className="text-base-content/70">
-            Copyright &copy; {new Date().getFullYear()} IT Cart - All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} Devora - All rights reserved.
           </p>
         </div>
       </div>

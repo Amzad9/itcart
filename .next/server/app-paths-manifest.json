@@ -1,1 +1,23 @@
-{}
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/careers/page": "app/careers/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/job/page": "app/job/page.js",
+  "/ourservice/page": "app/ourservice/page.js",
+  "/ourteam/page": "app/ourteam/page.js",
+  "/page": "app/page.js",
+  "/resources/page": "app/resources/page.js",
+  "/cartsolution/page": "app/cartsolution/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/business-automation/page": "app/business-automation/page.js",
+  "/eservices/page": "app/eservices/page.js",
+  "/app-development/page": "app/app-development/page.js",
+  "/hrms/page": "app/hrms/page.js",
+  "/enterprise/page": "app/enterprise/page.js",
+  "/case-studies/page": "app/case-studies/page.js",
+  "/mis/page": "app/mis/page.js",
+  "/help-center/page": "app/help-center/page.js",
+  "/news/page": "app/news/page.js",
+  "/technology-consulting/page": "app/technology-consulting/page.js",
+  "/web-development/page": "app/web-development/page.js"
+}

@@ -1,9 +1,16 @@
 import type { Metadata, Viewport } from 'next';
 import { ThemeProvider } from 'next-themes';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import Navigation from '@/components/Nav/Nav';
 import Footer from '@/components/Footer/Footer';
 import '@/index.css';
 import './globals.css';
+
+const fontSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
 
 const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://weblibron.com');
 
@@ -49,7 +56,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
-  themeColor: '#FF2951',
+  themeColor: '#6F8F72',
 };
 
 const jsonLd = {
@@ -84,8 +91,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+      <body className={`${fontSans.variable} font-sans`}>
+        <ThemeProvider attribute="data-theme" defaultTheme="devora" enableSystem>
           <Navigation />
           <main id="main-content">{children}</main>
           <Footer />
@@ -94,4 +101,3 @@ export default function RootLayout({
     </html>
   );
 }
-

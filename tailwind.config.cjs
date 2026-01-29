@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,33 +12,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // 2026 Futuristic Color Palette
-        primary: {
-          50: '#FFF0F3',
-          100: '#FFE0E6',
-          200: '#FFC1CC',
-          300: '#FF8FA3',
-          400: '#FF5C7A',
-          500: '#FF2951',
-          600: '#E62047',
-          700: '#CC1A3D',
-          800: '#B31433',
-          900: '#990E29',
-          DEFAULT: '#FF2951',
-        },
-        secondary: {
-          50: '#E0F7FA',
-          100: '#B2EBF2',
-          200: '#80DEEA',
-          300: '#4DD0E1',
-          400: '#26C6DA',
-          500: '#00BCD4',
-          600: '#00ACC1',
-          700: '#0097A7',
-          800: '#00838F',
-          900: '#006064',
-          DEFAULT: '#00BCD4',
-        },
+        /**
+         * Theme palette:
+         * - primary: #25343F (Dark blue for headings)
+         * - secondary: #6F8F72 (Muted green for accents)
+         * - tertiary: #1B3C53 (Darker blue for backgrounds)
+         * - light-bg: #F8FAFC
+         * - light-text: #64748B
+         */
+        primary: 'var(--color-primary, #25343F)',
+        secondary: 'var(--color-secondary, #6F8F72)',
+        tertiary: 'var(--color-tertiary, #1B3C53)',
+        'light-bg': 'var(--color-light-bg, #F8FAFC)',
+        'light-text': 'var(--color-light-text, #64748B)',
+        ink: '#1B3C53',
         accent: {
           50: '#F3E5F5',
           100: '#E1BEE7',
@@ -93,8 +83,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Roboto', 'system-ui', '-apple-system', 'sans-serif'],
-        display: ['Poppins', 'Roboto', 'sans-serif'],
+        sans: ['var(--font-sans)', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['var(--font-sans)', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
       fontSize: {
@@ -259,11 +249,51 @@ module.exports = {
         '800': '800ms',
         '1200': '1200ms',
       },
+      backgroundColor: {
+        'primary': 'var(--color-primary, #25343F)',
+        'secondary': 'var(--color-secondary, #6F8F72)',
+        'tertiary': 'var(--color-tertiary, #1B3C53)',
+        'light-bg': 'var(--color-light-bg, #F8FAFC)',
+      },
+      textColor: {
+        'primary': 'var(--color-primary, #25343F)',
+        'secondary': 'var(--color-secondary, #6F8F72)',
+        'tertiary': 'var(--color-tertiary, #1B3C53)',
+        'light-text': 'var(--color-light-text, #64748B)',
+      },
+      borderColor: {
+        'primary': 'var(--color-primary, #25343F)',
+        'secondary': 'var(--color-secondary, #6F8F72)',
+        'tertiary': 'var(--color-tertiary, #1B3C53)',
+      },
+      gradientColorStops: {
+        'primary': 'var(--color-primary, #25343F)',
+        'secondary': 'var(--color-secondary, #6F8F72)',
+        'tertiary': 'var(--color-tertiary, #1B3C53)',
+      },
     },
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['light', 'dark'],
+    themes: [
+      {
+        itcart: {
+          primary: '#6F8F72',
+          secondary: '#25343F',
+          accent: '#6F8F72',
+          neutral: '#25343F',
+          'base-100': '#ffffff',
+          'base-200': '#F6F7F8',
+          'base-300': '#E5E7EB',
+          'base-content': '#1B3C53',
+          info: '#3B82F6',
+          success: '#10B981',
+          warning: '#F59E0B',
+          error: '#EF4444',
+        },
+      },
+      'dark',
+    ],
     base: true,
     styled: true,
     utils: true,

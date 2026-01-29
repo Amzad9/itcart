@@ -1,0 +1,23 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/careers/page": "/careers",
+  "/contact/page": "/contact",
+  "/job/page": "/job",
+  "/ourservice/page": "/ourservice",
+  "/ourteam/page": "/ourteam",
+  "/page": "/",
+  "/resources/page": "/resources",
+  "/cartsolution/page": "/cartsolution",
+  "/blog/page": "/blog",
+  "/business-automation/page": "/business-automation",
+  "/eservices/page": "/eservices",
+  "/app-development/page": "/app-development",
+  "/hrms/page": "/hrms",
+  "/enterprise/page": "/enterprise",
+  "/case-studies/page": "/case-studies",
+  "/mis/page": "/mis",
+  "/help-center/page": "/help-center",
+  "/news/page": "/news",
+  "/technology-consulting/page": "/technology-consulting",
+  "/web-development/page": "/web-development"
+}

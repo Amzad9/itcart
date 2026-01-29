@@ -1,8 +1,42 @@
 @import "tailwindcss";
 
-/* Global styles for Business component paragraphs */
-.business-section p {
-  font-size: 24px;
-  color: #000000;
-  line-height: 29px;
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #1B3C53;
+    @apply font-sans;
+  }
+
+  /* Typography colors per theme */
+  h1,
+  h2 {
+    color: #6F8F72;
+    @apply font-bold tracking-tight;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #25343F;
+    @apply font-semibold;
+  }
+
+  p {
+    color: #1B3C53;
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn-secondary {
+    background-color: #25343F;
+    border-color: #25343F;
+    color: #ffffff;
+  }
 }

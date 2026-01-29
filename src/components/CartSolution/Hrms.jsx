@@ -1,365 +1,149 @@
-import React from 'react'
+'use client';
 
-import Adit1 from '../assets/odit1.png';
-import Adit2 from '../assets/odit2.png';
+import React from 'react';
+import { TwoCol, Section } from './SharedComponents';
+import { Users, Briefcase, UserCheck, Clock, Calendar, Receipt, CreditCard } from 'lucide-react';
 
+// Splash images for HRMS
+const Adit1 = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop';
+const Adit2 = 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&h=650&fit=crop';
+const Img1 = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=650&fit=crop';
+const Img2 = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=650&fit=crop';
+const Img3 = 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=650&fit=crop';
+const Img4 = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=650&fit=crop';
+const Img5 = 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=650&fit=crop';
+const Img6 = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=650&fit=crop';
+const Img7 = 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&h=650&fit=crop';
+const Img8 = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=650&fit=crop';
+const Img9 = 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=650&fit=crop';
+const Img10 = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop';
+const Img11 = 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop';
+const Img12 = 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&h=650&fit=crop';
 
-import Img1 from '../assets/solution/1.png';
-import Img2 from '../assets/solution/2.png';
-import Img3 from '../assets/solution/3.png';
-import Img4 from '../assets/solution/4.png';
-import Img5 from '../assets/solution/5.png';
-import Img6 from '../assets/solution/6.png';
-import Img7 from '../assets/solution/7.png';
-import Img8 from '../assets/solution/8.png';
-import Img9 from '../assets/solution/9.png';
-import Img10 from '../assets/solution/10.png';
-import Img11 from '../assets/solution/11.png';
-import Img12 from '../assets/solution/12.png';
-function Hrms() {
-    return (
-        <>
-            <section>
-                <Container className="bg-light2 rounded-top-8 px-6 py-5" fluid="xxl">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Employee Management</h2>
+export default function Hrms() {
+  const sections = [
+    { title: "Employee Management", icon: Users, topRounded: true },
+    { title: "Recruitment Process", icon: Briefcase },
+    { title: "Onboarding Process", icon: UserCheck },
+    { title: "Attendance and Time Logs", icon: Clock },
+    { title: "Employee Leaves", icon: Calendar },
+    { title: "Travel & Expense Claims", icon: Receipt },
+    { title: "Salary & Payroll Processing", icon: CreditCard, bottomRounded: true },
+  ];
 
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never forget important events</h4>
-                            <p>Be at the forefront of important events of your employees with our HRMS, giving your notifications & reminders of such events!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img1} alt="" className='img-fluid' />
-                        </Col>
+  return (
+    <>
+      <Section title={sections[0].title} index={0} topRounded icon={sections[0].icon}>
+        <TwoCol
+          title="Never forget important events"
+          desc="Be at the forefront of important events of your employees with our HRMS, giving your notifications & reminders of such events!"
+          img={Img1}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="All Employment data in one place"
+            desc="The employment information can be difficult to organize in one place, however with our HRMS it becomes automatically gets organized in a proper format!"
+            img={Img2}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img2} alt="" className='img-fluid' />
-                        </Col>
+      <Section title={sections[1].title} index={1} icon={sections[1].icon}>
+        <TwoCol
+          title="Source candidates seamlessly"
+          desc="Create Job descriptions with our master templates and post them across social media and Job portals. Get the sourced candidates directly from your mail into the system with our HRMS"
+          img={Img3}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Engage in Real Time"
+            desc="Organize, schedule and manage interviews in real-time with reminders and notifications to the candidates and the recruiters/hiring managers!"
+            img={Img4}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>All Employment data in one place</h4>
-                            <p>The employment information can be difficult to organize in one place, however with our HRMS it becomes automatically gets organized in a proper format!</p>
-                        </Col>
+      <Section title={sections[2].title} index={2} icon={sections[2].icon}>
+        <TwoCol
+          title="Streamline your Hiring & Firing!"
+          desc="We help you create digital employment processes that is custom designed to your organizational needs!"
+          img={Img5}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Easy Documentation"
+            desc="Create and customize your company's offer letters, joining letters and experience cum release letters from our library of templates!"
+            img={Img6}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light6 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Recruitment Process</h2>
+      <Section title={sections[3].title} index={3} icon={sections[3].icon}>
+        <TwoCol
+          title="Know their whereabouts in Real-time"
+          desc="Now track the whereabouts of your workforce whether they're in office, on break or gone out for a client meet!"
+          img={Img7}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Create & assess project involvements"
+            desc="Customize project based resource deployment and track their log-ins & log-offs from the projects!"
+            img={Img8}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Source candidates seamlessly</h4>
-                            <p>Create Job descriptions with our master templates and post them across social media and Job portals. Get the sourced candidates directly from your mail into the system with our HRMS</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img3} alt="" className='img-fluid' />
-                        </Col>
+      <Section title={sections[4].title} index={4} icon={sections[4].icon}>
+        <TwoCol
+          title="Online leave application"
+          desc="Employees can create a leave request and the manager has the option to approve or disapprove the same!"
+          img={Img9}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Track & manage overall leaves"
+            desc="The HR and the employees can track their leave quota across several major headings like casual & sick leaves!"
+            img={Img10}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img4} alt="" className='img-fluid' />
-                        </Col>
+      <Section title={sections[5].title} index={5} icon={sections[5].icon}>
+        <TwoCol
+          title="Accurate Travel Reimbursement"
+          desc="Our HRMS allows accurate assessment of the travel expenses and provides immediate reimbursement options!"
+          img={Img11}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Business Trip Management"
+            desc="Whether it is individual travel or group trips, made for company purposes our HRMS provides measures to properly account for transportation and stay expenses!"
+            img={Img12}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Engage in Real Time</h4>
-                            <p>Organize, schedule and manage interviews in real-time with reminders and notifications to the candidates and the recruiters/hiring managers!</p>
-                        </Col>
-
-                    </Row>
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light7 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Onboarding Process</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Streamline your Hiring & Firing!</h4>
-                            <p>We help you create digital employment processes that is custom designed to your organizational needs!  </p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img5} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-
-                        <Col xs={12} md={6}>
-                            <img src={Img6} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Easy Documentation</h4>
-                            <p>Create and customize your company’s offer letters, joining letters and experience cum release letters  from our library of templates!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-7">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light5 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Attendance and Time Logs</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Know their whereabouts in Real-time</h4>
-                            <p>Now track the whereabouts of your workforce whether they’re in office, on break or gone out for a client meet!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img7} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-
-                        <Col xs={12} md={6}>
-                            <img src={Img8} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Create & assess project involvements</h4>
-                            <p>Customize project based resource deployment and track their log-ins & log-offs from the projects! </p>
-                        </Col>
-
-                    </Row>
-
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light3 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Employee Leaves</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Online leave application </h4>
-                            <p>Employees can create a leave request and the manager has the option to approve or disapprove the same!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img9} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img10} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Track & manage overall leaves</h4>
-                            <p>The HR and the employees can track their leave quota across several major headings like casual  & sick leaves!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light5 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Travel & Expense Claims</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Accurate Travel Reimbursement</h4>
-                            <p>Our HRMS allows accurate assessment of the travel expenses and provides immediate reimbursement options!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img11} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img12} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Business Trip Management</h4>
-                            <p>Whether it is individual travel or group trips, made for company purposes our HRMS provides measures to properly account for transportation and stay expenses!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Salary & Payroll Processing</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Manage salary, deductions & incentives</h4>
-                            <p>Get a proper breakdown of employee salaries in a designated format accounting for the tax & other deductions and perks/incentives with our HRMS!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Generate reports & pay slips</h4>
-                            <p>Create salary slips from our predefined customizable templates and get reports and analytics on CTC of employees! </p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>E-Learning & Continuous</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Schedule company wide programs </h4>
-                            <p>Customize, design and schedule the training programs for your teams across various divisions tailored for their needs!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Live Training support</h4>
-                            <p>You can now train your teams in real-time with the trainers from around the world with proper engagement & assessment tools!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Performance & Appraisals</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>KPI based appraisals </h4>
-                            <p>Now you can judge the performance of your team objectively with predefined KPIs, thereby ensuring merit based appraisals!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Clear & Transparent Tracking</h4>
-                            <p>Employees and management can track real-time analytics of the key performance indicators and calibrate the efforts accordingly!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-        </>
-    )
+      <Section title={sections[6].title} index={6} bottomRounded icon={sections[6].icon}>
+        <TwoCol
+          title="Manage salary, deductions & incentives"
+          desc="Get a proper breakdown of employee salaries in a designated format accounting for the tax & other deductions and perks/incentives with our HRMS!"
+          img={Adit1}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Generate reports & pay slips"
+            desc="Create salary slips from our predefined customizable templates and get reports and analytics on CTC of employees!"
+            img={Adit2}
+            reverse
+          />
+        </div>
+      </Section>
+    </>
+  );
 }
-
-export default Hrms

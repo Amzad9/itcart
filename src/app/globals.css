@@ -1,4 +1,76 @@
-@import '../index.css';
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
 
+/* Theme Color Variables */
+:root {
+  --color-primary: #25343F; /* Dark blue for headings */
+  --color-secondary: #6F8F72; /* Muted green for accents */
+  --color-tertiary: #1B3C53; /* Darker blue for backgrounds */
+  --color-light-bg: #F8FAFC;
+  --color-light-text: #64748B;
+}
+
+/* Header Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out;
+}
+
+.animate-slide-up-delay {
+  animation: slide-up 1s ease-out 0.2s both;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 1.2s ease-out 0.4s both;
+}
+
+/* CartSolution Component Animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}

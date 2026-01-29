@@ -1,12 +1,13 @@
+'use client';
+
 import React from 'react'
-import { Tab} from 'react-bootstrap';
 
 function TabPane(props) {
     return (
         <>
-            <Tab.Pane eventKey={props.eventKey}>
+            <div className={`tab-content ${props.activeTab === props.eventKey ? '' : 'hidden'}`}>
                {props.children}
-            </Tab.Pane> 
+            </div> 
         </>
     )
 }

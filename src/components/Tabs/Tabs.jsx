@@ -1,13 +1,13 @@
-import React from 'react'
-import { Nav} from 'react-bootstrap';
+'use client';
 
+import React from 'react'
 
 const Tabs = (props) => {
     return (
         <>
-            <Nav variant="pills" className={props.ClassName}>
+            <div className={`tabs tabs-boxed ${props.ClassName || ''}`}>
                 {props.children}
-            </Nav> 
+            </div> 
         </>
     )
 }

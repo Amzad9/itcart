@@ -1,176 +1,137 @@
 'use client';
 
 import React, { useState } from 'react';
-import Button from '../Button/button';
-import SlideCard from '../Card/SlideCard';
+import Image from 'next/image';
 import { NavData } from '../Utility';
-import styles from './Service.module.css';
-import Digital from '../assets/Web/1.png';
-import Corporate from '../assets/Web/2.png';
-import Document from '../assets/Web/3.png';
-import Learning from '../assets/Web/4.png';
-import Process from '../assets/Web/5.png';
-import Project from '../assets/Web/6.png';
+import { ChevronRight, Sparkles, Building,BarChart3, Check, ArrowRight, Zap, Target, Users, Cpu, Shield, Globe } from 'lucide-react';
 
-const Service = () => {
-  const [index, setIndex] = useState(0);
-
-  const web = [
+const Services = () => {
+  const services = [
     {
       id: 1,
-      img: Digital,
-      title: 'Digital (DX) Collaboration Portal',
-      items: [
-        'Collaboration Platform',
-        'Corporate Events',
-        'Document Management',
-        'App Integration',
-        'Social Media Integration',
-        'Live Conferencing',
-      ],
+      img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
+      title: 'Digital Collaboration Portal',
+      description: 'Centralized platform for seamless team collaboration and project management',
+      icon: Users,
+      features: ['Real-time Collaboration', 'Document Management', 'Video Conferencing', 'Task Tracking']
     },
     {
       id: 2,
-      img: Corporate,
-      title: 'Corporate Public Website',
-      items: [
-        'Brand Identity',
-        'Offerings',
-        'Testimonials',
-        'Masterful Copy',
-        'Social Media Integration',
-        'Mobile Responsive',
-      ],
+      img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+      title: 'Enterprise Solutions',
+      description: 'Comprehensive business solutions for digital transformation',
+      icon: Building,
+      features: ['Process Automation', 'Data Analytics', 'System Integration', 'Cloud Migration']
     },
     {
       id: 3,
-      img: Document,
-      title: 'Document Management System (DMS)',
-      items: [
-        'Workflow Automation',
-        'Document Indexing',
-        'Keyword Search',
-        'Document Editing',
-        'Document Security',
-        'Document Processing',
-      ],
+      img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
+      title: 'Cloud Infrastructure',
+      description: 'Secure and scalable cloud solutions for modern businesses',
+      icon: Cpu,
+      features: ['Cloud Architecture', 'Security Management', 'Performance Optimization', 'Cost Control']
     },
     {
       id: 4,
-      img: Learning,
-      title: 'Digital Learning Platform',
-      items: [
-        'Centralized Learning Platform',
-        'Online Training',
-        'Collaboration',
-        'Keyword Search',
-        'Reports & Analysis',
-        'Rewards & Appraisals',
-      ],
-    },
-    {
-      id: 5,
-      img: Process,
-      title: 'Digital Process Management',
-      items: [
-        'Visual Workflow',
-        'Process Automation',
-        'Role-based access',
-        'Reports & Analytics',
-        'Performance KPIs',
-        'System Integration',
-      ],
-    },
-    {
-      id: 6,
-      img: Project,
-      title: 'Project Management System',
-      items: [
-        'Planning & Scheduling',
-        'Project Budgeting',
-        'Resource Management',
-        'Task Management',
-        'Time Tracking',
-        'Reporting & Analytics',
-      ],
-    },
+      img: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop',
+      title: 'Data Analytics',
+      description: 'Transform data into actionable insights for business growth',
+      icon: BarChart3,
+      features: ['BI Dashboards', 'Predictive Analytics', 'Real-time Reporting', 'Data Visualization']
+    }
   ];
 
   return (
-    <section className="clients service pt-12 -mt-6 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="bg-service rounded-2xl px-6 pt-8 pb-6 mt-6">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold">Our Services</h2>
+    <section className="py-24 lg:py-32 bg-light-bg">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="max-w-3xl mx-auto text-center mb-16 lg:mb-20">
+          <div className="inline-flex items-center gap-2 mb-6 rounded-full px-4 py-2.5 text-sm font-medium bg-[#25343F]/10 text-[#25343F] shadow-sm backdrop-blur-sm">
+            <Sparkles className="w-4 h-4 text-[#6F8F72]" />
+            Our Services
           </div>
+          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-[#25343F] sm:text-5xl lg:text-6xl mb-6">
+          Comprehensive{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F8F72] via-[#25343F] to-[#1B3C53]">
+              Digital Solutions
+            </span>
+          </h2>
+        
+          
+          <p className="text-lg leading-relaxed max-w-2xl mx-auto text-[#64748B]">
+            Delivering innovative technology solutions that drive business growth and operational excellence.
+          </p>
+        </div>
 
-          {/* DaisyUI Tabs */}
-          <div className="tabs tabs-boxed justify-start lg:justify-center mb-8 bg-base-200">
-            {NavData.map((item, idx) => (
-              <button
-                key={item.key}
-                className={`tab tab-lg ${index === idx ? 'tab-active' : ''}`}
-                onClick={() => setIndex(idx)}
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {services.map((service) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={service.id}
+                className="group relative bg-white rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-3 border border-gray-100"
               >
-                {item.title}
-              </button>
-            ))}
-          </div>
-
-          {index === 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {web.map((item) => (
-                <div key={item.id} className={`${styles.flip} mb-4`}>
-                  <SlideCard className="border-0 bg-white front px-3 pt-3 pb-0" src={item.img}>
-                    <h6 className="text-lg font-semibold">{item.title}</h6>
-                  </SlideCard>
-                  <SlideCard className={`border-0 bg-white back px-3 pt-2 pb-0 ${styles.back}`}>
-                    <h5 className="text-black text-xl font-bold mb-3">{item.title}</h5>
-                    <ul className={`text-start list mt-3 space-y-2 ${styles.list}`}>
-                      {item.items &&
-                        item.items.map((val, idx) => (
-                          <li key={idx} className="flex items-center gap-2">
-                            <svg
-                              className="flex-shrink-0"
-                              width="16"
-                              height="16"
-                              viewBox="0 0 16 16"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M7.55548 15.111C11.7283 15.111 15.111 11.7283 15.111 7.55548C15.111 3.38271 11.7283 0 7.55548 0C3.3827 0 0 3.38271 0 7.55548C0 11.7283 3.3827 15.111 7.55548 15.111Z"
-                                fill="#DD87B8"
-                              />
-                              <path
-                                d="M6.80691 10.4377C6.63693 10.438 6.47147 10.383 6.33548 10.2811L6.32705 10.2747L4.55141 8.91642C4.46917 8.85338 4.40016 8.77475 4.34831 8.68503C4.29646 8.59531 4.2628 8.49625 4.24923 8.39352C4.23566 8.29079 4.24245 8.18639 4.26923 8.08629C4.296 7.98618 4.34223 7.89233 4.40528 7.81009C4.46832 7.72786 4.54694 7.65884 4.63665 7.60699C4.72637 7.55514 4.82543 7.52146 4.92817 7.50789C5.0309 7.49432 5.13531 7.50112 5.23541 7.5279C5.33552 7.55467 5.42936 7.6009 5.5116 7.66395L6.66172 8.54591L9.37949 5.00025C9.44251 4.91805 9.52111 4.84906 9.61079 4.79724C9.70047 4.74541 9.79949 4.71176 9.90218 4.6982C10.0049 4.68463 10.1092 4.69143 10.2093 4.7182C10.3093 4.74497 10.4032 4.79118 10.4854 4.8542L10.4856 4.85438L10.4687 4.87781L10.486 4.85438C10.6519 4.98183 10.7604 5.16989 10.7878 5.37725C10.8151 5.58462 10.7591 5.79436 10.6319 5.96046L7.43523 10.1291C7.36127 10.2251 7.26618 10.3028 7.15733 10.3562C7.04849 10.4096 6.92881 10.4371 6.80759 10.4368L6.80691 10.4377Z"
-                                fill="white"
-                              />
-                            </svg>
-                            {val}
-                          </li>
-                        ))}
-                    </ul>
-                    <div className={`btn-wrapper flex justify-between mt-4 ${styles.btnWrapper}`}>
-                      <div className="w-full mt-3">
-                        <Button className="text-white w-full bg-secondary btn-b">Know more</Button>
+                {/* Decorative Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#6F8F72]/5 via-transparent to-[#25343F]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Image Container */}
+                <div className="relative h-72 overflow-hidden">
+                  <Image
+                    src={service.img}
+                    alt={service.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                  
+                  {/* Icon Badge with Enhanced Design */}
+                  <div className="absolute top-6 right-6 z-20">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-[#6F8F72] rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                      <div className="relative rounded-2xl p-4 shadow-2xl bg-gradient-to-br from-[#6F8F72] to-[#5a7a5d] border border-white/20">
+                        <Icon className="w-7 h-7 text-white" />
                       </div>
                     </div>
-                  </SlideCard>
-                </div>
-              ))}
-            </div>
-          )}
+                  </div>
 
-          <div className="pt-8 text-center">
-            <a href="/ourservice" className="link link-primary text-lg">
-              SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i>
-            </a>
-          </div>
+                  {/* Title Overlay on Image */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+                    <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-lg">
+                      {service.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="p-8 relative">
+                  {/* Description */}
+                  <p className="mb-8 leading-relaxed text-[#64748B] text-base">
+                    {service.description}
+                  </p>
+
+                  {/* Action Button with Enhanced Design */}
+                  <button className="group/btn relative w-full overflow-hidden rounded-xl px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-[#6F8F72] to-[#5a7a5d] hover:from-[#5a7a5d] hover:to-[#6F8F72] shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000"></div>
+                    <div className="relative flex items-center justify-center gap-3">
+                      <span>Learn More</span>
+                      <ArrowRight className="w-5 h-5 transition-transform group-hover/btn:translate-x-1" />
+                    </div>
+                  </button>
+                </div>
+
+                {/* Hover Border Effect */}
+                <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#6F8F72]/30 transition-all duration-500 pointer-events-none"></div>
+                
+                {/* Corner Accent */}
+                <div className="absolute -top-4 -right-4 h-20 w-20 rounded-full bg-gradient-to-br from-[#6F8F72]/20 to-transparent blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 };
 
-export default Service;
+export default Services;

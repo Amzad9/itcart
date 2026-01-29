@@ -1,443 +1,149 @@
-import React from 'react'
+'use client';
 
-import Img13 from '../assets/solution/E-service/13.png';
-import Img14 from '../assets/solution/E-service/14.png';
-import Img1 from '../assets/solution/E-service/1.png';
-import Img2 from '../assets/solution/E-service/2.png';
-import Img3 from '../assets/solution/E-service/3.png';
-import Img4 from '../assets/solution/E-service/4.png';
-import Img5 from '../assets/solution/E-service/5.png';
-import Img6 from '../assets/solution/E-service/6.png';
-import Img7 from '../assets/solution/E-service/7.png';
-import Img8 from '../assets/solution/E-service/8.png';
-import Img9 from '../assets/solution/E-service/9.png';
-import Img10 from '../assets/solution/E-service/10.png';
-import Img11 from '../assets/solution/E-service/11.png';
-import Img12 from '../assets/solution/E-service/12.png';
-function Eservice() {
-    return (
-        <>
-            <section>
-                <Container className="bg-light2 rounded-top-8 px-6 py-5" fluid="xxl">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Document Change Request</h2>
+import React from 'react';
+import { TwoCol, Section } from './SharedComponents';
+import { FileText, ClipboardCheck, AlertTriangle, Settings, DollarSign, UserCheck, CreditCard } from 'lucide-react';
 
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Prevent Document Corruption </h4>
-                            <p>Document Change request ensures that no unauthorized access can make any changes to the key documents!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img1} alt="" className='img-fluid' />
-                        </Col>
+// Splash images for E-Services
+const Img1 = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=650&fit=crop';
+const Img2 = 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=650&fit=crop';
+const Img3 = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=650&fit=crop';
+const Img4 = 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=650&fit=crop';
+const Img5 = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=650&fit=crop';
+const Img6 = 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&h=650&fit=crop';
+const Img7 = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=650&fit=crop';
+const Img8 = 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=650&fit=crop';
+const Img9 = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop';
+const Img10 = 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop';
+const Img11 = 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&h=650&fit=crop';
+const Img12 = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=650&fit=crop';
+const Img13 = 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&h=650&fit=crop';
+const Img14 = 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&h=650&fit=crop';
 
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img2} alt="" className='img-fluid' />
-                        </Col>
+export default function Eservice() {
+  const sections = [
+    { title: "Document Change Request", icon: FileText, topRounded: true },
+    { title: "Business Change Request (BCR)", icon: ClipboardCheck },
+    { title: "Non-Conformity Reporting (NCR)", icon: AlertTriangle },
+    { title: "IT Service Request & Approval", icon: Settings },
+    { title: "Capital Expenditure Note Approval (CapEx)", icon: DollarSign },
+    { title: "KYC Update Request and Approval", icon: UserCheck },
+    { title: "Salary & Payroll Processing", icon: CreditCard, bottomRounded: true },
+  ];
 
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Organize change Request</h4>
-                            <p>The document change request process can be formulated based on your organizational needs from predefined formats!</p>
-                        </Col>
+  return (
+    <>
+      <Section title={sections[0].title} index={0} topRounded icon={sections[0].icon}>
+        <TwoCol
+          title="Prevent Document Corruption"
+          desc="Document Change request ensures that no unauthorized access can make any changes to the key documents!"
+          img={Img1}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Organize change Request"
+            desc="The document change request process can be formulated based on your organizational needs from predefined formats!"
+            img={Img2}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light6 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Business Change Request (BCR)</h2>
+      <Section title={sections[1].title} index={1} icon={sections[1].icon}>
+        <TwoCol
+          title="Format Business changes"
+          desc="Organize your business change request with our workflow templates which can be customizable to fit your criteria!"
+          img={Img3}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Enable request & approval"
+            desc="Give user based access to submit request form and have the separate access to project coordinator or vendor for approval of requested changes!"
+            img={Img4}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Format Business changes</h4>
-                            <p>Organize your business change request with our workflow templates which can be customizable to fit your criteria!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img3} alt="" className='img-fluid' />
-                        </Col>
+      <Section title={sections[2].title} index={2} icon={sections[2].icon}>
+        <TwoCol
+          title="Identify Failures instantly"
+          desc="With our Non conformity reporting module you can immediately identify glitches or failures from the conformed set of guidelines!"
+          img={Img5}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Process remedial actions"
+            desc="Once the failures are identified, remedial prescriptions can be properly communicated and processed!"
+            img={Img6}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img4} alt="" className='img-fluid' />
-                        </Col>
+      <Section title={sections[3].title} index={3} icon={sections[3].icon}>
+        <TwoCol
+          title="Organize IT service requests"
+          desc="With our system you can easily identify and organize the request type and nature of urgency it demands, so as to process it accordingly!"
+          img={Img7}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Process service delivery"
+            desc="Clear set of procedures are in place to approve/disapprove and assign the request to the process owner in order to resolve it successfully!"
+            img={Img8}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Enable request & approval</h4>
-                            <p>Give user based access to submit request form and have the separate access to project coordinator or vendor for approval of requested changes!</p>
-                        </Col>
+      <Section title={sections[4].title} index={4} icon={sections[4].icon}>
+        <TwoCol
+          title="Raising Capital Requirement Made Easy"
+          desc="No need to go through series of long shot mails to all stakeholders to approve a purchase of an asset, now you can raise the request in our form and all stakeholders will receive the request in proper format!"
+          img={Img9}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Approval and Purchase Order"
+            desc="Based on the predefined parameters the stakeholders can approve or disapprove the request and process it further, in case of approval by raising purchase order through predefined channel!"
+            img={Img10}
+            reverse
+          />
+        </div>
+      </Section>
 
-                    </Row>
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light7 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>NNon-Conformity Reporting (NCR) </h2>
+      <Section title={sections[5].title} index={5} icon={sections[5].icon}>
+        <TwoCol
+          title="Never misidentify your people"
+          desc="Whether you are a recruitment firm dealing with thousands of job applicants or a big organization doing a background check on its people, our system would help you organize and manage their KYC in a format that fits your criteria!"
+          img={Img11}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Risk & Compliance assessment"
+            desc="You can now record and assess their credit worthiness and the legal liabilities so as to take better decisions in assigning resources to them!"
+            img={Img12}
+            reverse
+          />
+        </div>
+      </Section>
 
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Identify Failures instantly</h4>
-                            <p>With our Non conformity reporting module you can immediately identify glitches or failures from the conformed set of guidelines!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img5} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-
-                        <Col xs={12} md={6}>
-                            <img src={Img6} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Process remedial actions</h4>
-                            <p>Once the failures are identified, remedial prescriptions can be properly communicated and processed!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-7">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light5 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>IT Service Request & Approval</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Organize IT service requests</h4>
-                            <p>With our system you can easily identify and organize the request type and nature of urgency it demands, so as to process it accordingly!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img7} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-
-                        <Col xs={12} md={6}>
-                            <img src={Img8} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Process service delivery</h4>
-                            <p>Clear set of procedures are in place to approve/disapprove and assign the request to the process owner in order to resolve it successfully!</p>
-                        </Col>
-
-                    </Row>
-
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light3 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Capital Expenditure Note Approval (CapEx)</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Raising Capital Requirement Made Easy</h4>
-                            <p>No need to go through series of long shot mails to all stakeholders to approve a purchase of an asset, now you can raise the request in our form and all stakeholders will receive the request in proper format!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img9} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img10} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Approval and Purchase Order</h4>
-                            <p>Based on the predefined parameters the stakeholders can approve or disapprove the request and process it further, in case of approval by raising purchase order through predefined channel!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light5 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>KYC Update Request and Approval</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never misidentify your people</h4>
-                            <p>Whether you are a recruitment firm dealing with thousands of job applicants or a big organization doing a background check on its people, our system would help you organize and manage their KYC in a format that fits your criteria!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <img src={Img11} alt="" className='img-fluid' />
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <img src={Img12} alt="" className='img-fluid' />
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Risk & Compliance assessment </h4>
-                            <p>You can now record and assess their credit worthiness and the legal liabilities so as to take better decisions in assigning resources to them!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-dark text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Salary & Payroll Processing</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Manage salary, deductions & incentives</h4>
-                            <p>Get a proper breakdown of employee salaries in a designated format accounting for the tax & other deductions and perks/incentives with our HRMS!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img13} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img14} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Generate reports & pay slips</h4>
-                            <p>Create salary slips from our predefined customizable templates and get reports and analytics on CTC of employees! </p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            {/* <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>SLA Tracking and Violations</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Customize your SLA parameters</h4>
-                            <p>Create case based legal compliance & performance criteria for your SLA from our predefined templates!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img13} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img14 } className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Manage critical failures</h4>
-                            <p>Prescribe predefined remedial measures for any deviation or failure from the set parameters in SLA and system shall implement it in such cases!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Guests/Visitors Service Request</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Never let Trespassers intrude</h4>
-                            <p>We enable organizations and residential societies secure their parameters from unsolicited visitors with our visitor service request module! </p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img13} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img13} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Manage visitor stays </h4>
-                            <p>Track and analyze the visitor arrival, departure, nature and purpose of visit with our system!  </p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section>
-                <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Health & Insurance Request Approvals</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Do organization wide health audit</h4>
-                            <p>The MIS allows to manage company wide health audit & check ups and ensures health compliance!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img13} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Img14} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Emergency reporting & management</h4>
-                            <p>This feature allows reporting of the medical emergencies and ensuring immediate resolutions!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </section> */}
-            <section>
-                {/* <Container fluid="xxl" className="bg-light8 rounded-bottom-8 mb-2 px-6 py-5">
-                    <Row>
-                        <Col xs={12} md={12} className="text-center pb-5 pt-4">
-                            <h2>Covid-19 / Emergency Incident Reporting</h2>
-
-                        </Col>
-                    </Row>
-                    <Row className="align-items-center">
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Emergency reporting made easy</h4>
-                            <p>This feature allows reporting of the medical, disaster or any other emergencies and ensuring immediate resolutions!</p>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Adit1} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-
-                    </Row>
-                    <Row className="align-items-center mt-7">
-                        <Col xs={12} md={6}>
-                            <div>
-                                <img src={Adit2} className='img-fluid' alt="" />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} className="ps-5">
-                            <h4 className='mb-4'>Event assessment for right resolution</h4>
-                            <p>Our system allows the reports to file quick details in the predefined forms, so that the responders can proactively pacify and control the situation!</p>
-                        </Col>
-
-                    </Row>
-
-                    <Row>
-                        <Col md={12} className="pt-6">
-                            <Nav.Link className="fs-6 text-sky text-center">SEE ALL THE SERVICES <i className="bi bi-arrow-right"></i></Nav.Link>
-                        </Col>
-                    </Row>
-                </Container> */}
-            </section>
-        </>
-    )
+      <Section title={sections[6].title} index={6} bottomRounded icon={sections[6].icon}>
+        <TwoCol
+          title="Manage salary, deductions & incentives"
+          desc="Get a proper breakdown of employee salaries in a designated format accounting for the tax & other deductions and perks/incentives with our HRMS!"
+          img={Img13}
+        />
+        <div className="mt-12 lg:mt-16">
+          <TwoCol
+            title="Generate reports & pay slips"
+            desc="Create salary slips from our predefined customizable templates and get reports and analytics on CTC of employees!"
+            img={Img14}
+            reverse
+          />
+        </div>
+      </Section>
+    </>
+  );
 }
-
-export default Eservice

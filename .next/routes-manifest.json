@@ -1,1 +1,167 @@
-{"version":3,"caseSensitive":false,"basePath":"","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[{"source":"/:path+/","destination":"/:path+","permanent":true,"internal":true,"regex":"^(?:\\/((?:[^\\/]+?)(?:\\/(?:[^\\/]+?))*))\\/$"}],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/app-development",
+      "regex": "^/app\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/app\\-development(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/business-automation",
+      "regex": "^/business\\-automation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-automation(?:/)?$"
+    },
+    {
+      "page": "/careers",
+      "regex": "^/careers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/careers(?:/)?$"
+    },
+    {
+      "page": "/cartsolution",
+      "regex": "^/cartsolution(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cartsolution(?:/)?$"
+    },
+    {
+      "page": "/case-studies",
+      "regex": "^/case\\-studies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/case\\-studies(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/enterprise",
+      "regex": "^/enterprise(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/enterprise(?:/)?$"
+    },
+    {
+      "page": "/eservices",
+      "regex": "^/eservices(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/eservices(?:/)?$"
+    },
+    {
+      "page": "/help-center",
+      "regex": "^/help\\-center(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/help\\-center(?:/)?$"
+    },
+    {
+      "page": "/hrms",
+      "regex": "^/hrms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hrms(?:/)?$"
+    },
+    {
+      "page": "/job",
+      "regex": "^/job(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/job(?:/)?$"
+    },
+    {
+      "page": "/mis",
+      "regex": "^/mis(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mis(?:/)?$"
+    },
+    {
+      "page": "/news",
+      "regex": "^/news(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/news(?:/)?$"
+    },
+    {
+      "page": "/ourservice",
+      "regex": "^/ourservice(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ourservice(?:/)?$"
+    },
+    {
+      "page": "/ourteam",
+      "regex": "^/ourteam(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ourteam(?:/)?$"
+    },
+    {
+      "page": "/resources",
+      "regex": "^/resources(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resources(?:/)?$"
+    },
+    {
+      "page": "/technology-consulting",
+      "regex": "^/technology\\-consulting(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/technology\\-consulting(?:/)?$"
+    },
+    {
+      "page": "/web-development",
+      "regex": "^/web\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/web\\-development(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

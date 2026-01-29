@@ -1,13 +1,17 @@
-import React from 'react'
-import { Tab} from 'react-bootstrap';
+'use client';
 
+import React, { useState } from 'react'
 
 const TabContainer = (props) => {
+    const [activeTab, setActiveTab] = useState(props.activeTab || props.defaultActiveKey);
+    
     return (
         <>
-           <Tab.Container id="left-tabs-example" defaultActiveKey={props.activeTab}>
-              {props.children}
-           </Tab.Container> 
+           <div className={props.className || ''}>
+              {React.Children.map(props.children, child => 
+                React.cloneElement(child, { activeTab, setActiveTab })
+              )}
+           </div> 
         </>
     )
 }
